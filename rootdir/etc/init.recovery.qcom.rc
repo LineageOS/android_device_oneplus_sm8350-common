@@ -6,3 +6,6 @@ on fs
 
 on init
     setprop sys.usb.configfs 1
+
+on property:ro.boot.usbcontroller=*
+    write /sys/class/udc/${ro.boot.usbcontroller}/device/../mode peripheral
