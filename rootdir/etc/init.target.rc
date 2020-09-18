@@ -112,10 +112,6 @@ on late-fs
     #exec_start wait_for_keymaster
     start console
     mount_all /vendor/etc/fstab.qcom --late
-    #ifdef VENDOR_EDIT
-    # sam.li@SYSTEM,add for mountting reserve.img
-    mount_reserve ext4 loop@/data/reserve/reserve.img /system/reserve ro context=u:object_r:system_file:s0
-    #endif /*VENDOR_EDIT*/
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
