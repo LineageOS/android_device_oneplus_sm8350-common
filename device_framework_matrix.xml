@@ -654,7 +654,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.ims</name>
-        <version>1.0-7</version>
+        <version>1.0-8</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
