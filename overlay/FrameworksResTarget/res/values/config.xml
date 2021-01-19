@@ -48,7 +48,7 @@
         <item>/apex/com.android.art/javalib/arm/boot.oat</item>
         <item>/system/framework/telephony-common.jar</item>
         <item>/system/framework/arm64/boot-telephony-common.art</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/system/bin/libsurfaceflinger</item>
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
     </string-array>
