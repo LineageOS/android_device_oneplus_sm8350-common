@@ -705,6 +705,14 @@
             <instance>slot2</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <interface>
+            <name>IQtiRadioStable</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.uim</name>
         <version>1.1-2</version>
