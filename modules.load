@@ -77,12 +77,6 @@ snd_event_dlkm.ko
 fc2580.ko
 fc0013.ko
 msi001.ko
-qca_cld3_wlan.ko
-qca_cld3_qca6750.ko
-qca_cld3_qca6390.ko
-qca_cld3_wlan.ko
-qca_cld3_qca6750.ko
-qca_cld3_qca6390.ko
 rmnet_core.ko
 rmnet_ctl.ko
 rmnet_offload.ko
