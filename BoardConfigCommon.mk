@@ -56,6 +56,7 @@ TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
