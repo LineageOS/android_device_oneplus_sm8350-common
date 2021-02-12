@@ -345,6 +345,10 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.blocklist
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
