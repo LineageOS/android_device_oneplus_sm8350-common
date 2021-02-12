@@ -1,0 +1,3 @@
+# The module will be loaded from the target RC after
+# cold boot calibration.
+blocklist qca_cld3_wlan
