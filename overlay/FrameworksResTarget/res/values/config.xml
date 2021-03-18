@@ -26,12 +26,6 @@
 
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
-        <item>/system/framework/arm64/boot-framework.oat</item>
-        <item>/system/framework/arm/boot-framework.oat</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.oat</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-okhttp.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot-okhttp.oat</item>
         <item>/apex/com.android.art/javalib/arm64/boot.vdex</item>
         <item>/apex/com.android.art/javalib/arm/boot.vdex</item>
         <item>/apex/com.android.art/javalib/arm64/boot-core-libart.vdex</item>
@@ -43,9 +37,6 @@
         <item>/system/lib/libhwui.so</item>
         <item>/system/framework/boot-framework.vdex</item>
         <item>/system/framework/oat/arm64/services.vdex</item>
-        <item>/system/framework/oat/arm64/services.odex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot.oat</item>
         <item>/system/framework/telephony-common.jar</item>
         <item>/system/framework/arm64/boot-telephony-common.art</item>
         <item>/system/bin/libsurfaceflinger</item>
