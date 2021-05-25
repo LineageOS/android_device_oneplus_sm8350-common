@@ -262,10 +262,11 @@ case "$target" in
                     log -t BOOT -p i "SDM429 early_boot prop set for: HwID '$soc_hwid'"
                 fi
                 ;;
-            303|307|308|309|320)
+            303|307|308|309|320|386|436)
                 # Vulkan is not supported for 8917 variants
                 setprop vendor.opengles.version 196608
                 setprop persist.graphics.vulkan.disable true
+                setprop vendor.gralloc.disable_ahardware_buffer 1
                 ;;
             *)
                 setprop vendor.opengles.version 196608
@@ -342,6 +343,13 @@ case "$target" in
             441)
                 setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
                 setprop vendor.gralloc.disable_ubwc 1
+
+                # 196609 is decimal for 0x30001 to report version 3.1
+                setprop vendor.opengles.version 196609
+                ;;
+            471)
+                #scuba APQ
+                setprop vendor.gralloc.disable_ubwc 1
                 ;;
         esac
         ;;
@@ -389,6 +397,9 @@ case "$target" in
                 fi
                 ;;
         esac
+        ;;
+    "holi")
+        setprop vendor.media.target_variant "_holi"
         ;;
 esac
 
