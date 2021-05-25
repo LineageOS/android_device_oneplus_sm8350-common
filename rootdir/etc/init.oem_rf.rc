@@ -1,0 +1,11 @@
+#add for SMT test enters WLAN FTM test in non-signaling
+service wififtmserver /vendor/bin/sh vendor/bin/wifi_ftm
+    class late_start
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:vendor.wlan.ftm.up=1
+    start wififtmserver
+
