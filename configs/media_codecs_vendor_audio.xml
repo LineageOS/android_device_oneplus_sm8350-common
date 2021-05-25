@@ -18,6 +18,8 @@
 <Included>
     <Decoders>
         <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
+        <!-- webber.yan@media,20201009,fix BUG 33064,raw use c2 codec in priority,change rank from 1 to 100 -->
+        <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="100"/>
         <!-- SimpleOMXComponet based software decoder-->
     </Decoders>
 </Included>
