@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oneplus_kona",
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus_kona.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus_kona.xml"],
+    name: "vendor.lineage.livedisplay@2.1-service.oneplus_lahaina",
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus_lahaina.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus_lahaina.xml"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
