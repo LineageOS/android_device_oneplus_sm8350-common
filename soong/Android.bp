@@ -1,6 +1,6 @@
 bootstrap_go_package {
-    name: "soong-oneplus-kona-plugins",
-    pkgPath: "device/oneplus/sm8250-common",
+    name: "soong-oneplus-lahaina-plugins",
+    pkgPath: "device/oneplus/sm8350-common",
     deps: [
         "blueprint",
         "blueprint-pathtools",

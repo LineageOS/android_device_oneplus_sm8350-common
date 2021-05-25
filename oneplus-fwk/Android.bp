@@ -1,5 +1,5 @@
 java_library {
-    name: "oneplus-fwk.oneplus_kona",
+    name: "oneplus-fwk.oneplus_lahaina",
     installable: true,
 
     srcs: [

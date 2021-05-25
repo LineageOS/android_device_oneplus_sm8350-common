@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.oneplus_kona",
+    name: "libgptutils.oneplus_lahaina",
     vendor: true,
     recovery_available: true,
     shared_libs: [

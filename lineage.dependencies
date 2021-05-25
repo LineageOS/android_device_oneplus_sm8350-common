@@ -4,7 +4,7 @@
     "target_path": "device/oneplus/common"
   },
   {
-    "repository": "android_kernel_oneplus_sm8250",
-    "target_path": "kernel/oneplus/sm8250"
+    "repository": "android_kernel_oneplus_sm8350",
+    "target_path": "kernel/oneplus/sm8350"
   }
 ]
