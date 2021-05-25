@@ -1,6 +1,7 @@
 #!/system/bin/sh
 echo "ftm_power_config start" >> /dev/kmsg
 bootmode=`getprop ro.vendor.factory.mode`
+target=`getprop ro.board.platform`
 /vendor/bin/sh /vendor/bin/init.qcom.post_boot.sh
 sleep 5
 echo 0 > /sys/devices/system/cpu/cpu4/online
@@ -11,8 +12,14 @@ echo 0 > /sys/devices/system/cpu/cpu7/online
 sleep 10
 echo 0 > /sys/devices/system/cpu/cpu3/online
 echo 0 > /sys/devices/system/cpu/cpu2/online
-echo 518400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-echo 883200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+
+if [ "$target" == "lito" ]; then
+	echo 614400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+	echo 1075200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+else
+	echo 518400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+	echo 883200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+fi
 
 echo "ftm_power_config ftrace config start" >> /dev/kmsg
 echo 0 > /sys/kernel/debug/tracing/tracing_on

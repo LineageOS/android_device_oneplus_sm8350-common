@@ -19,3 +19,6 @@ on post-fs-data && property:ro.boot.cust=9
     mount overlay overlay /system_ext/priv-app lowerdir=/oem/system_ext/priv-app:/system_ext/priv-app,context=u:object_r:system_file:s0
     mount overlay overlay /system_ext/etc/permissions lowerdir=/oem/system_ext/etc/permissions:/system_ext/etc/permissions,context=u:object_r:system_file:s0
     mount overlay overlay /system_ext/etc/sysconfig lowerdir=/oem/system_ext/etc/sysconfig:/system_ext/etc/sysconfig,context=u:object_r:system_file:s0
+
+on property:ro.boot.product.hardware.sku=9
+    setprop persist.radio.multisim.config ssss
