@@ -13,6 +13,7 @@ persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
