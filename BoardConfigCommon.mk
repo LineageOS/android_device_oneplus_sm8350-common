@@ -1,5 +1,5 @@
-
-# Copyright (C) 2018 The LineageOS Project
+#
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 BOARD_VENDOR := oneplus
 
-COMMON_PATH := device/oneplus/sm8250-common
+COMMON_PATH := device/oneplus/sm8350-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -38,7 +38,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kona
+TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -50,14 +50,14 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc OEM_TARGET_PRODUCT=$(PRODUCT_DEVICE)
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8250
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := kona
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
+TARGET_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno660
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -123,9 +123,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
-SOONG_CONFIG_NAMESPACES += ONEPLUS_KONA_FOD
-SOONG_CONFIG_ONEPLUS_KONA_FOD := POS_X POS_Y SIZE
-TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.oneplus_kona
+SOONG_CONFIG_NAMESPACES += ONEPLUS_LAHAINA_FOD
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD := POS_X POS_Y SIZE
+TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.oneplus_lahaina
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/device_framework_matrix.xml
@@ -208,4 +208,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
+-include vendor/oneplus/sm8350-common/BoardConfigVendor.mk
