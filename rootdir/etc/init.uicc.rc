@@ -1,0 +1,3 @@
+#nfc uicc control
+on init
+	setprop persist.vendor.radio.uicc_se_enabled false
