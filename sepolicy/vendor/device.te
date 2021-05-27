@@ -13,6 +13,5 @@ type ramboost_socket, dev_type;
 type reserve1_block_device, dev_type;
 type reserve2_block_device, dev_type;
 type therm_device, dev_type;
-type vendor_rawdump_block_device, dev_type;
 type vl53l1_device, dev_type;
 type wlchg_device, dev_type;
