@@ -6,7 +6,6 @@
 /(vendor|system/vendor)/bin/wlchgd                  u:object_r:wlchgd_exec:s0
 
 # Block devices
-/dev/block/platform/soc/1d84000.ufshc/by-name/config             u:object_r:frp_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/fw_ufs1_[ab]       u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/fw_ufs2_[ab]       u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/logo_[ab]          u:object_r:vendor_custom_ab_block_device:s0
