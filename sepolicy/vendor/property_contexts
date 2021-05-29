@@ -34,6 +34,7 @@ vendor.oem.wifi.socket.quit               u:object_r:vendor_set_wlan_prop:s0
 vendor.service.wifi.socket.enable         u:object_r:vendor_oem_wifi_prop:s0
 vendor.service.wifi.socket.mdm.enable     u:object_r:vendor_oem_wifi_prop:s0
 vendor.sys.memplus.postboot               u:object_r:vendor_memplus_prop:s0
+vendor.sys.op.disable_ufstw               u:object_r:vendor_sys_op_prop:s0
 vendor.wlan.driver.status                 u:object_r:vendor_set_wlan_prop:s0
 vendor.wlan.ftm.daemon                    u:object_r:vendor_set_wlan_prop:s0
 vendor.wlan.ftm.up                        u:object_r:vendor_set_wlan_prop:s0
