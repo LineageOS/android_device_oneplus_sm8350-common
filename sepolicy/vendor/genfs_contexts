@@ -12,6 +12,7 @@ genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib          
 genfscon sysfs /kernel/ois_control                                                                                     u:object_r:sysfs_ois_control:s0
 genfscon sysfs /kernel/tof_control                                                                                     u:object_r:sysfs_tof_control:s0
 genfscon sysfs /module/memplus_core/parameters                                                                         u:object_r:sysfs_memplus:s0
+genfscon sysfs /project_info                                                                                           u:object_r:sysfs_project_info:s0
 
 # sysfs (wakeup)
 genfscon sysfs /devices/platform/dummy_hcd.0/usb1/wakeup u:object_r:sysfs_wakeup:s0
