@@ -45,6 +45,10 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                                    u:object_r:hal_param_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                              u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service                       u:object_r:hal_graphics_composer_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.charger@1\.0-service                                  u:object_r:hal_charger_default_exec:s0
+
+# Init scripts
+/vendor/bin/init.oplus_chg.sh                                                                                   u:object_r:vendor_qti_init_shell_exec:s0
 
 # OP1, OP2 files
 /mnt/vendor/op1(/.*)?    u:object_r:op1_file:s0
@@ -68,7 +72,6 @@
 /sys/module/fuse(/.*)?     u:object_r:sysfs_fuse:s0
 /sys/module/proc(/.*)?     u:object_r:sysfs_dbg:s0
 /sys/module/tpd(/.*)?      u:object_r:sysfs_tpd:s0
-/sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
 
 # Sys files (health)
 /sys/devices/platform/soc/soc:oplus,chg_gki/power_supply/(?!.*wakeup\d+).*                                           u:object_r:vendor_sysfs_battery_supply:s0
@@ -77,9 +80,10 @@
 /sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/(?!.*wakeup\d+).*    u:object_r:vendor_sysfs_battery_supply:s0
 
 # Sys files (wakeup)
-/sys/devices/platform/soc/soc:oneplus_wlchg/power_supply/wireless/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/soc:tri_state_key/hall_data_calib u:object_r:sysfs_tri_state_key:s0
-/sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/wakeup(/.*)?                                                       u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,(wireless-charge|common-charge)/oplus_chg/(wireless|common)/wakeup[0-9]+(/.*)?     u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/oplus_chg/(usb|battery)/wakeup[0-9]+(/.*)?                                                                  u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_gki/power_supply/(battery|usb|wireless)/wakeup[0-9]+(/.*)?                                                       u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_aac/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_alac/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_amrnb/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
