@@ -1,5 +1,7 @@
 hal_client_domain(hal_camera_default, hal_cameraHIDL)
 
+allow hal_camera_default hal_charger_hwservice:hwservice_manager find;
+
 allow hal_camera_default mnt_vendor_file:dir w_dir_perms;
 allow hal_camera_default mnt_vendor_file:file create_file_perms;
 
@@ -26,3 +28,4 @@ allow hal_camera_default sysfs_tof_control:file rw_file_perms;
 get_prop(hal_camera_default, ctl_default_prop)
 get_prop(hal_camera_default, vendor_db_security_prop)
 get_prop(hal_camera_default, vendor_mmi_prop)
+set_prop(hal_camera_default, vendor_sys_op_prop)
