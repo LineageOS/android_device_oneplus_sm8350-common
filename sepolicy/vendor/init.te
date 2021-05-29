@@ -1,0 +1,1 @@
+allow init op2_file:dir mounton;
