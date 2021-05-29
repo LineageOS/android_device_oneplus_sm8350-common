@@ -1,2 +1,9 @@
-on property:ro.boot.product.hardware.sku=9
+# Restrict SIM configuration to SSSS on the NA variants
+on property:ro.boot.rf_version=12
+    setprop persist.radio.multisim.config ssss
+
+on property:ro.boot.rf_version=22
+    setprop persist.radio.multisim.config ssss
+
+on property:ro.boot.rf_version=23
     setprop persist.radio.multisim.config ssss
