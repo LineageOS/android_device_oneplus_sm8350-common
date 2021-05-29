@@ -45,6 +45,10 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                                    u:object_r:hal_param_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                              u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service                       u:object_r:hal_graphics_composer_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.charger@1\.0-service                                  u:object_r:hal_charger_default_exec:s0
+
+# Init scripts
+/vendor/bin/init.oplus_chg.sh                                                                                   u:object_r:vendor_qti_init_shell_exec:s0
 
 # OP1, OP2 files
 /mnt/vendor/op1(/.*)?    u:object_r:op1_file:s0
@@ -68,7 +72,6 @@
 /sys/module/fuse(/.*)?     u:object_r:sysfs_fuse:s0
 /sys/module/proc(/.*)?     u:object_r:sysfs_dbg:s0
 /sys/module/tpd(/.*)?      u:object_r:sysfs_tpd:s0
-/sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
 
 # Sys files (health)
 /sys/devices/platform/soc/soc:oplus,chg_gki/power_supply/(?!.*wakeup\d+).*                                           u:object_r:vendor_sysfs_battery_supply:s0
