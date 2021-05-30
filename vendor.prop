@@ -232,7 +232,7 @@ sys.vendor.shutdown.waittime=500
 
 # USB
 vendor.usb.diag.func.name=ffs
-vendor.usb.use_ffs_mtp=0
+vendor.usb.use_ffs_mtp=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
