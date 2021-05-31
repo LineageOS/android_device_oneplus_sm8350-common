@@ -418,6 +418,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.oneplus_lahaina
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
