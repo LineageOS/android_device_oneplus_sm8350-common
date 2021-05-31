@@ -26,7 +26,7 @@ namespace powershare {
 namespace V1_0 {
 namespace implementation {
 
-#define WIRELESS_TX_ENABLE_PATH "/proc/wireless/enable_tx"
+#define WIRELESS_TX_ENABLE_PATH "/sys/class/oplus_chg/wireless/trx_online"
 
 /*
  * Write value to path and close file.
@@ -47,7 +47,7 @@ static T get(const std::string& path, const T& def) {
 }
 
 Return<bool> PowerShare::isEnabled() {
-    return get<std::string>(WIRELESS_TX_ENABLE_PATH, "disable") != "disable";
+    return get<int>(WIRELESS_TX_ENABLE_PATH, 0) >= 1;
 }
 
 Return<bool> PowerShare::setEnabled(bool enable) {
