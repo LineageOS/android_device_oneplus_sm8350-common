@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "65d529ab_0e9f7cdd",
+        "filename": "common.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2021-06-01T23:38:51Z",
+      "side": 1,
+      "message": "remov？",
+      "revId": "1f7634e16003c0c959c07d32789e855e288b7efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
