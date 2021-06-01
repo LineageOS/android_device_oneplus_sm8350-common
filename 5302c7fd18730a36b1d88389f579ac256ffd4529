@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d759cf5_51e12060",
+        "filename": "oneplus-fwk/src/android/util/OpFeatures.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2021-06-01T09:04:19Z",
+      "side": 1,
+      "message": "372, I assume?",
+      "revId": "5302c7fd18730a36b1d88389f579ac256ffd4529",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
