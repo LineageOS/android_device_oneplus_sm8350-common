@@ -16,6 +16,24 @@
       "revId": "1f7634e16003c0c959c07d32789e855e288b7efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "08f85252_e12a792f",
+        "filename": "common.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-01T23:45:10Z",
+      "side": 1,
+      "message": "Notitce sku_11 vs sku_9.",
+      "parentUuid": "65d529ab_0e9f7cdd",
+      "revId": "1f7634e16003c0c959c07d32789e855e288b7efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
