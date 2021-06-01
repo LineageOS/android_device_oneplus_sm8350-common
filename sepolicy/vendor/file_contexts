@@ -1,8 +1,6 @@
 # Binaries
-/(vendor|system/vendor)/bin/dashd                   u:object_r:dashd_exec:s0
 /(vendor|system/vendor)/bin/opf-service             u:object_r:opf_exec:s0
 /(vendor|system/vendor)/bin/tri-state-key_daemon    u:object_r:tri-state-key_daemon_exec:s0
-/(vendor|system/vendor)/bin/vl53l1_daemon_main      u:object_r:vl53l1_daemon_main_exec:s0
 /(vendor|system/vendor)/bin/wlchgd                  u:object_r:wlchgd_exec:s0
 
 # Block devices
@@ -23,7 +21,6 @@
 # Devices
 /dev/byte-cntr            u:object_r:byte_cntr_device:s0
 /dev/cc_ctl               u:object_r:graphics_device:s0
-/dev/dash                 u:object_r:dash_device:s0
 /dev/fragment_monitor     u:object_r:fragment_monitor_device:s0
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
 /dev/ht_ctl               u:object_r:graphics_device:s0
@@ -34,7 +31,6 @@
 /dev/opfeature            u:object_r:opf_file:s0
 /dev/param                u:object_r:param_device:s0
 /dev/skin_thermal         u:object_r:therm_device:s0
-/dev/stmvl53l1_ranging    u:object_r:vl53l1_device:s0
 /dev/wlchg                u:object_r:wlchg_device:s0
 
 # HALs
@@ -46,7 +42,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                                   u:object_r:hal_cameraHIDL_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service                            u:object_r:hal_cameraHIDL_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                                  u:object_r:hal_display_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.hdcpkey@1\.0-service                                  u:object_r:hal_hdcpkey_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                                    u:object_r:hal_param_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                              u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service                       u:object_r:hal_graphics_composer_default_exec:s0

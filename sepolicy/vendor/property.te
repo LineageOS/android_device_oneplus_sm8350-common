@@ -1,4 +1,3 @@
-type vendor_cwb_prop, property_type;
 type vendor_db_security_prop, property_type;
 type vendor_fingerprint_prop, property_type;
 type vendor_gps_prop, property_type;
