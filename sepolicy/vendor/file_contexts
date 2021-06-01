@@ -82,10 +82,15 @@
 /sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/(?!.*wakeup\d+).*    u:object_r:vendor_sysfs_battery_supply:s0
 
 # Sys files (wakeup)
-/sys/devices/platform/soc/c440000\.qcom,spmi/spmi-0/spmi0-00/c440000\.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc/rtc0/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/soc:oneplus_wlchg/power_supply/wireless/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/soc:tri_state_key/hall_data_calib u:object_r:sysfs_tri_state_key:s0
-/sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-f]+.qcom,spmi:qcom,pmk[0-9]+@[0-9]+:pon_hlos@[0-9]+/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-f]+.qcom,spmi:qcom,pmk[0-9]+@[0-9]+:pon_pbs@[0-9]+/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-f]+.qcom,spmi:qcom,pmk[0-9]+@[0-9]+:rtc@[0-9]+/rtc/rtc[0-9]+/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-f]+.qcom,spmi:qcom,pmk[0-9]+@[0-9]+:rtc@[0-9]+/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_gki/power_supply/(battery|usb|wireless)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/oplus_chg/(usb|battery)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,(wireless-charge|common-charge)/oplus_chg/(wireless|common)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/fastrpc/adsprpc-smd-secure/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/fastrpc/adsprpc-smd/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_aac/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_alac/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_amrnb/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
