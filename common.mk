@@ -201,9 +201,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     ftm_power_config.sh \
     init.class_main.sh \
-    init.crda.sh \
     init.cust.rc \
-    init.mdm.sh \
     init.oem.debug.rc \
     init.oem.minidump.sdx55m.rc \
     init.oem.rc \
@@ -217,13 +215,11 @@ PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.sdio.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.qti.ims.sh \
     init.qti.qcv.sh \
     init.recovery.qcom.rc \
     init.target.rc \
