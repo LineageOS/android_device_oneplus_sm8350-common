@@ -215,10 +215,6 @@ service vendor.mdm_helper /vendor/bin/mdm_helper
     group system wakelock
     disabled
 
-service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
-    class core
-    oneshot
-
 # ifdef VENDOR_EDIT
 # travis.oyang@OPTI, 2020/9/3, Add server for modem sleep info service.
 service qmi_master_stats_service /vendor/bin/qmi-framework-tests/qmi_master_stats_service
