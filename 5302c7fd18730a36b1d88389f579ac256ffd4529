@@ -16,6 +16,24 @@
       "revId": "5302c7fd18730a36b1d88389f579ac256ffd4529",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0dcd93ff_46e81405",
+        "filename": "oneplus-fwk/src/android/util/OpFeatures.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-01T09:16:37Z",
+      "side": 1,
+      "message": "\u003e 372, I assume?\n\nGood catch.",
+      "parentUuid": "6d759cf5_51e12060",
+      "revId": "5302c7fd18730a36b1d88389f579ac256ffd4529",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
