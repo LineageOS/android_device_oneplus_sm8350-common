@@ -6,25 +6,16 @@
 /(vendor|system/vendor)/bin/wlchgd                  u:object_r:wlchgd_exec:s0
 
 # Block devices
-/dev/block/platform/soc/1d84000.ufshc/by-name/fw_ufs1_[ab]       u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/fw_ufs2_[ab]       u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/logo_[ab]          u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/mdm1oemnvbktmp     u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/mdm_oem_dycnvbk    u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/mdm_oem_stanvbk    u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/oem_cust1_[ab]     u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/oem_cust2_[ab]     u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/oem_dycnvbk        u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/oem_stanvbk        u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/op1                u:object_r:op1_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/op2                u:object_r:op2_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/opproduct_[ab]     u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/param              u:object_r:param_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/rawdump            u:object_r:vendor_rawdump_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/reserve1           u:object_r:reserve1_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/reserve2           u:object_r:reserve2_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/spunvm             u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/storsec_[ab]       u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplus_sec_[ab]        u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk          u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve4         u:object_r:reserve2_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/param                 u:object_r:param_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/rawdump               u:object_r:vendor_rawdump_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/rtice                 u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/splash_[ab]           u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/spunvm                u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_vendor_[ab]    u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/sdf                           u:object_r:boot_block_device:s0
 
 # Data files
 /data/reserve-lib(/.*)?    u:object_r:apk_data_file:s0
