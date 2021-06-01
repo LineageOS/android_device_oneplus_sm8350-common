@@ -1,14 +1,5 @@
 # procfs
-genfscon proc /dash_4300_4p45_exit                  u:object_r:sysfs_dash_charger:s0
-genfscon proc /dash_4320_4p45_exit                  u:object_r:sysfs_dash_charger:s0
-genfscon proc /dash_4510_4p45_exit                  u:object_r:sysfs_dash_charger:s0
-genfscon proc /dash_firmware_ok                     u:object_r:sysfs_dash_charger:s0
-genfscon proc /enhance_dash                         u:object_r:sysfs_dash_charger:s0
-genfscon proc /n76e_exit                            u:object_r:sysfs_dash_charger:s0
-genfscon proc /ship_mode                            u:object_r:sysfs_dash_charger:s0
-genfscon proc /swarp_chg_exist                      u:object_r:sysfs_dash_charger:s0
 genfscon proc /touchpanel                           u:object_r:proc_touchpanel:s0
-genfscon proc /warp_chg_exit                        u:object_r:sysfs_dash_charger:s0
 
 # sysfs
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator                                           u:object_r:sysfs_leds:s0
@@ -20,9 +11,6 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 genfscon sysfs /kernel/ois_control                                                                                     u:object_r:sysfs_ois_control:s0
 genfscon sysfs /kernel/tof_control                                                                                     u:object_r:sysfs_tof_control:s0
 genfscon sysfs /module/memplus_core/parameters                                                                         u:object_r:sysfs_memplus:s0
-genfscon sysfs /module/qpnp_smb5/parameters/call_on                                                                    u:object_r:sysfs_dash_charger:s0
-genfscon sysfs /module/qpnp_smb5/parameters/video_call_on                                                              u:object_r:vendor_sysfs_video_call_on:s0
-genfscon sysfs /module/stmvl53l1                                                                                       u:object_r:sysfs_vl53l1:s0
 
 # sysfs (wakeup)
 genfscon sysfs /devices/0306_02.01.00/wakeup u:object_r:sysfs_wakeup:s0
@@ -51,11 +39,6 @@ genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-4/4-0048/wakeup u:object_r:s
 genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6390/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qpnp,fg/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-08/c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:oem_rf_cable/wakeup u:object_r:sysfs_wakeup:s0
