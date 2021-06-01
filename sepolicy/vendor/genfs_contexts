@@ -6,24 +6,9 @@ genfscon proc /dash_firmware_ok                     u:object_r:sysfs_dash_charge
 genfscon proc /enhance_dash                         u:object_r:sysfs_dash_charger:s0
 genfscon proc /n76e_exit                            u:object_r:sysfs_dash_charger:s0
 genfscon proc /ship_mode                            u:object_r:sysfs_dash_charger:s0
-genfscon proc /skin_temp_thrd/fastchg_lcdoff_thd    u:object_r:procfs_oem_wireless:s0
-genfscon proc /skin_temp_thrd/fastchg_thd           u:object_r:procfs_oem_wireless:s0
-genfscon proc /skin_temp_thrd/norchg_lcdoff_thd     u:object_r:procfs_oem_wireless:s0
-genfscon proc /skin_temp_thrd/norchg_thd            u:object_r:procfs_oem_wireless:s0
 genfscon proc /swarp_chg_exist                      u:object_r:sysfs_dash_charger:s0
 genfscon proc /touchpanel                           u:object_r:proc_touchpanel:s0
 genfscon proc /warp_chg_exit                        u:object_r:sysfs_dash_charger:s0
-genfscon proc /wireless/charge_pump_en              u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/current_out                 u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/deviated                    u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/enable_rx                   u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/enable_tx                   u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/epp_or_bpp                  u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/fast_skin_threld            u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/ftm_mode                    u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/ftm_test                    u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/quiet_mode                  u:object_r:procfs_oem_wireless:s0
-genfscon proc /wireless/rx_voltage                  u:object_r:procfs_oem_wireless:s0
 
 # sysfs
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator                                           u:object_r:sysfs_leds:s0
