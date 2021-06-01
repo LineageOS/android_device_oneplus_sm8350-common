@@ -76,7 +76,10 @@
 /sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
 
 # Sys files (health)
-/sys/devices/platform/soc/soc:oplus,chg_gki/power_supply/(?!.*wakeup\d+).*                                      u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_gki/power_supply/(?!.*wakeup\d+).*                                           u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,common-charge/oplus_chg/(?!.*wakeup\d+).*      u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/(?!.*wakeup\d+).*    u:object_r:vendor_sysfs_battery_supply:s0
 
 # Sys files (wakeup)
 /sys/devices/platform/soc/c440000\.qcom,spmi/spmi-0/spmi0-00/c440000\.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc/rtc0/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
