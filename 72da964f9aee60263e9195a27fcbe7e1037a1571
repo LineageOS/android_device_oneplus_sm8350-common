@@ -22,6 +22,24 @@
       "revId": "72da964f9aee60263e9195a27fcbe7e1037a1571",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99759e23_5d61599d",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-06-02T21:19:56Z",
+      "side": 1,
+      "message": "it\u0027s actually installed without .sh",
+      "parentUuid": "05c60163_fa827bb5",
+      "revId": "72da964f9aee60263e9195a27fcbe7e1037a1571",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
