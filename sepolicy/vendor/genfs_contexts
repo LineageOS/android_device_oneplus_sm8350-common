@@ -11,7 +11,11 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib                                                 u:object_r:sysfs_tri_state_key:s0
 genfscon sysfs /kernel/ois_control                                                                                     u:object_r:sysfs_ois_control:s0
 genfscon sysfs /kernel/tof_control                                                                                     u:object_r:sysfs_tof_control:s0
+genfscon sysfs /module/fsc                                                                                             u:object_r:sysfs_fsc:s0
+genfscon sysfs /module/fuse                                                                                            u:object_r:sysfs_fuse:s0
 genfscon sysfs /module/memplus_core/parameters                                                                         u:object_r:sysfs_memplus:s0
+genfscon sysfs /module/proc                                                                                            u:object_r:sysfs_dbg:s0
+genfscon sysfs /module/tpd                                                                                             u:object_r:sysfs_tpd:s0
 genfscon sysfs /project_info                                                                                           u:object_r:sysfs_project_info:s0
 
 # sysfs (wakeup)
