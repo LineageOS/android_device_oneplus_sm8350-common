@@ -61,13 +61,6 @@
 /mnt/vendor/persist/engineermode(/.*)?               u:object_r:oem_file:s0
 /mnt/vendor/persist/OPDiagnose(/.*)?                 u:object_r:oem_file:s0
 
-# Sys files
-/sys/module/fsc(/.*)?      u:object_r:sysfs_fsc:s0
-/sys/module/fuse(/.*)?     u:object_r:sysfs_fuse:s0
-/sys/module/proc(/.*)?     u:object_r:sysfs_dbg:s0
-/sys/module/tpd(/.*)?      u:object_r:sysfs_tpd:s0
-/sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
-
 # Sys files (health)
 /sys/devices/platform/soc/soc:oplus,chg_gki/power_supply/(?!.*wakeup\d+).*                                           u:object_r:vendor_sysfs_battery_supply:s0
 /sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/(?!.*wakeup\d+).*                                             u:object_r:vendor_sysfs_battery_supply:s0
