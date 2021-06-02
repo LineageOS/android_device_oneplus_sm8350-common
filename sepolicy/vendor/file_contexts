@@ -7,6 +7,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplus_sec_[ab]        u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk          u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve4         u:object_r:reserve2_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk          u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/param                 u:object_r:param_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/rawdump               u:object_r:vendor_rawdump_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/rtice                 u:object_r:vendor_efs_boot_dev:s0
