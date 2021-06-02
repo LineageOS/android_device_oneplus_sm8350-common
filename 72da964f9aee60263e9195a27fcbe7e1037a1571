@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "05c60163_fa827bb5",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-06-02T21:19:19Z",
+      "side": 1,
+      "message": ".sh?",
+      "range": {
+        "startLine": 4,
+        "startChar": 28,
+        "endLine": 4,
+        "endChar": 46
+      },
+      "revId": "72da964f9aee60263e9195a27fcbe7e1037a1571",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
