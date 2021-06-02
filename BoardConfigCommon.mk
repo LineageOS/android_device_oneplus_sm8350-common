@@ -102,13 +102,12 @@ BOARD_KERNEL_CMDLINE := \
     ip6table_raw.raw_before_defrag=1 \
     iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_PAGESIZE := 5096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
-    LLVM=1
+    DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
