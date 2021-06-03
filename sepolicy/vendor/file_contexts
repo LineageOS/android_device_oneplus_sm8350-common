@@ -2,7 +2,6 @@
 /(vendor|system/vendor)/bin/opf-service             u:object_r:opf_exec:s0
 /(vendor|system/vendor)/bin/tri-state-key_daemon    u:object_r:tri-state-key_daemon_exec:s0
 /(vendor|system/vendor)/bin/wifi-mac-generator      u:object_r:wifi-mac-generator_exec:s0
-/(vendor|system/vendor)/bin/wlchgd                  u:object_r:wlchgd_exec:s0
 
 # Block devices
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplus_sec_[ab]        u:object_r:vendor_custom_ab_block_device:s0
@@ -33,7 +32,6 @@
 /dev/opfeature            u:object_r:opf_file:s0
 /dev/param                u:object_r:param_device:s0
 /dev/skin_thermal         u:object_r:therm_device:s0
-/dev/wlchg                u:object_r:wlchg_device:s0
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.oneplus_lahaina         u:object_r:hal_fingerprint_default_exec:s0
