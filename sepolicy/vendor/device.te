@@ -9,4 +9,3 @@ type param_device, dev_type;
 type ramboost_socket, dev_type;
 type reserve2_block_device, dev_type;
 type therm_device, dev_type;
-type wlchg_device, dev_type;
