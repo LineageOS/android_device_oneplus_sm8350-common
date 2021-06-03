@@ -230,6 +230,7 @@ ro.com.android.dataroaming=false
 
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
 
 # Shutdown
