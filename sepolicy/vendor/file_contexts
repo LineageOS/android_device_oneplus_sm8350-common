@@ -26,7 +26,6 @@
 /dev/fragment_monitor     u:object_r:fragment_monitor_device:s0
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
 /dev/ht_ctl               u:object_r:graphics_device:s0
-/dev/memplus              u:object_r:memplus_device:s0
 /dev/mmw0_therm           u:object_r:therm_device:s0
 /dev/mmw1_therm           u:object_r:therm_device:s0
 /dev/mmw2_therm           u:object_r:therm_device:s0
