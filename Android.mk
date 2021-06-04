@@ -15,11 +15,9 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-COMMON_PATH := $(LOCAL_PATH)
 
 ifneq ($(filter lemonade lemonadep,$(TARGET_DEVICE)),)
-subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
-$(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
@@ -97,7 +95,7 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
 
-VENDOR_RAMDISK_KERNEL_MODULES_LIST := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+VENDOR_RAMDISK_KERNEL_MODULES_LIST := $(strip $(shell cat device/oneplus/sm8350-common/modules.load.recovery))
 VENDOR_RAMDISK_KERNEL_MODULES := $(VENDOR_RAMDISK_KERNEL_MODULES_LIST:%=$(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/%)
 
 INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
