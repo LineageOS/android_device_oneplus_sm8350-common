@@ -22,7 +22,7 @@ persist.vendor.color.matrix=2
 persist.vendor.cne.feature=1
 
 # DPM
-persist.vendor.dpm.feature=9
+persist.vendor.dpm.feature=11
 
 # IMS
 persist.dbg.volte_avail_ovr=1
