@@ -204,6 +204,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
     fstab.qcom \
     ftm_power_config.sh \
     init.class_main.sh \
