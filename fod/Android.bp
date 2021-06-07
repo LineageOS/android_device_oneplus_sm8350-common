@@ -13,9 +13,35 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-oneplus_lahaina_fod_hal_binary {
+soong_config_module_type {
+    name: "oneplus_lahaina_fod_hal_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "oneplus_lahaina_FOD",
+    value_variables: ["POS_X", "POS_Y", "SIZE"],
+    properties: ["cflags"],
+}
+
+oneplus_lahaina_fod_hal_cc_defaults {
+    name: "oneplus_lahaina_fod_hal_defaults",
+    soong_config_variables: {
+        POS_X: {
+            cflags: ["-DFOD_POS_X=%s"],
+        },
+        POS_Y: {
+            cflags: ["-DFOD_POS_Y=%s"],
+        },
+        SIZE: {
+            cflags: ["-DFOD_SIZE=%s"],
+        },
+    },
+}
+
+cc_binary {
     relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "oneplus_lahaina_fod_hal_defaults",
+    ],
     name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_lahaina",
     init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_lahaina.rc"],
     vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_lahaina.xml"],
