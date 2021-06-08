@@ -1,9 +1,13 @@
-# Restrict SIM configuration to SSSS on the NA variants
-on property:ro.boot.rf_version=12
-    setprop persist.radio.multisim.config ssss
+# Enable dsds by default where needed
 
-on property:ro.boot.rf_version=22
-    setprop persist.radio.multisim.config ssss
+# China
+on property:ro.boot.rf_version=11
+    setprop persist.radio.multisim.config dsds
 
-on property:ro.boot.rf_version=23
-    setprop persist.radio.multisim.config ssss
+# India
+on property:ro.boot.rf_version=13
+    setprop persist.radio.multisim.config dsds
+
+# Europe
+on property:ro.boot.rf_version=21
+    setprop persist.radio.multisim.config dsds
