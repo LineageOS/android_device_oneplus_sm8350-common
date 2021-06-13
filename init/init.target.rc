@@ -89,8 +89,6 @@ on post-fs
     setrlimit 8 67108864 67108864
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
-    #exec_start wait_for_keymaster
     mount_all --late
 
 on post-fs-data
