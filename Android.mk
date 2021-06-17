@@ -96,8 +96,7 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
 
-VENDOR_RAMDISK_KERNEL_MODULES_LIST := $(strip $(shell cat device/oneplus/sm8350-common/modules.load.recovery))
-VENDOR_RAMDISK_KERNEL_MODULES := $(VENDOR_RAMDISK_KERNEL_MODULES_LIST:%=$(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/%)
+VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/,$(shell cat device/oneplus/sm8350-common/modules.load.recovery))
 
 INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
 INTERNAL_VENDOR_RAMDISK_TARGET := $(call intermediates-dir-for,PACKAGING,vendor-boot)/vendor-ramdisk.cpio.gz
