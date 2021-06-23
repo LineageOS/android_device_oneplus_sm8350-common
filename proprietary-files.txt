@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlus9ProOxygen_22.E.09_OTA_0090_all_2105252227_60330d
+# All unpinned blobs below are extracted from OnePlus9ProOxygen_22.E.10_OTA_0100_all_2106092126_ca19638c4207e
 
 # ADSP
 vendor/bin/adsprpcd
