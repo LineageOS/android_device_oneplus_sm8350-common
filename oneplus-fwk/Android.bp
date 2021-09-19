@@ -1,8 +1,0 @@
-java_library {
-    name: "oneplus-fwk.oneplus_lahaina",
-    installable: true,
-
-    srcs: [
-        "src/**/*.java",
-    ],
-}
