@@ -321,7 +321,7 @@ vendor/lib64/libvdsuperphoto.so
 vendor/lib64/libyuv2.so
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|cc424bea56f93d508464ec9f0a137c5b6ff36cce
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
