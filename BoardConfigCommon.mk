@@ -192,7 +192,7 @@ CUSTOM_APNS_FILE := $(COMMON_PATH)/configs/apns-conf.xml
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-09-01
+VENDOR_SECURITY_PATCH := 2021-11-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
