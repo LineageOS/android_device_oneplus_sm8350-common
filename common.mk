@@ -181,6 +181,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Authsecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -305,7 +309,16 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.oneplus \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@2.1.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/gps/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
@@ -335,6 +348,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -372,6 +389,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
     netutils-wrapper-1.0
 
 # NFC
@@ -380,6 +398,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1:64 \
     android.hardware.nfc@1.2:64 \
     android.hardware.secure_element@1.0:64 \
+    android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     SecureElement \
     Tag \
@@ -406,6 +425,7 @@ PRODUCT_BOOT_JARS += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
@@ -430,6 +450,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
