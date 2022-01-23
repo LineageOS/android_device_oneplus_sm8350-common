@@ -103,8 +103,8 @@ INTERNAL_VENDOR_RAMDISK_TARGET := $(call intermediates-dir-for,PACKAGING,vendor_
 $(VENDOR_RAMDISK_KERNEL_MODULES): $(INSTALLED_KERNEL_TARGET)
 	@echo "Copying kernel modules to vendor ramdisk: $@"
 	@mkdir -p $(dir $@)
-	cp $(@F:%=$(TARGET_OUT_VENDOR)/lib/modules/%) $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
-	cp $(TARGET_OUT_VENDOR)/lib/modules/modules.dep $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
+	cp $(@F:%=$(TARGET_OUT_VENDOR_DLKM)/lib/modules/%) $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
+	cp $(TARGET_OUT_VENDOR_DLKM)/lib/modules/modules.dep $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
 	sed -i "s/\/vendor//g" $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/modules.dep
 
 $(INTERNAL_VENDOR_RAMDISK_TARGET): $(VENDOR_RAMDISK_KERNEL_MODULES)
