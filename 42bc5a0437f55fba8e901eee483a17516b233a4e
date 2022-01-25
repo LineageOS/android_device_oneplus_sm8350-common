@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ead01877_2a74d6b2",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 335,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-01-25T08:39:13Z",
+      "side": 1,
+      "message": "android.hardware.health@2.1 is a shared library of the vendor service, so it will be built by default.",
+      "revId": "42bc5a0437f55fba8e901eee483a17516b233a4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "509963e9_7399983e",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 490,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-01-25T08:39:13Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "42bc5a0437f55fba8e901eee483a17516b233a4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
