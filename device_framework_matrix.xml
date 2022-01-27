@@ -144,13 +144,6 @@
             <instance>cnd</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.aac.hardware.richtap.vibrator</name>
-        <interface>
-            <name>IRichtapVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.display.color</name>
         <version>1.0-5</version>
@@ -185,43 +178,11 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <version>2.1</version>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.eventprocessor</name>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEseEvtProcessor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.nxp.hardware.nfc</name>
         <version>1.0-1</version>
         <version>2.0</version>
         <interface>
             <name>INqNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpese</name>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEse</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpnfc</name>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -233,48 +194,17 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.engnative.engineer</name>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.appradio</name>
         <version>1.0</version>
         <interface>
-            <name>IEngineer</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.faceunlock.hal</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFaceUnlockNativeService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.fingerprint.extension</name>
-        <version>1.0</version>
-        <interface>
-            <name>IVendorFingerprintExtensions</name>
-            <instance>default</instance>
+            <name>IOplusAppRadio</name>
+            <instance>oplus_app_slot1</instance>
+            <instance>oplus_app_slot2</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraMDM</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.camera</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraProvider</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.charger</name>
+        <name>vendor.oplus.hardware.charger</name>
         <version>1.0</version>
         <interface>
             <name>ICharger</name>
@@ -282,91 +212,29 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.cwb</name>
+        <name>vendor.oplus.hardware.displaypanelfeature</name>
         <version>1.0</version>
         <interface>
-            <name>ICwbService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.display</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDisplay</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.drmkey</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDrmKey</name>
+            <name>IDisplayPanelFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.hdcpkey</name>
+        <name>vendor.oplus.hardware.ims</name>
         <version>1.0</version>
         <interface>
-            <name>IOneplusHdcpKey</name>
-            <instance>default</instance>
+            <name>IOplusImsRadio</name>
+            <instance>oplusimsradio0</instance>
+            <instance>oplusimsradio1</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.hypnus</name>
-        <version>1.0</version>
+        <name>vendor.oplus.hardware.radio</name>
+        <version>1.0-1</version>
         <interface>
-            <name>IHypnusUtil</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.ifaa</name>
-        <version>2.0</version>
-        <interface>
-            <name>IOneplusIfaa</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.lmvibrator</name>
-        <version>1.0</version>
-        <interface>
-            <name>ILinearMotorVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.motorcontrol</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOPMotorControl</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.param</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusParam</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.rpmb</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusRpmb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.oneplus.hardware.wifi</name>
-        <version>1.1</version>
-        <interface>
-            <name>IOneplusWifi</name>
-            <instance>default</instance>
+            <name>IOplusRadio</name>
+            <instance>oplus_slot1</instance>
+            <instance>oplus_slot2</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -476,6 +344,14 @@
         <interface>
             <name>IService</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.camera.aon</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAONService</name>
+            <instance>aoncameraservice</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -745,6 +621,41 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRCoreService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRCamService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRSplitService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRModService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRAudioService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.am</name>
         <version>1.0</version>
@@ -852,14 +763,6 @@
         <interface>
             <name>ISecCam</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.secureprocessor.device</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureProcessor</name>
-            <instance>qti-tee</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -1040,14 +943,6 @@
         <version>1.0</version>
         <interface>
             <name>IQtiVoicePrintService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.rongcard.hardware.eid</name>
-        <version>1.0</version>
-        <interface>
-            <name>IEidDevice</name>
             <instance>default</instance>
         </interface>
     </hal>
