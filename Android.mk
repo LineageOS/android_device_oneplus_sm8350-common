@@ -99,7 +99,7 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/,$(shell cat device/oneplus/sm8350-common/modules.load.recovery))
 
 INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
-INTERNAL_VENDOR_RAMDISK_TARGET := $(call intermediates-dir-for,PACKAGING,vendor-boot)/vendor-ramdisk.cpio.gz
+INTERNAL_VENDOR_RAMDISK_TARGET := $(call intermediates-dir-for,PACKAGING,vendor_boot)/vendor_ramdisk.cpio.gz
 $(VENDOR_RAMDISK_KERNEL_MODULES): $(INSTALLED_KERNEL_TARGET)
 	@echo "Copying kernel modules to vendor ramdisk: $@"
 	@mkdir -p $(dir $@)
