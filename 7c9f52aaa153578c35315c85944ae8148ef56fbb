@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c15bb27_ea6e6424",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-01-29T14:01:03Z",
+      "side": 1,
+      "message": "```\n\u003c6\u003e [20220126_23:48:03.204244]@1 Hardware name: Qualcomm Technologies, Inc. Lahaina MTP lemonadep (DT)\n\u003c6\u003e [20220126_23:48:03.204255]@1 pstate: 204001c5 (nzCv dAIF +PAN -UAO)\n\u003c6\u003e [20220126_23:48:03.204293]@1 pc : check_update_ftr_reg (arch/arm64/kernel/cpufeature.c:642 arch/arm64/kernel/cpufeature.c:652) \n\u003c6\u003e [20220126_23:48:03.204300]@1 lr : check_update_ftr_reg (arch/arm64/kernel/cpufeature.c:456 arch/arm64/kernel/cpufeature.c:649) \n\u003c6\u003e [20220126_23:48:03.204305]@1 sp : ffffffc01021bf00\n\u003c6\u003e [20220126_23:48:03.204310]@1 x29: ffffffc01021bf00 x28: 0000000000180100\n\u003c6\u003e [20220126_23:48:03.204319]@1 x27: ffffffd9db30f000 x26: ffffffd9db30f590\n\u003c6\u003e [20220126_23:48:03.204324]@1 x25: 0000000000000060 x24: 0000000000000000\n\u003c6\u003e [20220126_23:48:03.204328]@1 x23: 0000000000000000 x22: 0000000000000000\n\u003c6\u003e [20220126_23:48:03.204333]@1 x21: 0000000000000001 x20: 0000000011112222\n\u003c6\u003e [20220126_23:48:03.204338]@1 x19: 0000000011112222 x18: ffffffc0100dd020\n\u003c6\u003e [20220126_23:48:03.204342]@1 x17: fffffffffffff000 x16: 0000000000000001\n\u003c6\u003e [20220126_23:48:03.204347]@1 x15: 0000000000001000 x14: 0000000000001000\n\u003c6\u003e [20220126_23:48:03.204352]@1 x13: ffffffffffffffff x12: ffffffd9daec4ff0\n\u003c6\u003e [20220126_23:48:03.204356]@1 x11: 0000000000000040 x10: ffffffd9daec57b8\n\u003c6\u003e [20220126_23:48:03.204361]@1 x9 : 0000000011111112 x8 : ffffffd9db08ffe0\n\u003c6\u003e [20220126_23:48:03.204366]@1 x7 : 0000000000000000 x6 : ffffffd9db5978f2\n\u003c6\u003e [20220126_23:48:03.204370]@1 x5 : ffffffd9db3bd000 x4 : 0000000000000030\n\u003c6\u003e [20220126_23:48:03.204375]@1 x3 : ffffffd9d90dc0a0 x2 : 0000000000000001\n\u003c6\u003e [20220126_23:48:03.204380]@1 x1 : 0000000000000002 x0 : 0000000000000001\n\u003c6\u003e [20220126_23:48:03.204389]@1 Call trace:\n\u003c6\u003e [20220126_23:48:03.204398]@1 check_update_ftr_reg (arch/arm64/kernel/cpufeature.c:642 arch/arm64/kernel/cpufeature.c:652) \n\u003c6\u003e [20220126_23:48:03.204406]@1 update_cpu_features (arch/arm64/kernel/cpufeature.c:728) \n\u003c6\u003e [20220126_23:48:03.204422]@1 cpuinfo_store_cpu (arch/arm64/kernel/cpuinfo.c:387) \n\u003c6\u003e [20220126_23:48:03.204429]@1 secondary_start_kernel (arch/arm64/kernel/smp.c:249) \n\u003c0\u003e [20220126_23:48:03.204445]@1 Code: 8a1101ce 8a2e0129 8a0e01ee aa0901c9 (f9000d09)\n```",
+      "revId": "7c9f52aaa153578c35315c85944ae8148ef56fbb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
