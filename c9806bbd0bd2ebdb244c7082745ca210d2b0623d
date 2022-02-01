@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52738d76_2f96064c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-02-01T15:18:12Z",
+      "side": 1,
+      "message": "I removed that on purpose, please don\u0027t bring it back.",
+      "revId": "c9806bbd0bd2ebdb244c7082745ca210d2b0623d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
