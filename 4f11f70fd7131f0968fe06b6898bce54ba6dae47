@@ -16,6 +16,24 @@
       "message": "We\u0027d need to somehow migrate users from min_refresh_rate...",
       "revId": "4f11f70fd7131f0968fe06b6898bce54ba6dae47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43558a86_61b5b697",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-02-27T18:37:58Z",
+      "side": 1,
+      "message": "It seems like users can just uncheck force peak refresh rate in dev options, so perhaps this isn\u0027t a problem.",
+      "parentUuid": "b604a86b_46eb762b",
+      "revId": "4f11f70fd7131f0968fe06b6898bce54ba6dae47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
