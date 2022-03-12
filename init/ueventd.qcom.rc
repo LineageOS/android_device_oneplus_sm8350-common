@@ -320,6 +320,11 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/nfc-nci              0660    nfc         nfc
 /dev/nq-nci               0660    nfc         nfc
 /dev/assd                 0660    nfc         nfc
+#ifdef OPLUS_FEATURE_NFC_BRINGUP
+#Longzuming@CONNECTIVITY.NFC, 2020/04/19,Add ST chip
+/dev/st21nfc              0660    nfc         nfc
+/dev/st54spi              0660    secure_element         secure_element
+#endif OPLUS_FEATURE_NFC_BRINGUP
 
 # UIO devices
 /dev/uio0                 0660   system     system
