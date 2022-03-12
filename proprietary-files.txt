@@ -332,13 +332,6 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# ESE
-odm/bin/hw/vendor.qti.esepowermanager@1.1-service
-odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-odm/lib64/vendor.qti.esepowermanager@1.0.so
-odm/lib64/vendor.qti.esepowermanager@1.1.so
-
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -701,11 +694,6 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-gpu.so
 vendor/lib64/unnhal-acc-htp.so
 
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_19815:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_19815:vendor/etc/libnfc-nci.conf
-odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
-
 # OMX
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -987,11 +975,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-
-# Secure element
-odm/bin/hw/vendor.qti.secure_element@1.2-service
-odm/etc/init/vendor.qti.secure_element@1.2-service.rc
-odm/lib64/android.hardware.secure_element@1.0-impl.so
 
 # Sensors
 odm/bin/oplus_sensor_fb
