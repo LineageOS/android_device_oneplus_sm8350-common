@@ -96,18 +96,5 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
 
-VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/,$(shell cat device/oneplus/sm8350-common/modules.load.recovery))
-
-INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
-INTERNAL_VENDOR_RAMDISK_TARGET := $(call intermediates-dir-for,PACKAGING,vendor_boot)/vendor_ramdisk.cpio.gz
-$(VENDOR_RAMDISK_KERNEL_MODULES): $(INSTALLED_KERNEL_TARGET)
-	@echo "Copying kernel modules to vendor ramdisk: $@"
-	@mkdir -p $(dir $@)
-	cp $(@F:%=$(TARGET_OUT_VENDOR_DLKM)/lib/modules/%) $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
-	cp $(TARGET_OUT_VENDOR_DLKM)/lib/modules/modules.dep $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/
-	sed -i "s/\/vendor_dlkm//g" $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/modules.dep
-
-$(INTERNAL_VENDOR_RAMDISK_TARGET): $(VENDOR_RAMDISK_KERNEL_MODULES)
-
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
 endif
