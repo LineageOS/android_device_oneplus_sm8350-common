@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "544996b6_2b758be7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2022-04-03T19:03:54Z",
+      "side": 1,
+      "message": "Has noticeable color shift on lemonade.",
+      "revId": "62d5cc696958f40d6de72a1f7eae2cd3bbd4b205",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
