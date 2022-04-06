@@ -34,6 +34,24 @@
       "parentUuid": "b652d597_17cde43d",
       "revId": "a215a769ac28ceef9d07a006b6605cb1236791a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bedc42a5_89d2d3e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2022-04-06T17:19:47Z",
+      "side": 1,
+      "message": "Right now, lemonade only switches to 60Hz when there is no user interaction and nothing on the display is changing. What is lemonadep doing under those same conditions?",
+      "parentUuid": "9189c103_16154650",
+      "revId": "a215a769ac28ceef9d07a006b6605cb1236791a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
