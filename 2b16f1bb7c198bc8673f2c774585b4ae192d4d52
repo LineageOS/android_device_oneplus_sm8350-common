@@ -52,6 +52,24 @@
       "parentUuid": "73035f7c_2abd026b",
       "revId": "2b16f1bb7c198bc8673f2c774585b4ae192d4d52",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33314f1f_e631323b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-06T11:13:33Z",
+      "side": 1,
+      "message": "OnePlus updated it in stock?",
+      "parentUuid": "5c2ad467_4d4d1c16",
+      "revId": "2b16f1bb7c198bc8673f2c774585b4ae192d4d52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
