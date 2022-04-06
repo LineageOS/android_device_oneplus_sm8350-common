@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66ba2cea_96f32b82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-06T11:06:13Z",
+      "side": 1,
+      "message": "I am guessing that LC3 support bonus is only achieved if you\u0027re using AOSP BT stack, which is not the case here.",
+      "revId": "2b16f1bb7c198bc8673f2c774585b4ae192d4d52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
