@@ -52,6 +52,24 @@
       "parentUuid": "a95d0525_2134a8fa",
       "revId": "3cfad50e832f97e174ab65e306f38956bf7434a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20df127f_356fc57f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-04-06T16:12:34Z",
+      "side": 1,
+      "message": "Realme GT Master Edition. Although i\u0027m using common tree blobs from lemonadep A12. I used stock prebuilt A12 kernel to test these patches. I\u0027m still trying to figure out the newly released broken kernel source.",
+      "parentUuid": "ee4ba0de_b1a60570",
+      "revId": "3cfad50e832f97e174ab65e306f38956bf7434a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
