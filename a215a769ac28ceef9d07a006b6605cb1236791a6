@@ -16,6 +16,24 @@
       "message": "This is incomplete, tho. How did you test it? \n\nWe set config_defaultRefreshRate overlay to 0, which in turn forces 120Hz as default rate.",
       "revId": "a215a769ac28ceef9d07a006b6605cb1236791a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9189c103_16154650",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-06T11:04:09Z",
+      "side": 1,
+      "message": "And setting config_defaultRefreshRate overlay to 60 doesn\u0027t help. I don\u0027t see the device switching refresh rates when /needed/.",
+      "parentUuid": "b652d597_17cde43d",
+      "revId": "a215a769ac28ceef9d07a006b6605cb1236791a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
