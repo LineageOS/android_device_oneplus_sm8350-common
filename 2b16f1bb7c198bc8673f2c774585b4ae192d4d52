@@ -16,6 +16,24 @@
       "message": "I am guessing that LC3 support bonus is only achieved if you\u0027re using AOSP BT stack, which is not the case here.",
       "revId": "2b16f1bb7c198bc8673f2c774585b4ae192d4d52",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73035f7c_2abd026b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-06T11:08:16Z",
+      "side": 1,
+      "message": "Well, you\u0027re building AOSP Bluetooth audio HAL even when you use QTI one, it won\u0027t hurt upreving it",
+      "parentUuid": "66ba2cea_96f32b82",
+      "revId": "2b16f1bb7c198bc8673f2c774585b4ae192d4d52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
