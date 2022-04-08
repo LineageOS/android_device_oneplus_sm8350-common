@@ -22,6 +22,30 @@
       },
       "revId": "66272c001320cfc8cb174514437f3b074e98ec1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4f00396_b18a8ae3",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-08T15:57:53Z",
+      "side": 0,
+      "message": "Actually, just pull https://review.lineageos.org/c/LineageOS/android_device_oneplus_enchilada/+/327727, no clue why i ever put it in 8250/8350 common.",
+      "parentUuid": "d873a94d_5677ec85",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 82
+      },
+      "revId": "66272c001320cfc8cb174514437f3b074e98ec1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
