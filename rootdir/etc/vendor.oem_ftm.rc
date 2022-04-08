@@ -9,32 +9,96 @@ service wcnss-service-f /system/bin/wcnss_service -f
     oneshot
     disabled
 
-service factory /vendor/bin/factory
+service factory /my_engineering/bin/factory
     class late_start
     disabled
 
-service ftm_power_config /vendor/bin/sh /vendor/etc/init/hw/ftm_power_config.sh
+service pcba_diag /my_engineering/bin/pcba_diag
+    class late_start
+    disabled
+
+service ftm_power_config /vendor/bin/sh /vendor/bin/ftm_power_config.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+service at-post-boot /vendor/bin/sh /vendor/bin/init.at.post_boot.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+service klogd_loose /system/system_ext/bin/autochmod.sh "klogdftm"
+    class late_start
+    user root
+    disabled
+    oneshot
+
+service logcat_loose /system/system_ext/bin/autochmod.sh "logcatftm"
     class late_start
     user root
     disabled
     oneshot
 
 on oem_ftm
-    chmod 0666  /sys/module/sysctl/parameters/oem_en_chg_prk_lv
-    chmod 0666  /sys/class/drm/card0-DSI-1/panel_serial_number_AT
-    chown system system /vendor/bin/factory
-    chmod 0755  /vendor/bin/factory
-    chown system system /vendor/bin/ptt_socket_app
-    chmod 0755  /vendor/bin/ptt_socket_app
-    write /sys/class/power_supply/battery/charging_enabled 0
+    write /proc/charger_cycle dis808
+    start klogd_loose
+    start logcat_loose
     start qcom-sh
-    start vendor.qmuxd
-    start ptt_ffbm
+    start at-post-boot
     start ftm_power_config
-    start cnss-daemon
     start qcom-c_main-sh
     write /dev/kmsg "factory boot mode is:${ro.vendor.factory.mode}"
     start vendor.mdm_launcher
 
-on property:ro.vendor.factory.mode=ftm
+on property:sys.oplus_boot_mode=ftm_at
+#ifdef OPLUS_FEATURE_FINGERPRINT
+    start fps_hal
+#endif
     start factory
+    trigger oem_ftm
+
+#richy.li@CONNECTIVITY.WIFI.HARDWARE.FTM.1065227, 2021/07/3, add for wlan mode
+service wififtm /vendor/bin/wififtm
+    class late_start
+    user root
+    group root vendor_qti_diag
+    disabled
+    oneshot
+
+#ifdef OPLUS_FEATURE_FINGERPRINT
+#//PengNan@BSP.FTM.Factory, 2019/01/21, add enterning vddmin,
+service fps_hal /odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user root
+    group root
+#endif
+
+on property:oplus.wifi.ftm=1
+     setprop sys.usb.config diag,adb
+     setprop persist.sys.usb.config diag,adb
+     setprop persist.sys.addevdiag 1
+     setprop ro.wandrfmode 1
+     setprop persist.sys.adb.engineermode 0
+     start pcba_diag
+     start wififtm
+#ifdef OPLUS_BUG_STABILITY
+#LiFenfen@CONNECTIVITY.WIFI.HARDWARE.FTM.1776184, 2021/03/31,
+#Add for :wlan_ftm mode, turn off charge via USB, turn off cpu4~7
+     write /proc/charger_cycle "dis808"
+     write /sys/devices/system/cpu/cpu0/online 1
+     write /sys/devices/system/cpu/cpu1/online 1
+     write /sys/devices/system/cpu/cpu2/online 1
+     write /sys/devices/system/cpu/cpu3/online 1
+     write /sys/devices/system/cpu/cpu4/online 0
+     write /sys/devices/system/cpu/cpu5/online 0
+     write /sys/devices/system/cpu/cpu6/online 0
+     write /sys/devices/system/cpu/cpu7/online 0
+#endif /* OPLUS_BUG_STABILITY */
+
+on property:oplus.wifi.ftm=0
+     stop wififtm

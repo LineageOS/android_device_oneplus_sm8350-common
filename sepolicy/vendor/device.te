@@ -1,6 +1,7 @@
 type byte_cntr_device, dev_type;
 type charger_device, dev_type;
 type dash_device, dev_type;
+type display_device, dev_type;
 type fingerprintd_device, dev_type;
 type fragment_monitor_device, dev_type;
 type param_block_device, dev_type;
