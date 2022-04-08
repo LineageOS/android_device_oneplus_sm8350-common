@@ -1,0 +1,139 @@
+##################################################################################
+### VENDOR_EDIT, OPPO All rights reserved.
+###
+### File: - init.oppo.reserve.rc
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### Runsheng.Pei@PSW.AD.Storage.ReservePartition.1207580, 2017/12/29, Add for new reserve partition
+### Xuefeng.Peng@PSW.AD.Storage.ReservePartition.1207580, 2018/11/19, Add for change opporeserve mount point for google GSI test
+##################################################################################
+on post-fs-data
+  chown system system /mnt/vendor/oplusreserve
+  chmod 0771 /mnt/vendor/oplusreserve
+  mkdir /mnt/vendor/oplusreserve/radio
+  chown radio system /mnt/vendor/oplusreserve/radio
+  chmod 0771 /mnt/vendor/oplusreserve/radio
+  mkdir /mnt/vendor/oplusreserve/system
+  chown system system /mnt/vendor/oplusreserve/system
+  chmod 0771 /mnt/vendor/oplusreserve/system
+  mkdir /mnt/vendor/oplusreserve/system/config
+  chown system system /mnt/vendor/oplusreserve/system/config
+  chmod 0771 /mnt/vendor/oplusreserve/system/config
+  mkdir /mnt/vendor/oplusreserve/system/flag
+  chown system system /mnt/vendor/oplusreserve/system/flag
+  chmod 0771 /mnt/vendor/oplusreserve/system/flag
+  mkdir /mnt/vendor/oplusreserve/system/ssv
+  chown system system /mnt/vendor/oplusreserve/system/ssv
+  chmod 0771 /mnt/vendor/oplusreserve/system/ssv
+  mkdir /mnt/vendor/oplusreserve/media
+  chown system system /mnt/vendor/oplusreserve/media
+  chmod 0771 /mnt/vendor/oplusreserve/media
+# mount sdcardfs /dev/block/bootdevice/by-name/mnt/vendor/opporeserve2 /mnt/vendor/opporeserve/media reserved_mb=24
+  mkdir /mnt/vendor/oplusreserve/media/dropbox
+  chown system system /mnt/vendor/oplusreserve/media/dropbox
+  chmod 0771 /mnt/vendor/oplusreserve/media/dropbox
+  mkdir /mnt/vendor/oplusreserve/media/log
+  chown system system /mnt/vendor/oplusreserve/media/log
+  chmod 0771 /mnt/vendor/oplusreserve/media/log
+  mkdir /mnt/vendor/oplusreserve/media/log/usage
+  chown system system /mnt/vendor/oplusreserve/media/log/usage
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/usage
+  mkdir /mnt/vendor/oplusreserve/media/log/usage/cache
+  chown system system /mnt/vendor/oplusreserve/media/log/usage/cache
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/usage/cache
+  mkdir /mnt/vendor/oplusreserve/media/log/usage/persist
+  chown system system /mnt/vendor/oplusreserve/media/log/usage/persist
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/usage/persist
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog
+  chown system system /mnt/vendor/oplusreserve/media/log/criticalLog
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/criticalLog
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog/persist
+  chown system system /mnt/vendor/oplusreserve/media/log/criticalLog/persist
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/criticalLog/persist
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog/cache
+  chown system system /mnt/vendor/oplusreserve/media/log/criticalLog/cache
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/criticalLog/cache
+  mkdir /mnt/vendor/oplusreserve/media/engineermode
+  chown system system /mnt/vendor/oplusreserve/media/engineermode
+  chmod 0771 /mnt/vendor/oplusreserve/media/engineermode
+  mkdir /mnt/vendor/oplusreserve/media/ColorOS
+  chown system system /mnt/vendor/oplusreserve/media/ColorOS
+  chmod 0771 /mnt/vendor/oplusreserve/media/ColorOS
+  mkdir /mnt/vendor/oplusreserve/media/Camera
+  chown system system /mnt/vendor/oplusreserve/media/Camera
+  chmod 0771 /mnt/vendor/oplusreserve/media/Camera
+
+  mkdir /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
+  chown system system /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
+  chmod 0771 /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
+
+##ifdef OPLUS_FEATURE_TOOLS
+  #Zhuan.Pan@BSP.Tool, Add for mount stamp.db
+  mkdir /mnt/vendor/oplusreserve/media/log/stamp
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/stamp
+  chown system system /mnt/vendor/oplusreserve/media/log/stamp
+##endif OPLUS_FEATURE_TOOLS
+
+#ifdef OPLUS_FEATURE_SHUTDOWN_DETECT
+#Bin.Xu@BSP.kernel.Stability, 2020/4/28, add for shutdown_detect
+  mkdir /mnt/vendor/oplusreserve/media/log/shutdown
+  chown system system /mnt/vendor/oplusreserve/media/log/shutdown
+  chmod 0771 /mnt/vendor/oplusreserve/media/log/shutdown
+#endif
+
+#ifdef OPLUS_FEATURE_PHOENIX
+  mkdir /mnt/vendor/oplusreserve/media/log/hang_oplus 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/boot_log 0771 system system
+  mkdir /mnt/vendor/oplusreserve/rbr_log 0771 system system
+#endif
+
+  restorecon_recursive /mnt/vendor/oplusreserve
+
+#jay.huang@imaging 2020/11/24 add permision for ams-tof and ois
+on post-fs-data
+    chown system system /sys/kernel/tof_control/app0/capture
+    chmod 666 /sys/kernel/tof_control/app0/capture
+    chown system system /sys/kernel/tof_control/app0/app0_get_fac_calib
+    chmod 666 /sys/kernel/tof_control/app0/app0_get_fac_calib
+    chown system system /sys/kernel/tof_control/app0/app0_get_distance
+    chmod 666 /sys/kernel/tof_control/app0/app0_get_distance
+    chown system system /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
+    chmod 666 /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
+    chown system system /sys/kernel/tof_control/app0/period
+    chmod 666 /sys/kernel/tof_control/app0/period
+    chown system system /sys/kernel/tof_control/app0/iterations
+    chmod 666 /sys/kernel/tof_control/app0/iterations
+    chown system system /sys/kernel/tof_control/app0/alg_setting
+    chmod 666 /sys/kernel/tof_control/app0/alg_setting
+    chown system system /sys/kernel/tof_control/app0/app0_clk_iterations
+    chmod 666 /sys/kernel/tof_control/app0/app0_clk_iterations
+    chown system system /sys/kernel/tof_control/chip_enable
+    chmod 666 /sys/kernel/tof_control/chip_enable
+    chown system system /sys/kernel/tof_control/app0/app0_clk_trim_set
+    chmod 666 /sys/kernel/tof_control/app0/app0_clk_trim_set
+    chown system system /sys/kernel/tof_control/app0/app0_apply_fac_calib
+    chmod 666 /sys/kernel/tof_control/app0/app0_apply_fac_calib
+    chown system system /sys/kernel/tof_control/driver_debug
+    chmod 666 /sys/kernel/tof_control/driver_debug
+    chown system system /sys/kernel/ois_control/dump_registers
+    chmod 666 /sys/kernel/ois_control/dump_registers
+
+##ifdef VENDOR_EDIT
+#wenjie.Liu@CN.NFC.Basic.Felica.1334855,add for: Felica Nvram store in opporeserve
+  mkdir /mnt/vendor/oplusreserve/media/nfclock 0771
+  chown system system /mnt/vendor/oplusreserve/media/nfclock
+  mkdir /mnt/vendor/oplusreserve/connectivity 0771
+  chown nfc system /mnt/vendor/oplusreserve/connectivity
+  mkdir /mnt/vendor/oplusreserve/connectivity/felicalock 0771
+  chown nfc system /mnt/vendor/oplusreserve/connectivity/felicalock
+##endif VENDOR_EDIT
+
+# midas binder_stats
+  chown system system /dev/binder_stats
+  chmod 0660 /dev/binder_stat
+
+#fangxiang@BSP.Power.Framework, 2020/12/17, add for MIDAS
+  chown system system /dev/midas_dev
+  chmod 0660 /dev/midas_dev
