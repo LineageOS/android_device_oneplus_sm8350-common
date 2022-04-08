@@ -12,11 +12,6 @@ GKI_MOD_PATH="/vendor/lib/modules/5.4-gki"
 MODPROBE="/vendor/bin/modprobe"
 MODULES=`${MODPROBE} -d ${MODULES_PATH} -l`
 
-# insmod op_cmdline before other modules
-CMD_LINE=`cat /proc/cmdline`
-${MODPROBE} -a -b -d ${MODULES_PATH} op_cmdline.ko op_cmdline="\"${CMD_LINE}\""
-${MODPROBE} -a -b -d ${GKI_MOD_PATH} op_cmdline.ko op_cmdline="\"${CMD_LINE}\""
-
 # Find the first non-blacklisted module and try
 # inserting it. If insertion fails the module is not
 # compatible with the current kernel. Change the modules
