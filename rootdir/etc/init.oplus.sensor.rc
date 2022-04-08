@@ -1,0 +1,12 @@
+#ifdef OPLUS_FEATURE_SENSOR_DRIVER
+#Fei.Mo@PSW.BSP.Sensor 2018/03/20, Add for oplus_sensor_fb
+on boot
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+    chmod 0666 /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+
+service oplus_sensor_fb /odm/bin/oplus_sensor_fb
+    user system
+    group system
+    class late_start
+    oneshot
+#endif

@@ -1,0 +1,81 @@
+
+#ifdef OPLUS_FEATURE_WIFI_BDF
+#WuGuotian@CONNECTIVITY.WIFI.HARDWARE.BDF.1065227 , 2021/05/26, Add for : Wifi one-point cal
+on boot
+    mkdir /mnt/vendor/persist/copy 0770 system system
+    #add for helium platform bdf
+    chown system system  /mnt/vendor/persist/copy/bdwlan.bin
+    chown system system  /mnt/vendor/persist/copy/bdwlanu.bin
+    #Add for qca platform bdf
+    chown system system  /mnt/vendor/persist/copy/bdwlan.elf
+#endif /* OPLUS_FEATURE_WIFI_BDF */
+
+#ifdef OPLUS_FEATURE_WIFI_BDF
+#WuGuotian@CONNECTIVITY.WIFI.HARDWARE.BDF.1065227, 2021/05/26, add for start init.oplus.wifi.sh
+service wifiserver /odm/bin/init.oplus.wifi.sh
+    class core
+    user root
+    oneshot
+#endif /* OPLUS_FEATURE_WIFI_BDF */
+
+#ifdef OPLUS_FEATURE_DUMP_NETCFG
+#SuPei@CONNECTIVITY.WIFI.NETWORK.100259, 2020/09/20, add for dumping qcom netcfg
+on property:persist.sys.assert.panic=true
+    stop oplus_dump_netcfg
+
+on property:persist.sys.assert.panic=false
+    start oplus_dump_netcfg
+
+service oplus_dump_netcfg /system/bin/oplus_dump_netcfg
+    class main
+    user shell
+    group system net_raw net_admin readproc input inet
+    capabilities NET_ADMIN NET_RAW
+    oneshot
+#endif  /* OPLUS_FEATURE_DUMP_NETCFG */
+
+#ifdef OPLUS_FEATURE_WIFI_FTM
+#Tao.Hui@CONNECTIVITY.WIFI.BASIC.HARDWARE.1065227, 2020/08/31
+#Add for : Wifi BDF version
+service WifibdfVersion /odm/bin/vendor.autochmod.sh "WifibdfVersion"
+    class late_start
+    user root
+    group root
+    oneshot
+#endif /* OPLUS_FEATURE_WIFI_FTM */
+
+#ifdef OPLUS_FEATURE_WIFI_SAR
+#Lei.Zhang@CONNECTIVITY.WIFI.HARDWARE.SAR.1785313, 2021/06/07
+#Modify for Android S compatible
+service wifisar /odm/bin/wifisar
+    class main
+    user root
+    group root
+    disabled
+    oneshot
+# Any property change trigger wifisar setting
+on property:sys.oplus.wlan.sar_idx=*
+    start wifisar
+#endif /* OPLUS_FEATURE_WIFI_SAR */
+
+#OPLUS_FEATURE_WIFI_DIAG
+#LiFenfen@CONNECTIVITY.WIFI.HARDWARE.WIFIDIAG.1730689, 2021/06/23
+#Add for receive command from the PC tools
+service wifitestdiag /odm/bin/wifi_diag
+    class late_start
+    user root
+    group root system vendor_qti_diag
+    disabled
+    oneshot
+
+on property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
+    start wifitestdiag
+#endif /* OPLUS_FEATURE_WIFI_DIAG */
+
+# ifdef OPLUS_FEATURE_WIFI_INI_ROMUPDATE
+# YangJiang@CONNECTIVITY.WIFI.NETWORK.2132185, 2021/09/13
+# To rename ini_temp.txt into WCNSS_qcom_cfg.ini
+on property:sys.oplus.wifi.iniromupdate=*
+    copy /mnt/vendor/persist/ini_temp.txt /mnt/vendor/persist/wlan/WCNSS_qcom_cfg.ini
+    chmod 0666 /mnt/vendor/persist/wlan/WCNSS_qcom_cfg.ini
+# endif /* OPLUS_FEATURE_WIFI_INI_ROMUPDATE */
