@@ -225,21 +225,3 @@ if [ -d /config/usb_gadget/g1/functions/uvc.0 ]; then
 	ln -s streaming/header/h streaming/class/hs/
 	ln -s streaming/header/h streaming/class/ss/
 fi
-#ifdef VENDOR_EDIT
-#Enable diag and adb for FTM
-boot_mode=`getprop ro.boot.ftm_mode`
-echo "boot_mode: $boot_mode" > /dev/kmsg
-case "$boot_mode" in
-    "ftm_rf" | "ftm_wlan" | "ftm_mos")
-    setprop sys.usb.config diag,adb
-    setprop persist.sys.usb.config diag,adb
-    echo "peripheral" > /sys/devices/platform/soc/a600000.ssusb/mode
-    echo "AFTER boot_mode: diag,adb" > /dev/kmsg
-esac
-case "$boot_mode" in
-    "ftm_at")
-    setprop sys.usb.config diag,adb
-    setprop persist.sys.usb.config diag,adb
-    echo "AFTER boot_mode: diag,adb" > /dev/kmsg
-esac
-#endif
