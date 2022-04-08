@@ -1,5 +1,5 @@
 #=============================================================================
-# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -45,6 +45,8 @@ on early-init
 
     write /proc/sys/kernel/sched_boost 1
 
+    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
+
 on init
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
@@ -78,7 +80,7 @@ on early-boot
 on boot
     # Set the console loglevel to < KERN_WARN
     # Set the default message loglevel to KERN_INFO
-    write /proc/sys/kernel/printk "3 6 1 7"
+    write /proc/sys/kernel/printk "4 6 1 7"
 
     # Allow access to emmc rawdump block partition and dload sysfs node
     chown root system /dev/block/bootdevice/by-name/rawdump
@@ -117,6 +119,18 @@ on boot
 on post-fs-data
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
+#ifdef OPLUS_FEATURE_CPUFREQ_BOUNCING
+    chown system system /sys/module/cpufreq_bouncing/parameters/enable
+    chown system system /sys/module/cpufreq_bouncing/parameters/config
+#endif
+# ifdef OPLUS_FEATURE_TPD
+# rock.lin@OPTI, 2020/01/12, add for tpd
+    chown system system /sys/module/tpd/parameters/tpd_enable
+    chown system system /sys/module/tpd/parameters/tpd_cmds
+    chown system system /sys/module/tpd/parameters/tpd_id
+    chown system system /sys/module/tpd/parameters/tpd_dynamic
+    chown system system /sys/module/tpd/parameters/st_tpd_enable
+# endif
 
 on property:persist.sys.ssr.enable_debug=*
     write /sys/module/subsys_pil_tz/parameters/enable_debug ${persist.sys.ssr.enable_debug}

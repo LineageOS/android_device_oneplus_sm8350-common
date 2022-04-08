@@ -16,12 +16,6 @@ service surfaceflinger /system/bin/xxx
     oneshot
     disabled
 
-service vendor.fps_hal /vendor/bin/hw/XXX
-    class hal
-    user system
-    group system input uhid everybody
-    disabled
-
 #disable below services to solve AT current peaks issue start
 service zygote /system/bin/xxx
     class main
@@ -87,4 +81,43 @@ service vendor.imsdaemon /vendor/bin/imsdaemon
     class main
     user radio
     group radio wifi inet vendor_qti_diag log
+    disabled
+service audioserver /system/bin/xxx
+    class core
+    user audioserver
+    group audio camera drmrpc media mediadrm net_bt net_bt_admin net_bw_acct wakelock
+    disabled
+
+service pasr-hal /vendor/bin/hw/xxx
+    class hal
+    user system
+    group system
+    disabled
+
+service tcmd /system/system_ext/bin/xxx
+    class late_start
+    socket tcmd  stream 660 root inet
+    group system readproc inet radio wakelock oem_2901
+    user system
+    disabled
+
+service media.transcoding /apex/com.android.media/bin/xxx
+    class main
+    user media
+    group media
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    disabled
+
+service gnss_service /vendor/bin/hw/xxx
+    class hal
+    user gps
+    group system gps radio vendor_qti_diag
+    disabled
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/xxx
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc
     disabled
