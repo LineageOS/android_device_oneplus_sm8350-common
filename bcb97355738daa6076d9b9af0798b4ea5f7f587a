@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f4c87e3_6e4e5942",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-04-10T11:46:19Z",
+      "side": 1,
+      "message": "duplicate",
+      "range": {
+        "startLine": 46,
+        "startChar": 351,
+        "endLine": 46,
+        "endChar": 366
+      },
+      "revId": "bcb97355738daa6076d9b9af0798b4ea5f7f587a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "909aa7e6_68707a44",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-04-10T11:46:19Z",
+      "side": 1,
+      "message": "duplicate",
+      "range": {
+        "startLine": 46,
+        "startChar": 441,
+        "endLine": 46,
+        "endChar": 472
+      },
+      "revId": "bcb97355738daa6076d9b9af0798b4ea5f7f587a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
