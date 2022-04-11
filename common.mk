@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc \
     init.qcom.sh \
     init.target.rc \
+    ueventd.oplus.rc \
     ueventd.qcom.rc
 
 # Keymaster
