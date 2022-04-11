@@ -1518,6 +1518,7 @@ vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
+odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
 
 # WiFi Display
