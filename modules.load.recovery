@@ -1,6 +1,1 @@
-fingerprint_detect.ko
-gf_spi_driver.ko
-op_cmdline.ko
-oplus_chg.ko
-project_info.ko
-touchscreen.ko
+msm_drm.ko
