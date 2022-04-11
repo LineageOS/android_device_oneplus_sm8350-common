@@ -854,7 +854,10 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
 # Charger
+vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/etc/charger_fstab.qti
+vendor/etc/charger_fw_fstab.qti
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -1367,6 +1370,13 @@ vendor/lib64/libpwirishalwrapper.so
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
+# Kernel
+vendor/bin/init.kernel.post_boot-lahaina.sh
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/vendor_modprobe.sh
+vendor/etc/init/hw/init.qti.kernel.rc
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
@@ -1654,6 +1664,10 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # QCC
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+
+# QCV
+vendor/bin/init.qti.qcv.sh
+vendor/etc/init/init.qti.qcv.rc
 
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
