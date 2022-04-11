@@ -307,6 +307,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.class_main.sh \
     init.oplus.display.rc \
+    init.oplus.sensors.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
