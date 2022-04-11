@@ -28,12 +28,14 @@
 # Firmware directory Path
 # Below macro will be read by uevent and path will
 # be added to search path for firmware loading
-# ifndef VENDOR_EDIT
-# Richy.li@CONNECTIVITY, 2020/08/20, [8350] Wifi one point cal
-#firmware_directories /vendor/firmware_mnt/image/
-# else
-firmware_directories /mnt/vendor/persist/copy/ /vendor/firmware_mnt/image/
-# endif /* VENDOR_EDIT *
+
+# ifndef OPLUS_FEATURE_WIFI_BDF
+# WuGuotian@CONNECTIVITY.WIFI.HARDWARE.BDF.1065227 , 2021/05/26,
+# Modify for: multi projects using different bdf, adding persist into firmware_directories
+# firmware_directories /vendor/firmware_mnt/image/
+# else /* OPLUS_FEATURE_WIFI_BDF */
+firmware_directories /mnt/vendor/persist/copy/ /mnt/vendor/persist/ /odm/etc/wifi/ /vendor/firmware_mnt/image/
+# endif /* OPLUS_FEATURE_WIFI_BDF */
 
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
@@ -166,11 +168,6 @@ firmware_directories /mnt/vendor/persist/copy/ /vendor/firmware_mnt/image/
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
 
-#ifdef VENDOR_EDIT
-#Revise the permissions for Param
-/dev/block/by-name/param  0660   root       system
-#endif VENDOR_EDIT
-
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902
@@ -189,8 +186,9 @@ firmware_directories /mnt/vendor/persist/copy/ /vendor/firmware_mnt/image/
 /dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/wlan0/queues/rx-* rps_cpus           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/p2p0/queues/rx-* rps_cpus            0660   system     system
-/sys/devices/platform/soc/18800000.qcom,icnss/net/wlan*/queues/rx-* rps_cpus      0660   system     system
+/sys/devices/platform/soc/*.qcom,icnss/net/wlan*/queues/rx-* rps_cpus             0660   system     system
 /sys/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan*/queues/rx-* rps_cpus      0660   system     system
+/sys/devices/platform/soc/17a10040.qcom,wcn6750/net/wlan*/queues/rx-* rps_cpus    0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/i2c-7                0660   system     audio
 /dev/msm_camera/*         0660   system     camera
@@ -362,6 +360,9 @@ firmware_directories /mnt/vendor/persist/copy/ /vendor/firmware_mnt/image/
 
 # Kmsg device
 /dev/kmsg                                               0620   root       system
+
+# Huaiwei.Ding@BSP.Kernel.Stability, 2021/07/01, add for explorer project
+/dev/explorer_preisp                                    0660   cameraserver   camera
 
 # LED class devices
 /sys/class/leds/red      delay_on     0640    system    system
