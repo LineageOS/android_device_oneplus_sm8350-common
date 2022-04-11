@@ -1,0 +1,34 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot
+    chown system system /sys/kernel/oplus_display/aod_light_mode_set
+    chown system system /sys/kernel/oplus_display/audio_ready
+    chown system system /sys/kernel/oplus_display/ccd_check
+    chown system system /sys/kernel/oplus_display/dim_alpha
+    chown system system /sys/kernel/oplus_display/dim_dc_alpha
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chown system system /sys/kernel/oplus_display/dimlayer_hbm
+    chown system system /sys/kernel/oplus_display/display_regulator_control
+    chown system system /sys/kernel/oplus_display/dump_info
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/ffl_set
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/max_brightness
+    chown system system /sys/kernel/oplus_display/notify_fppress
+    chown system system /sys/kernel/oplus_display/notify_panel_blank
+    chown system system /sys/kernel/oplus_display/oplus_brightness
+    chown system system /sys/kernel/oplus_display/oplus_max_brightness
+    chown system system /sys/kernel/oplus_display/panel_dsc
+    chown system system /sys/kernel/oplus_display/panel_id
+    chown system system /sys/kernel/oplus_display/panel_pwr
+    chown system system /sys/kernel/oplus_display/panel_serial_number
+    chown system system /sys/kernel/oplus_display/power_status
+    chown system system /sys/kernel/oplus_display/roundcorner
+    chown system system /sys/kernel/oplus_display/sau_closebl_node
+    chown system system /sys/kernel/oplus_display/seed
+    chown system system /sys/kernel/oplus_display/spr
+    chown system system /sys/kernel/oplus_display/write_panel_reg
