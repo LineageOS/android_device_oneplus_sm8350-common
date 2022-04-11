@@ -422,7 +422,10 @@ odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
 -odm/etc/vintf/manifest/manifest_oplus_charger.xml
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
+vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/etc/charger_fstab.qti
+vendor/etc/charger_fw_fstab.qti
 
 # CNE
 -vendor/app/CACertService/CACertService.apk
@@ -867,6 +870,13 @@ vendor/lib64/libpwirishalwrapper.so
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
+# Kernel
+vendor/bin/init.kernel.post_boot-lahaina.sh
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/vendor_modprobe.sh
+vendor/etc/init/hw/init.qti.kernel.rc
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
@@ -1065,6 +1075,12 @@ vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+
+# QCV
+vendor/bin/init.qti.qcv.sh
+vendor/etc/init/init.qti.qcv.rc
+vendor/lib64/libsoc_helper_jni.so
+vendor/lib64/libsoc_helper.so
 
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
