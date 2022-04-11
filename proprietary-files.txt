@@ -1026,13 +1026,6 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 
 # Perf LM
-system_ext/bin/perfservice
-system_ext/etc/init/perfservice.rc
-system_ext/etc/seccomp_policy/perfservice.policy
-system_ext/lib64/libqti-iopd-client_system.so
-system_ext/lib64/libqti-perfd-client_system.so
-system_ext/lib64/libqti_performance.so
-system_ext/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
 vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
 vendor/etc/lm/prekill/prekill_2GB.data
