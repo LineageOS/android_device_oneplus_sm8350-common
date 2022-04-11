@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bab65f4a_bea87aa3",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 43
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-11T09:08:31Z",
+      "side": 1,
+      "message": "I don\u0027t think these are needed.",
+      "range": {
+        "startLine": 331,
+        "startChar": 0,
+        "endLine": 333,
+        "endChar": 39
+      },
+      "revId": "c996a74c7448c09f76e6638d76ede44899bc3e50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
