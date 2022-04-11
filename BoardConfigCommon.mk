@@ -149,7 +149,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oneplus:libudfps_extension.oneplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -194,11 +194,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-
-# PowerShare
-SOONG_CONFIG_NAMESPACES += ONEPLUS_POWERSHARE
-SOONG_CONFIG_ONEPLUS_POWERSHARE := WIRELESS_TX_ENABLE_PATH
-SOONG_CONFIG_ONEPLUS_POWERSHARE_WIRELESS_TX_ENABLE_PATH := /sys/class/oplus_chg/wireless/trx_online
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
