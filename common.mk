@@ -458,8 +458,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
