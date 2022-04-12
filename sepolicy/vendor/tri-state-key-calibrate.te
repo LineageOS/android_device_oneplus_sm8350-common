@@ -1,0 +1,4 @@
+type tri-state-key-calibrate, domain;
+type tri-state-key-calibrate_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(tri-state-key-calibrate)
