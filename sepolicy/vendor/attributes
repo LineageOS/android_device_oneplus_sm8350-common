@@ -1,0 +1,3 @@
+attribute vendor_hal_charger_oplus;
+attribute vendor_hal_charger_oplus_client;
+attribute vendor_hal_charger_oplus_server;
