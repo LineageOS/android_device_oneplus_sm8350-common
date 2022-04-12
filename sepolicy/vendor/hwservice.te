@@ -1,0 +1,5 @@
+# Charging
+type vendor_hal_charger_oplus_hwservice, hwservice_manager_type, protected_hwservice;
+
+# ORMS
+type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
