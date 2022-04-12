@@ -9,3 +9,6 @@ on boot
     chown system system /sys/kernel/oplus_display/hbm
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
+
+on property:ro.boot.prjname=*
+    setprop ro.separate.soft ${ro.boot.prjname}
