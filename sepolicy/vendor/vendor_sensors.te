@@ -1,2 +1,0 @@
-r_dir_file(vendor_sensors, oem_file)
-r_dir_file(vendor_sensors, sysfs_project_info)
