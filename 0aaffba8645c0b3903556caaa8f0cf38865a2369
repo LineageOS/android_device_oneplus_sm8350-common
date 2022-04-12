@@ -16,6 +16,24 @@
       "message": "We don\u0027t have any of the libraries listed in this file",
       "revId": "0aaffba8645c0b3903556caaa8f0cf38865a2369",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "595d6e30_087927d5",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 56
+      },
+      "lineNbr": 938,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-12T11:54:13Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e9c122c8_e5c7b473",
+      "revId": "0aaffba8645c0b3903556caaa8f0cf38865a2369",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
