@@ -1,0 +1,3 @@
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+allow hal_fingerprint_default vendor_hal_orms_hwservice:hwservice_manager find;
