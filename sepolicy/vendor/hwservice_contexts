@@ -1,5 +1,6 @@
 vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions         u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.appradio::IOplusAppRadio                             u:object_r:hal_telephony_hwservice:s0
+vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint       u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.charger::ICharger                                    u:object_r:hal_charger_hwservice:s0
 vendor.oplus.hardware.displaypanelfeature::IDisplayPanelFeature            u:object_r:hal_display_hwservice:s0
 vendor.oplus.hardware.ims::IOplusImsRadio                                  u:object_r:hal_telephony_hwservice:s0

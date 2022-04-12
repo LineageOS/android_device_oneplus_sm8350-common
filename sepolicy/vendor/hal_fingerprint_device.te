@@ -6,11 +6,15 @@ binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
+allow hal_fingerprint_default egis_finger_device:chr_file rw_file_perms;
 allow hal_fingerprint_default fingerprintd_device:chr_file rw_file_perms;
+allow hal_fingerprint_default jiiov_fp_device:chr_file rw_file_perms;
+allow hal_fingerprint_default silead_fpd_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_qdsp_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 
+allow hal_fingerprint_default proc_oplus_fp:file r_file_perms;
 allow hal_fingerprint_default proc_touchpanel:dir search;
 allow hal_fingerprint_default proc_touchpanel:file rw_file_perms;
 
@@ -18,4 +22,5 @@ allow hal_fingerprint_default sysfs_fod:file rw_file_perms;
 
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 get_prop(hal_fingerprint_default, vendor_default_prop)
+get_prop(hal_fingerprint_default, vendor_sys_op_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)

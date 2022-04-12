@@ -6,6 +6,7 @@ type opf_file, file_type;
 
 # procfs
 type proc_direct_swappiness, fs_type, proc_type;
+type proc_oplus_fp, fs_type, proc_type;
 type proc_swappiness, fs_type, proc_type;
 type proc_touchpanel, fs_type, proc_type;
 type proc_watermark_boost_factor, fs_type, proc_type;

@@ -1,5 +1,7 @@
 # procfs
 genfscon proc /touchpanel                           u:object_r:proc_touchpanel:s0
+genfscon proc /fp_id                                u:object_r:proc_oplus_fp:s0
+genfscon proc /devinfo/lcd                          u:object_r:proc_oplus_fp:s0
 
 # sysfs
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator                                           u:object_r:sysfs_leds:s0

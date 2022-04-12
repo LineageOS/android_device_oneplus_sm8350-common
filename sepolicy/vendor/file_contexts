@@ -22,15 +22,20 @@
 # Devices
 /dev/byte-cntr            u:object_r:byte_cntr_device:s0
 /dev/cc_ctl               u:object_r:graphics_device:s0
+/dev/esfp0                u:object_r:egis_finger_device:s0
 /dev/oplus_chg            u:object_r:charger_device:s0
 /dev/fragment_monitor     u:object_r:fragment_monitor_device:s0
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
 /dev/ht_ctl               u:object_r:graphics_device:s0
+/dev/jiiov_fp             u:object_r:jiiov_fp_device:s0
 /dev/mmw0_therm           u:object_r:therm_device:s0
 /dev/mmw1_therm           u:object_r:therm_device:s0
 /dev/mmw2_therm           u:object_r:therm_device:s0
 /dev/opfeature            u:object_r:opf_file:s0
 /dev/param                u:object_r:param_device:s0
+/dev/silead_fp            u:object_r:silead_fpd_device:s0
+/dev/spidev1.0            u:object_r:silead_fpd_device:s0
+/dev/spidev0.0            u:object_r:silead_fpd_device:s0
 /dev/skin_thermal         u:object_r:therm_device:s0
 
 # HALs
@@ -39,6 +44,7 @@
 /(odm|system/odm)/bin/hw/vendor\.oplus\.hardware\.displaypanelfeature@1\.0-service                      u:object_r:hal_display_default_exec:s0
 /(odm|system/odm)/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service                            u:object_r:hal_graphics_composer_default_exec:s0
 /(odm|system/odm)/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service                     u:object_r:hal_graphics_composer_default_exec:s0
+/(vendor|odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                      u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus         u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.oneplus                       u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.oneplus                        u:object_r:hal_lineage_powershare_default_exec:s0
@@ -46,6 +52,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oneplus                        u:object_r:hal_vibrator_default_exec:s0
 
 # Init scripts
+/(vendor|odm|system/vendor)/bin/init\.oppo\.fingerprints\.sh  u:object_r:vendor_qti_init_shell_exec:s0
 /vendor/bin/init.oplus_chg.sh    u:object_r:vendor_qti_init_shell_exec:s0
 
 # OP1, OP2 files
