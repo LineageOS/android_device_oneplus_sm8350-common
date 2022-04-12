@@ -22,6 +22,30 @@
       },
       "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3bdd07a_836c4101",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 61
+      },
+      "lineNbr": 894,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-12T17:43:16Z",
+      "side": 1,
+      "message": "But it is in lemonadep, and that\u0027s where we pull blobs from for common",
+      "parentUuid": "3a791518_17aa4611",
+      "range": {
+        "startLine": 894,
+        "startChar": 0,
+        "endLine": 894,
+        "endChar": 48
+      },
+      "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
