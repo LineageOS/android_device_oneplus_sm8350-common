@@ -1,0 +1,2 @@
+allow rild mnt_vendor_file:dir search;
+allow rild vendor_proc_display:file r_file_perms;
