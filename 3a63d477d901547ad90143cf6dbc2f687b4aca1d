@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e93a6dff_fcf69280",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 61
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2022-04-12T19:25:33Z",
+      "side": 1,
+      "message": "I am confused then, since I assumed that extracting common is supposed to work with both dumps, even if the list was generated from a lemonadep dump.",
+      "parentUuid": "50467b81_d7c8a455",
+      "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3a791518_17aa4611",
         "filename": "proprietary-files.txt",
         "patchSetId": 61
