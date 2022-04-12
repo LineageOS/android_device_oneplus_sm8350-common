@@ -1,0 +1,5 @@
+add_service(hal_graphics_composer_default, vendor_dp_service)
+
+binder_call(hal_graphics_composer_default, hal_graphics_composer_default)
+
+set_prop(hal_graphics_composer_default, vendor_display_prop)
