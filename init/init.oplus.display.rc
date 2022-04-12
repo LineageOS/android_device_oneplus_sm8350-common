@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on property:ro.boot.prjname=*
+    setprop ro.separate.soft ${ro.boot.prjname}
+
 on boot
     chown system system /sys/kernel/oplus_display/aod_light_mode_set
     chown system system /sys/kernel/oplus_display/audio_ready
