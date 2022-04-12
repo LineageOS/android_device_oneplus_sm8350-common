@@ -94,6 +94,30 @@
       },
       "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e651bf89_1f3f4682",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 61
+      },
+      "lineNbr": 894,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2022-04-12T18:40:03Z",
+      "side": 1,
+      "message": "This error will always generate when building lemonade if left as-is:\n\nFAILED: ninja: \u0027vendor/oneplus/sm8350-common/proprietary/odm/etc/seccomp_policy/\ncodec2.vendor.base.policy\u0027, needed by \u0027out/target/product/lemonade/odm/etc/secco\nmp_policy/codec2.vendor.base.policy\u0027, missing and no known rule to make it\n13:37:43 ninja failed with: exit status 1",
+      "parentUuid": "c0569f93_80ca5261",
+      "range": {
+        "startLine": 894,
+        "startChar": 0,
+        "endLine": 894,
+        "endChar": 48
+      },
+      "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
