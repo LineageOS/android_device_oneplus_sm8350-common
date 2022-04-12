@@ -16,6 +16,24 @@
       "message": "overlay-lineage/hardware/oplus/doze/res/values/config.xml",
       "revId": "344c4e8d26ee417380cbd765c8e6d7b67e5aac60",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "017656b3_4c6c6e1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-12T09:20:40Z",
+      "side": 1,
+      "message": "should be done at \"sm8350-common: Switch to hardware/oplus\".",
+      "parentUuid": "0b26919b_fa9f352a",
+      "revId": "344c4e8d26ee417380cbd765c8e6d7b67e5aac60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
