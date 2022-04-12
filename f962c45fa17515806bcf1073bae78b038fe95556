@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e201dfc_05e0b365",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-12T10:16:51Z",
+      "side": 1,
+      "message": "Squash into \"Android 12 blobs update\" change.",
+      "revId": "f962c45fa17515806bcf1073bae78b038fe95556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
