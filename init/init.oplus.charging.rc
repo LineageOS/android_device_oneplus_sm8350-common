@@ -1,0 +1,72 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    chown system system /proc/batt_param_noplug
+    chown system system /proc/charger/charger_factorymode_test
+    chown system system /proc/charger/chg_ctl
+    chown system system /proc/charger/input_current_now
+    chown system system /proc/charger/passedchg
+    chown system system /proc/charger/passedchg_reset_count
+    chown system system /proc/charger/qg_vbat_deviation
+    chown system system /proc/charger_critical_log
+    chown system system /proc/charger_cycle
+    chown system system /proc/charger_log
+    chown system system /proc/da9313/work_mode
+    chown system system /proc/devinfo/fastchg
+    chown system system /proc/fastchg_fw_update
+    chown system system /proc/oplus_charge_pump/work_mode
+    chown system system /proc/tbatt_pwroff
+    chown system system /proc/ui_soc_decimal
+    chown system system /proc/wireless/charge_pump_en
+    chown system system /proc/wireless/deviated
+    chown system system /proc/wireless/enable_rx
+    chown system system /proc/wireless/enable_tx
+    chown system system /proc/wireless/ftm_mode
+    chown system system /proc/wireless/idt_adc_test
+    chown system system /proc/wireless/rx_power
+    chown system system /proc/wireless/rx_version
+    chown system system /proc/wireless/tx_power
+    chown system system /proc/wireless/tx_version
+    chown system system /proc/wireless/user_sleep_mode
+    chown system system /proc/wireless/wired_otg_online
+    chown system system /sys/class/oplus_chg/ac/online
+    chown system system /sys/class/oplus_chg/ac/type
+    chown system system /sys/class/oplus_chg/battery/authenticate
+    chown system system /sys/class/oplus_chg/battery/battery_cc
+    chown system system /sys/class/oplus_chg/battery/battery_fcc
+    chown system system /sys/class/oplus_chg/battery/battery_notify_code
+    chown system system /sys/class/oplus_chg/battery/battery_rm
+    chown system system /sys/class/oplus_chg/battery/charge_technology
+    chown system system /sys/class/oplus_chg/battery/chargerid_volt
+    chown system system /sys/class/oplus_chg/battery/chip_soc
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/em_mode
+    chown system system /sys/class/oplus_chg/battery/fast_charge
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/ppschg_ing
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/battery/sub_current
+    chown system system /sys/class/oplus_chg/battery/voocchg_ing
+    chown system system /sys/class/oplus_chg/usb/fast_chg_type
+    chown system system /sys/class/oplus_chg/usb/input_current_now
+    chown system system /sys/class/oplus_chg/usb/online
+    chown system system /sys/class/oplus_chg/usb/otg_online
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/primal_type
+    chown system system /sys/class/oplus_chg/usb/typec_cc_orientation
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/wireless/capacity
+    chown system system /sys/class/oplus_chg/wireless/current_now
+    chown system system /sys/class/oplus_chg/wireless/icon_delay
+    chown system system /sys/class/oplus_chg/wireless/max_w_power
+    chown system system /sys/class/oplus_chg/wireless/real_type
+    chown system system /sys/class/oplus_chg/wireless/status_keep
+    chown system system /sys/class/oplus_chg/wireless/voltage_now
