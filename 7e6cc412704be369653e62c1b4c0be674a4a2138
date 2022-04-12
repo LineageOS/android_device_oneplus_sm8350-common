@@ -33,6 +33,24 @@
       "message": "This will be broken, BoardConfig is after device.mk. I need the flags present for checks in vendor/qcom/opensource/usb/vendor_product.mk, I think it\u0027s not a huge problem right now since I haven\u0027t gotten to properties yet but ideally USB HAL makefile is setting the prop",
       "revId": "7e6cc412704be369653e62c1b4c0be674a4a2138",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "353af47d_8f71375e",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-12T16:34:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f96b3bf_328ef96a",
+      "revId": "7e6cc412704be369653e62c1b4c0be674a4a2138",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
