@@ -1,0 +1,5 @@
+type vendor_hal_charger_oplus_default, domain;
+hal_server_domain(vendor_hal_charger_oplus_default, vendor_hal_charger_oplus)
+
+type vendor_hal_charger_oplus_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_charger_oplus_default)
