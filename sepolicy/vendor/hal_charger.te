@@ -1,4 +1,0 @@
-binder_call(hal_charger_client, hal_charger_server)
-binder_call(hal_charger_server, hal_charger_client)
-
-hal_attribute_hwservice(hal_charger, hal_charger_hwservice)
