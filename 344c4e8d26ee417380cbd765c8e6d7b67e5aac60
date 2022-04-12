@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b26919b_fa9f352a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19907
+      },
+      "writtenOn": "2022-04-12T09:14:44Z",
+      "side": 1,
+      "message": "overlay-lineage/hardware/oplus/doze/res/values/config.xml",
+      "revId": "344c4e8d26ee417380cbd765c8e6d7b67e5aac60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
