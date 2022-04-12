@@ -1,0 +1,6 @@
+binder_call(vendor_hal_charger_oplus_client, vendor_hal_charger_oplus_server)
+binder_call(vendor_hal_charger_oplus_server, vendor_hal_charger_oplus_client)
+
+add_hwservice(vendor_hal_charger_oplus_server, vendor_hal_charger_oplus_hwservice)
+
+allow vendor_hal_charger_oplus_client vendor_hal_charger_oplus_hwservice:hwservice_manager find;

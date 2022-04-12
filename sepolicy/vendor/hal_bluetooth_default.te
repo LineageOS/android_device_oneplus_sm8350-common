@@ -1,0 +1,2 @@
+r_dir_file(hal_bluetooth_default, vendor_proc_oplus_version)
+allow hal_bluetooth_default vendor_proc_oplus_version:file r_file_perms;

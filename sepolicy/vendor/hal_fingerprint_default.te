@@ -1,0 +1,12 @@
+binder_call(hal_fingerprint_default, hal_fingerprint_default)
+get_prop(hal_fingerprint_default, vendor_oplus_project_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+r_dir_file(hal_fingerprint_default, vendor_proc_display)
+
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_hal_orms_hwservice:hwservice_manager find;
+allow hal_fingerprint_default vendor_proc_display:file rw_file_perms;
+allow hal_fingerprint_default vendor_proc_fingerprint:file r_file_perms;
+allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;

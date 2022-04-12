@@ -1,0 +1,3 @@
+r_dir_file(vendor_rmt_storage, vendor_proc_oplus_version)
+allow vendor_rmt_storage vendor_proc_oplus_version:file r_file_perms;
+allow vendor_rmt_storage vendor_proc_engineer:file rw_file_perms;
