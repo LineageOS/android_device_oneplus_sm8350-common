@@ -1,0 +1,3 @@
+allow vendor_sensors vendor_persist_engineer_file:file rw_file_perms;
+
+r_dir_file(vendor_sensors, vendor_persist_engineer_file)
