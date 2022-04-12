@@ -32,3 +32,6 @@ on boot
     chown system system /sys/kernel/oplus_display/seed
     chown system system /sys/kernel/oplus_display/spr
     chown system system /sys/kernel/oplus_display/write_panel_reg
+
+on property:ro.boot.prjname=*
+    setprop ro.separate.soft ${ro.boot.prjname}
