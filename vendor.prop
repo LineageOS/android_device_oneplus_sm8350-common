@@ -225,3 +225,6 @@ vendor.usb.use_ffs_mtp=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Widevine
+persist.vendor.widevine.licenses=1
