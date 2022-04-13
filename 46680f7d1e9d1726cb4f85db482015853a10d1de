@@ -98,6 +98,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9423457a_c5202161",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-13T15:59:43Z",
+      "side": 1,
+      "message": "Yeah it was removed from CAF since they moved it to QCV, but we don\u0027t have blobs that new. Instead of bringing that commit back into init.target.rc, just leave it manually set here.",
+      "parentUuid": "2d9a2cde_8b2b45a7",
+      "range": {
+        "startLine": 120,
+        "startChar": 13,
+        "endLine": 120,
+        "endChar": 19
+      },
+      "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "43f7036d_9988d3c9",
         "filename": "vendor.prop",
         "patchSetId": 4
