@@ -4,7 +4,6 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 audio.deep_buffer.media=true
 audio.offload.video=true
-persist.audio.fluence.voicecomm=true
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
@@ -16,7 +15,6 @@ persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.voicecall.speaker.stereo=true
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
-tunnel.audio.encode=true
 ro.config.media_vol_steps=30
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
@@ -92,10 +90,8 @@ persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-lc3
 persist.bluetooth.a2dp_offload.disabled=false
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
 persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.bt.a2dp.hal.implementation=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
-persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
@@ -116,7 +112,6 @@ ro.soc.model=SM8350
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.support_metadata_encrypt=true
 ro.crypto.volume.metadata.method=dm-default-key
 
 # DPM
@@ -143,10 +138,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
 
-# GPS
-persist.backup.ntpServer=0.pool.ntp.org
-persist.vendor.overlay.izat.optin=rro
-
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
@@ -168,7 +159,6 @@ vendor.media.vpp.enable=0
 vendor.media.vpp.oplus.version=2
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
-vendor.mm.enable.qcom_parser=4044018
 
 # PASR
 vendor.pasr.activemode.enabled=true
