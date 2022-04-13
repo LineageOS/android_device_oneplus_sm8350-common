@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "044fadd0_942c6154",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-04-13T14:35:31Z",
+      "side": 1,
+      "message": "It\u0027s now set by init.target.rc",
+      "range": {
+        "startLine": 120,
+        "startChar": 13,
+        "endLine": 120,
+        "endChar": 19
+      },
+      "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
