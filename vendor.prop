@@ -246,5 +246,8 @@ sys.vendor.shutdown.waittime=500
 vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
 
+# Widevine
+persist.vendor.widevine.licenses=1
+
 # WiFi
 wifi.aware.interface=wifi-aware0
