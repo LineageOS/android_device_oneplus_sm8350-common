@@ -46,6 +46,30 @@
       },
       "revId": "7f76606de01870cb2399ad84156d5826c77769fd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "901d5b30_e4909447",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-13T14:37:30Z",
+      "side": 1,
+      "message": "Idea is to default to SSSS then set to DSDS based on SKU, need to do that in a different commit though.",
+      "parentUuid": "897203ad_2bb2ad5f",
+      "range": {
+        "startLine": 199,
+        "startChar": 0,
+        "endLine": 199,
+        "endChar": 34
+      },
+      "revId": "7f76606de01870cb2399ad84156d5826c77769fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

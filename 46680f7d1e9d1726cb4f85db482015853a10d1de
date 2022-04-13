@@ -22,6 +22,30 @@
       },
       "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e26699cc_de2b3231",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-13T14:37:30Z",
+      "side": 1,
+      "message": "Yeah there\u0027s a few like that, going to address them in a separate commit.",
+      "parentUuid": "044fadd0_942c6154",
+      "range": {
+        "startLine": 120,
+        "startChar": 13,
+        "endLine": 120,
+        "endChar": 19
+      },
+      "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
