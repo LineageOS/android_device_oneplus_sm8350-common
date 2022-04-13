@@ -302,6 +302,7 @@ PRODUCT_PACKAGES += \
     init.oplus.display.rc \
     init.oplus.sensors.rc \
     init.oplus.usb.rc \
+    init.oplus.widevine.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
