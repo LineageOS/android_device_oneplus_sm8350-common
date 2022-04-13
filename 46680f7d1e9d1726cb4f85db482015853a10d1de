@@ -120,6 +120,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9e16d23_8d11d125",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-04-13T16:36:46Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9423457a_c5202161",
+      "range": {
+        "startLine": 120,
+        "startChar": 13,
+        "endLine": 120,
+        "endChar": 19
+      },
+      "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "43f7036d_9988d3c9",
