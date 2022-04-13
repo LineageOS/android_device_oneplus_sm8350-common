@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbab055c_21b68399",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-13T16:14:55Z",
+      "side": 1,
+      "message": "Wondering if we shouldn\u0027t just remove the blob and the prop altogether.",
+      "revId": "5123369578df75c76bf3adb26e68b9b7de31273e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3b2818ba_a6753357",
