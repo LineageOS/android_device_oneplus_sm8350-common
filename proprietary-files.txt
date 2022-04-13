@@ -932,7 +932,6 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
-vendor/bin/qcom-system-daemon
 vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
@@ -969,7 +968,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
-vendor/lib64/libsubsystem_control.so
 
 # QSPM
 vendor/bin/vendor.qti.qspmhal@1.0-service
