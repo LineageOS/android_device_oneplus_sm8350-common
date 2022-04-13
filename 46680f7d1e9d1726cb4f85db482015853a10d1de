@@ -46,6 +46,29 @@
       },
       "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43f7036d_9988d3c9",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-04-13T14:41:44Z",
+      "side": 1,
+      "message": "Tie this with:\n\n#jack.liz@MM.audio, 2020/10/20, add for widvine licenses\n#ifdef/* VENDOR_EDIT */\non property:sys.boot_completed\u003d1 \u0026\u0026 property:persist.vendor.widevine.licenses\u003d1\n    copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm\n    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm\n    chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm\n#endif /* VENDOR_EDIT */",
+      "range": {
+        "startLine": 226,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 34
+      },
+      "revId": "46680f7d1e9d1726cb4f85db482015853a10d1de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
