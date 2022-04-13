@@ -18,11 +18,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.config.media_vol_steps=30
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
-ro.vendor.dolby.dax.version=DAX3_3.5.6.11_r1
 vendor.audio.adm.buffering.ms=2
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
-vendor.audio.dtmf.volume=35
 vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
@@ -137,9 +133,6 @@ vendor.display.use_smooth_motion=1
 # DRM
 drm.service.enabled=true
 
-# Fingerprint
-persist.vendor.qfp=true
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
@@ -168,12 +161,6 @@ vendor.media.vpp.enable=0
 vendor.media.vpp.oplus.version=2
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
-
-# NFC
-ro.camera.notify_nfc=1
-
-# OTG
-persist.sys.oem.otg_support=true
 
 # PASR
 vendor.pasr.activemode.enabled=true
