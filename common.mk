@@ -196,9 +196,6 @@ PRODUCT_PACKAGES += \
     bootctrl.lahaina \
     bootctrl.lahaina.recovery
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -293,9 +290,7 @@ PRODUCT_PACKAGES += \
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -347,8 +342,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
+    android.system.net.netd@1.1.vendor
 
 # Neural Network
 PRODUCT_PACKAGES += \
@@ -359,7 +353,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
-    SecureElement \
     Tag
 
 # OMX
@@ -387,9 +380,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
 # QTI service tracker
@@ -455,9 +446,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \
