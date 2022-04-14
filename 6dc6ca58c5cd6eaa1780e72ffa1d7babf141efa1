@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1526bd26_9517b6d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-04-14T09:06:04Z",
+      "side": 1,
+      "message": "RE54ABL1:/ # getprop ro.boot.rf_version\n4\nRE54ABL1:/ #\n\n(GT Master Edition)\nThis turns out to be 4 for me and mine is dual SIM ( Purchased in India, using the same firmware as the device came in)",
+      "revId": "6dc6ca58c5cd6eaa1780e72ffa1d7babf141efa1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
