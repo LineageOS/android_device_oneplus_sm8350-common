@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on init
+    # Radio
+    exec u:r:vendor_qti_init_shell:s0 -- /odm/bin/init.oplus.radio.sh
+
 on boot
     # Display
     chown system system /dev/oplus_display
@@ -80,6 +84,10 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,adb && pro
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2766
+
+# Radio
+on property:vendor.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
 
 service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     user system
