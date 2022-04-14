@@ -196,9 +196,6 @@ PRODUCT_PACKAGES += \
     bootctrl.lahaina \
     bootctrl.lahaina.recovery
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -217,7 +214,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    init.qti.display_boot.sh \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libmemutils \
@@ -294,9 +290,7 @@ PRODUCT_PACKAGES += \
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -344,13 +338,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
     libcodec2_hidl@1.0.vendor
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
+    android.system.net.netd@1.1.vendor
 
 # Neural Network
 PRODUCT_PACKAGES += \
@@ -361,7 +353,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
-    SecureElement \
     Tag
 
 # OMX
@@ -389,9 +380,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
 # QTI service tracker
@@ -406,8 +395,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
+    librmnetctl
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -454,9 +442,6 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
@@ -467,10 +452,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vendor libstdc++
-PRODUCT_PACKAGES += \
-    libstdc++.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
