@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9263fef7_967bbc90",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 783,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-04-14T13:45:28Z",
+      "side": 1,
+      "message": "# IMS - from \u003cbuild description or fingerprint\u003e",
+      "range": {
+        "startLine": 783,
+        "startChar": 0,
+        "endLine": 783,
+        "endChar": 17
+      },
+      "revId": "263c2e0b4bfb28a518f96ea1713325b959efdbd2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
