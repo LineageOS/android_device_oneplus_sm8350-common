@@ -787,6 +787,7 @@ my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/e
 # -system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/TeleServiceQcom/TeleServiceQcom.apk
 -system_ext/priv-app/TelecomQcom/TelecomQcom.apk
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
