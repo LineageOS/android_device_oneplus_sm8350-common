@@ -1,0 +1,11 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    exec u:r:vendor_qti_init_shell:s0 -- /odm/bin/init.oplus.radio.sh
+
+on property:vendor.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
