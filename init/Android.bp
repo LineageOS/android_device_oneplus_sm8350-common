@@ -17,6 +17,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.radio.rc",
+    src: "init.oplus.radio.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.sensors.rc",
     src: "init.oplus.sensors.rc",
     sub_dir: "init",
@@ -76,6 +83,12 @@ sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
     vendor: true,
+}
+
+sh_binary {
+    name: "init.oplus.radio.sh",
+    src: "init.oplus.radio.sh",
+    device_specific: true,
 }
 
 sh_binary {
