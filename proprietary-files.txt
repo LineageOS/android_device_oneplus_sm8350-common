@@ -777,6 +777,7 @@ my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/e
 
 # IMS
 # -system_ext/priv-app/ims/ims.apk
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
