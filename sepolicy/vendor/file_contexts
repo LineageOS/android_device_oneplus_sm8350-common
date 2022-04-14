@@ -39,6 +39,9 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk          u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk_[ab]     u:object_r:vendor_modem_efs_partition_device:s0
 
+# Radio
+/(odm|vendor/odm)/bin/init\.oplus\.radio\.sh    u:object_r:vendor_qti_init_shell_exec:s0
+
 # Reserve
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve4    u:object_r:vendor_reserve_partition:s0
 
