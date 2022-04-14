@@ -41,6 +41,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
+    OPlusFrameworksResCommon \
+    OPlusSettingsResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
