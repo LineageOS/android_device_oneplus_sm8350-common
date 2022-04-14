@@ -160,6 +160,9 @@ vendor.media.vpp.oplus.version=2
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
 
+# NFC
+vendor.qti.nfc.chipid=0xa4
+
 # PASR
 vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=false
