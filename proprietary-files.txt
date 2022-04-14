@@ -1241,11 +1241,13 @@ my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/e
 -my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
 -my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk
 
+# IMS - from sake - 31.1010.0410.43
+-system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
+
 # IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
 -system_ext/app/QtiTelephony/QtiTelephony.apk
 -system_ext/app/imssettings/imssettings.apk
-# -system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/TeleServiceQcom/TeleServiceQcom.apk
 -system_ext/priv-app/TelecomQcom/TelecomQcom.apk
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
