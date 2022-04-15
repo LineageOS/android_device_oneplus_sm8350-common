@@ -231,6 +231,30 @@
       },
       "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a27c6ef6_93a07b82",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 61
+      },
+      "lineNbr": 894,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-15T23:48:54Z",
+      "side": 1,
+      "message": "The file only exists because OnePlus 9 Pro has vendor.ozoaudio.media.c2@1.0-service while OnePlus 9 does not. We do not ship that service in common anyways, so we can safely delete it.",
+      "parentUuid": "12a46e8a_f694669d",
+      "range": {
+        "startLine": 894,
+        "startChar": 0,
+        "endLine": 894,
+        "endChar": 48
+      },
+      "revId": "3a63d477d901547ad90143cf6dbc2f687b4aca1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
