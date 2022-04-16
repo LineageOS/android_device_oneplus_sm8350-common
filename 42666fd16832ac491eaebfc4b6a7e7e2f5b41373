@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b145ac8b_93734a08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 80
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-04-16T06:21:15Z",
+      "side": 1,
+      "message": "May I know where are blobs extracted on git to test this?",
+      "revId": "42666fd16832ac491eaebfc4b6a7e7e2f5b41373",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
