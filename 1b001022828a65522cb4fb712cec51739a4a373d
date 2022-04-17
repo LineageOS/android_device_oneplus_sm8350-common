@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07a2459d_8930e0a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-17T20:25:54Z",
+      "side": 1,
+      "message": "Verified NFC turns on, can read tags, and went to a Dunkin Donuts and used Google Pay.",
+      "revId": "1b001022828a65522cb4fb712cec51739a4a373d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
