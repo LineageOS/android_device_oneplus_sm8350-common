@@ -2074,6 +2074,7 @@ vendor/lib64/libtrustedapploader.so
 # WiFi
 odm/etc/wifi/regdb.bin
 vendor/bin/cnss-daemon
+vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
