@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2dd5707_6486e6aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-04-17T09:00:54Z",
+      "side": 1,
+      "message": "NFC turns on, but I need to verify that Google Pay works. Seeing if AOSP NFC works would also be cool.",
+      "revId": "01ff3289f048b502d4ed32106868858a42dadfbd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
