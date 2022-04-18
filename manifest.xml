@@ -226,7 +226,7 @@
             <instance>oplus_slot1</instance>
             <instance>oplus_slot2</instance>
         </interface>
-    </hal>  
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
