@@ -4,17 +4,18 @@
 /(vendor|system/vendor)/bin/wifi-mac-generator         u:object_r:wifi-mac-generator_exec:s0
 
 # Block devices
-/dev/block/platform/soc/1d84000\.ufshc/by-name/oplus_sec_[ab]        u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk          u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve4         u:object_r:reserve2_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk_[ab]     u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/param                 u:object_r:param_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/rawdump               u:object_r:vendor_rawdump_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/rtice                 u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/splash_[ab]           u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/spunvm                u:object_r:vendor_efs_boot_dev:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_vendor_[ab]    u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/sdf                           u:object_r:boot_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/engineering_cdt_[ab]    u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplus_sec_[ab]          u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk            u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve4           u:object_r:reserve2_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk_[ab]       u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/param                   u:object_r:param_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/rawdump                 u:object_r:vendor_rawdump_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/rtice                   u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/splash_[ab]             u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/spunvm                  u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_vendor_[ab]      u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/sdf                             u:object_r:boot_block_device:s0
 
 # Data files
 /data/reserve-lib(/.*)?    u:object_r:apk_data_file:s0
