@@ -11,6 +11,7 @@ fc0012.ko
 fc0013.ko
 fc2580.ko
 hdmi_dlkm.ko
+hid-aksys.ko
 horae_shell_temp.ko
 it913x.ko
 llcc_perfmon.ko
@@ -36,6 +37,7 @@ platform_dlkm.ko
 q6_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
+qcom_edac.ko
 qm1d1b0004.ko
 qm1d1c0042.ko
 qt1010.ko
@@ -49,8 +51,8 @@ rmnet_shs.ko
 rt_info.ko
 rx_macro_dlkm.ko
 si2157.ko
-slimbus-ngd.ko
 slimbus.ko
+slimbus-ngd.ko
 snd_event_dlkm.ko
 stub_dlkm.ko
 swr_ctrl_dlkm.ko
