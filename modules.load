@@ -12,7 +12,6 @@ fc0013.ko
 fc2580.ko
 hdmi_dlkm.ko
 hid-aksys.ko
-horae_shell_temp.ko
 it913x.ko
 llcc_perfmon.ko
 m88rs6000t.ko
@@ -82,4 +81,3 @@ wsa883x_dlkm.ko
 wsa_macro_dlkm.ko
 xc4000.ko
 xc5000.ko
-zram_opt.ko
