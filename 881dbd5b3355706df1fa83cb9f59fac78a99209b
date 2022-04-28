@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a7126d5_1b320d8b",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 92
+      },
+      "lineNbr": 1426,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-04-28T03:46:31Z",
+      "side": 1,
+      "message": "I think only media_profiles_vendor.xml is parsed. Might we remove rest of the configs",
+      "revId": "881dbd5b3355706df1fa83cb9f59fac78a99209b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
