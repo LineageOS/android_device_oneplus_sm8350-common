@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9fd5241_a85ad74f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 94
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-05-01T07:21:20Z",
+      "side": 1,
+      "message": "I don\u0027t agree with last change, this lib was specifically mentioned by snapdragon_color_libs_config so it\u0027s fine to leave it in HWC group.",
+      "revId": "4f5f398bbccf1dd2c2c9bae365384f757e57e58b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
