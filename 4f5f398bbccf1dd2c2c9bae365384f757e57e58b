@@ -16,6 +16,24 @@
       "message": "I don\u0027t agree with last change, this lib was specifically mentioned by snapdragon_color_libs_config so it\u0027s fine to leave it in HWC group.",
       "revId": "4f5f398bbccf1dd2c2c9bae365384f757e57e58b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3991aef_f6673220",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 94
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2022-05-01T10:12:57Z",
+      "side": 1,
+      "message": "Ah understood. This lib and all of the pixelworks services don\u0027t exist in realme sm8350 and sm7325 devices (although exists in oneplus9rt 11 vendor). But ig keeping it in HWC shouldn\u0027t be a problem.",
+      "parentUuid": "c9fd5241_a85ad74f",
+      "revId": "4f5f398bbccf1dd2c2c9bae365384f757e57e58b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
