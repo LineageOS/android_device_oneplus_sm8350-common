@@ -7,9 +7,6 @@ persist.vendor.bt.a2dp.hal.implementation=true
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
-# Camera
-camera.disable_zsl_mode=true
-
 # Charger
 ro.charger.disable_init_blank=true
 
