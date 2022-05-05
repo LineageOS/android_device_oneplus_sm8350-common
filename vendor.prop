@@ -154,9 +154,6 @@ persist.vendor.radio.stack_id_0=0
 persist.vendor.radio.stack_id_1=1
 ro.com.android.dataroaming=false
 
-# QSPM
-ro.vendor.qspm.enable=true
-
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
