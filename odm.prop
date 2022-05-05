@@ -1,4 +1,10 @@
 # Audio
+persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.spv4.enable=false
+persist.vendor.audio.vbat.enabled=false
+ro.config.vc_call_vol_steps=9
+ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.qti.va_odm.support=1
 
 # Radio
