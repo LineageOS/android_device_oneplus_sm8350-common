@@ -140,26 +140,17 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audioadsprpcd \
     liba2dpoffload \
-    libaudiopreprocessing \
     libbatterylistener \
-    libbundlewrapper \
-    libcirrusspkrprot \
     libcomprcapture \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
     libexthwplugin \
     libhdmiedid \
     libhfp \
-    libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
     libsndmonitor \
     libspkrprot \
     libssrec \
-    libvisualizer \
     libvolumelistener \
     sound_trigger.primary.lahaina:32
 
