@@ -1,6 +1,4 @@
 # Audio
-audio.offload.min.duration.secs=30
-persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 tunnel.audio.encode=true
 
 # Bluetooth
