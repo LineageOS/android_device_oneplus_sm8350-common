@@ -7,9 +7,6 @@ persist.vendor.bt.a2dp.hal.implementation=true
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
-# Charger
-ro.charger.disable_init_blank=true
-
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
