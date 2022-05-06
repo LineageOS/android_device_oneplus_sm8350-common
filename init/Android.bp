@@ -10,6 +10,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.modem",
+    src: "fstab.modem",
+    recovery: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.display.rc",
     src: "init.oplus.display.rc",
     sub_dir: "init",
@@ -21,6 +27,13 @@ prebuilt_etc {
     src: "init.oplus.radio.rc",
     sub_dir: "init",
     device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.oplus.recovery.rc",
+    src: "init.oplus.recovery.rc",
+    sub_dir: "init",
+    recovery: true,
 }
 
 prebuilt_etc {
