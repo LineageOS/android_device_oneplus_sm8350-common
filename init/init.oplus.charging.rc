@@ -1,0 +1,10 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init && property:ro.boot.startupmode=usb_charger
+    mount_all /vendor/etc/charger_fw_fstab.qti --early
+    write /sys/kernel/boot_adsp/boot 1
+    wait /sys/class/power_supply/battery

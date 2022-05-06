@@ -283,6 +283,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.modem \
     init.class_main.sh \
+    init.oplus.charging.rc \
     init.oplus.display.rc \
     init.oplus.radio.rc \
     init.oplus.radio.sh \
