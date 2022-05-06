@@ -1,0 +1,9 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-boot
+    mount_all /system/etc/fstab.modem --early
+    write /sys/kernel/boot_adsp/boot 1

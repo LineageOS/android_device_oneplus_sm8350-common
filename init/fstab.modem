@@ -1,0 +1,1 @@
+/dev/block/bootdevice/by-name/modem    /vendor/firmware_mnt    vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0    wait,slotselect
