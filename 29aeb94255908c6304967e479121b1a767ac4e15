@@ -16,6 +16,23 @@
       "message": "makes experience bit sluggish.",
       "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e975cb52_4e49ac78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-05-07T08:40:51Z",
+      "side": 1,
+      "message": "and kryo385 \u003e cortex-a76",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
