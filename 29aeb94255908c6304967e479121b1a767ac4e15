@@ -69,6 +69,59 @@
       "parentUuid": "e975cb52_4e49ac78",
       "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56591ece_fd7b94a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-05-07T13:35:11Z",
+      "side": 1,
+      "message": "Kryo is modified cortex chipset for better efficiency. Why change it?",
+      "parentUuid": "936eafd8_08fbd517",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22670e13_ba2c06d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-05-07T13:35:11Z",
+      "side": 1,
+      "message": "No stats. It\u0027s UI experience that\u0027s sluggish. What performance improvement does this change make?",
+      "parentUuid": "7968f0d2_40ae9859",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4dafd971_a0aec12b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-05-07T13:35:11Z",
+      "side": 1,
+      "message": "a",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
