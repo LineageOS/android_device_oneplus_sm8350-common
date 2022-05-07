@@ -51,6 +51,24 @@
       "parentUuid": "cac5d579_2ef795d2",
       "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "936eafd8_08fbd517",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-07T08:55:07Z",
+      "side": 1,
+      "message": "Isn\u0027t kryo385 cortex-a53 since kryo385 isn\u0027t supported in GCC or Clang? cortex-a76 is cortex-a55",
+      "parentUuid": "e975cb52_4e49ac78",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
