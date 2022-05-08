@@ -122,6 +122,42 @@
       "message": "a",
       "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87a0f181_821b9c6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-08T01:52:54Z",
+      "side": 1,
+      "message": "Kryo385 is cortex-a53, cortex-a55 is an improvement. Kryo835 is not supported by Clang. The reason Kryo385 exists is because SDM845 does not support dot product (further up change). If the chipset doesn\u0027t support it, will either not boot or crash. SM8350 supports it.",
+      "parentUuid": "56591ece_fd7b94a2",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "053d9950_a87b4a08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-08T01:52:54Z",
+      "side": 1,
+      "message": "Switching from kryo385 to cortex-a76 passes \u0027-mcpu\u003dcortex-a55\u0027 to LLVM. According to the change here: https://github.com/llvm-mirror/llvm/commit/0472b1ccd49cc2737cc35037829371eb9cdbc07c\n\nA55 enables additional features over A53 that should improve performance. Google did a similar change on Pixel 6 since generic is a regression performance wise and doesn\u0027t make much sense since you\u0027re making target specific builds to begin with. \n\nAs for the sluggish bit I can\u0027t say I\u0027ve noticed that, shouldn\u0027t happen.",
+      "parentUuid": "22670e13_ba2c06d7",
+      "revId": "29aeb94255908c6304967e479121b1a767ac4e15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
