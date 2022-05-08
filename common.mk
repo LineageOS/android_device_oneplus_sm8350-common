@@ -276,11 +276,9 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # Init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
-
 PRODUCT_PACKAGES += \
     fstab.default \
+    fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.display.rc \
     init.oplus.radio.rc \
