@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19a1a09a_6154c1c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-08T00:57:31Z",
+      "side": 1,
+      "message": "This only works if you move recovery resources to vendor_boot since Soong logic dictates if BoardMoveRecoveryResourcesToVendorBoot, vendor_ramdisk is vendor_ramdisk/first_stage_ramdisk. This is fine since we already require vendor_boot to be flashed for recovery since msm_drm is a required recovery module.",
+      "revId": "608e3a7b40cd31ce6bcd6fc3fc17e13ae15b2621",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
