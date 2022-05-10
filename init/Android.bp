@@ -18,6 +18,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.hw.rc",
+    src: "init.oplus.hw.rc",
+    sub_dir: "init",
+    device_specific: true,
+    recovery_available: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.radio.rc",
     src: "init.oplus.radio.rc",
     sub_dir: "init",

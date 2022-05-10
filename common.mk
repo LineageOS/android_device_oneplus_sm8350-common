@@ -281,6 +281,8 @@ PRODUCT_PACKAGES += \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.display.rc \
+    init.oplus.hw.rc \
+    init.oplus.hw.rc.recovery \
     init.oplus.radio.rc \
     init.oplus.radio.sh \
     init.oplus.sensors.rc \
