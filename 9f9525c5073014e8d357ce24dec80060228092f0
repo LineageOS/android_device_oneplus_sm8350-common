@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21335999_0adeda05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-05-11T22:03:28Z",
+      "side": 1,
+      "message": "Could also set model number based on this if wanted (KB2003/etc)",
+      "revId": "9f9525c5073014e8d357ce24dec80060228092f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
