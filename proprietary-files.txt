@@ -1527,8 +1527,6 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 
 # Perf LM
-vendor/bin/hw/vendor.qti.psiclient@1.0-service
-vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
 vendor/etc/lm/prekill/prekill_2GB.data
 vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
