@@ -283,6 +283,7 @@ PRODUCT_PACKAGES += \
     init.oplus.display.rc \
     init.oplus.radio.rc \
     init.oplus.radio.sh \
+    init.oplus.recovery.rc \
     init.oplus.sensors.rc \
     init.oplus.usb.rc \
     init.qcom.early_boot.sh \

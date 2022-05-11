@@ -1,0 +1,8 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init && property:ro.boot.prjname=*
+    setprop ro.boot.revision ${ro.boot.prjname}

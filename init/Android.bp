@@ -25,6 +25,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.recovery.rc",
+    src: "init.oplus.recovery.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.sensors.rc",
     src: "init.oplus.sensors.rc",
     sub_dir: "init",
