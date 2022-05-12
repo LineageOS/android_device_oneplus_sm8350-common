@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a84cf1a6_5e4436fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-12T09:34:59Z",
+      "side": 1,
+      "message": "Dropped VZW as lemonadev never actually shipped.",
+      "revId": "891ccbb29339d7265796ab8b69c318c4588fc160",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
