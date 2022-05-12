@@ -18,13 +18,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.oplus.display.rc",
-    src: "init.oplus.display.rc",
-    sub_dir: "init",
-    device_specific: true,
-}
-
-prebuilt_etc {
     name: "init.oplus.hw.rc",
     src: "init.oplus.hw.rc",
     sub_dir: "init",
@@ -33,22 +26,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.oplus.radio.rc",
-    src: "init.oplus.radio.rc",
-    sub_dir: "init",
-    device_specific: true,
-}
-
-prebuilt_etc {
-    name: "init.oplus.sensors.rc",
-    src: "init.oplus.sensors.rc",
-    sub_dir: "init",
-    device_specific: true,
-}
-
-prebuilt_etc {
-    name: "init.oplus.usb.rc",
-    src: "init.oplus.usb.rc",
+    name: "init.oplus.rc",
+    src: "init.oplus.rc",
     sub_dir: "init",
     device_specific: true,
 }
@@ -95,8 +74,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.oplus.radio.sh",
-    src: "init.oplus.radio.sh",
+    name: "init.oplus.sh",
+    src: "init.oplus.sh",
     device_specific: true,
 }
 

@@ -4,6 +4,35 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on init
+    # Radio
+    exec u:r:vendor_qti_init_shell:s0 -- /odm/bin/init.oplus.radio.sh
+
+on boot
+    # Display
+    chown system system /dev/oplus_display
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/notify_fppress
+    chown system system /sys/kernel/oplus_display/panel_serial_number
+
+    # Sensors
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
+
+on property:ro.boot.prjname=*
+    setprop ro.separate.soft ${ro.boot.prjname}
+
+on property:sys.boot_completed=1
+    # Display
+    copy /vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm /mnt/vendor/persist/data/pfm/licenses/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
+    copy /vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
+    copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
+
+# USB
 on property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2769
@@ -55,3 +84,14 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,adb && pro
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2766
+
+# Radio
+on property:vendor.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
+
+# Sensors
+service oplus_sensor_fb /odm/bin/oplus_sensor_fb
+    user system
+    group system
+    class late_start
+    oneshot
