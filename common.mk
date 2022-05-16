@@ -315,21 +315,22 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
+$(call inherit-product, hardware/oplus/overlay/qssi.mk)
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    FrameworksResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusWifiResCommon \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon \
     WifiResTarget
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/oplus/overlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
