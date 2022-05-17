@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
 ifneq ($(filter lemonade lemonadep,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
