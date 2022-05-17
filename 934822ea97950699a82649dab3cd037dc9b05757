@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93f997c3_caafbc2e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-05-17T09:22:08Z",
+      "side": 1,
+      "message": "Causes:\n```build/make/core/base_rules.mk:335: error: device/oneplus/sm8250-common/rootdir: MODULE.TARGET.ETC.init.qcom.rc already defined by device/oneplus/sm8350-common/init.```",
+      "revId": "934822ea97950699a82649dab3cd037dc9b05757",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
