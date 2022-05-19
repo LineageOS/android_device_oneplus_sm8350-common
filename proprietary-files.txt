@@ -994,6 +994,7 @@ vendor/lib64/libcwb_sm8350.so
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
+vendor/etc/Oplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm
 vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
 
 # Display (HDR)
@@ -1423,6 +1424,7 @@ vendor/etc/msm_irqbalance.conf
 
 # Kernel
 vendor/bin/init.kernel.post_boot-lahaina.sh
+vendor/bin/init.kernel.post_boot-yupik.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
@@ -1463,6 +1465,7 @@ vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_lahaina/video_system_specs.json
+vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
@@ -1472,11 +1475,14 @@ vendor/etc/media_codecs_lahaina_vendor.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_lahaina.xml
 vendor/etc/media_codecs_performance_lahaina_vendor.xml
+vendor/etc/media_codecs_performance_yupik_v1.xml
 vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_lahaina.xml
 vendor/etc/media_profiles_lahaina_vendor.xml
+vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/video_system_specs.json
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
