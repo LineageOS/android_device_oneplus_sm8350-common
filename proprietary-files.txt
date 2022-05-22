@@ -966,60 +966,60 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display (Features)
-vendor/bin/feature_enabler_client
-vendor/etc/init/feature_enabler_client.rc
-vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
-
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
-
-# Display (HWC)
-odm/lib64/libsnapdragoncolor-pxlw.so
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
-vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libdpps.so
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-
-# Display (SDM)
-vendor/etc/display/advanced_sf_offsets.xml
-vendor/etc/display/DPU660.xml
-vendor/etc/display/DPU670.xml
-vendor/etc/display/DPU720.xml
-vendor/etc/display/DPU7__.xml
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libqseed3.so
-vendor/lib64/librcmask.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-
-# Display calibration data
+# Display (Calibration)
 vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml
 
-# Display postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display (Features) - from renoir - 22.5.11
+vendor/bin/feature_enabler_client|86f0eed3ab235986d009b22c60f0a73b136d8e36
+vendor/etc/init/feature_enabler_client.rc|7c8e7cf20093d1a6d94d7de2debd53a7e51f8c29
+
+# Display (HDR) - from renoir - 22.5.11
+vendor/lib64/libhdr_tm.so|d8dbc68fd52ec4e55389c8a458915018cc4c7678
+
+# Display (HWC) - from renoir - 22.5.11
+vendor/bin/qdcmss|2dd2d71247c85a1bb6b3168d53cd844cb387f75c
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/lib64/libdpps.so|9172a125e1fbfcf21c074641f174c2fd0dd2fd39
+vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
+vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
+vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
+
+# Display (PFM)
+vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
+vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
+
+# Display (Postprocessing) - from renoir - 22.5.11
+vendor/bin/hw/vendor.display.color@1.0-service|347fda7fe824e405829e1772739e999937421a58
+vendor/bin/ppd|4fcb818e39c813570fdbfaa9726274986e190e04
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|380ce9bec091ea522ee18bc8251b5b7ebe7c457a
+vendor/lib64/vendor.display.color@1.0.so|3a576468b60ead0f753e5b33a8d99283596de654
+vendor/lib64/vendor.display.color@1.1.so|4287f757280bbf13752c4cb2611c7e14de259b74
+vendor/lib64/vendor.display.color@1.2.so|8384c6fcfbdf10f179dfe962d28670aed2fd0fb8
+vendor/lib64/vendor.display.color@1.3.so|8b73635925e1764cfbe19120958efefb6591f348
+vendor/lib64/vendor.display.color@1.4.so|b5566647c1581f26a3914143414f8a18a97a708b
+vendor/lib64/vendor.display.color@1.5.so|5a1e7d0de33509909cf0f514b754e95f2233c86e
+vendor/lib64/vendor.display.postproc@1.0.so|e63c770fc317a9d98ddd2de2c7d6250258398f2e
+
+# Display (SDM) - from renoir - 22.5.11
+vendor/etc/display/advanced_sf_offsets.xml|1082e51d509a18821ae5680d2217141ecdeb648a
+vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
+vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
+vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
+vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
+vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
+vendor/lib64/libdisplayskuutils.so|5afcd261783ca109c9d63e8d08c879b76fb4efd6
+vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
+vendor/lib64/librcmask.so|140550a78090ddfca790c1c3331f63da128be7d5
+vendor/lib64/libsdm-color.so|aeb07689c1bfc885ef9c846c0148e6f1e3f7f0ac
+vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
+vendor/lib64/libsdm-diag.so|c0149ee3e1619fc77d62cfa04f5027153c36c369
+vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
+vendor/lib64/libsdmextension.so|cd2bc6e92a5dcda032699365cc0c99734e95404c
+vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
 # DPM
 system_ext/bin/dpmd
@@ -1351,9 +1351,11 @@ odm/lib64/libpwirispq.so
 odm/lib64/libpwirisservice.so
 odm/lib64/libpwirissoft.so
 odm/lib64/libpwsoftirisPCS.so
+odm/lib64/libsnapdragoncolor-pxlw.so
 odm/lib64/vendor.pixelworks.hardware.display@1.0.so
 odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
+vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirishalwrapper.so
 
