@@ -977,17 +977,11 @@ vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
 odm/lib64/libsnapdragoncolor-pxlw.so
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpps.so
-vendor/lib64/libhistogram.so
 vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
@@ -1001,7 +995,6 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
