@@ -16,6 +16,24 @@
       "message": "What happened to config_dozeAlwaysOnDisplayAvailable in the first place?",
       "revId": "ab06c5ffed19954b467dcee9eb03846e00fba7f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94000f11_500b7fd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-23T20:10:41Z",
+      "side": 1,
+      "message": "Nothing, it exists in the lahaina overlays since it exists by default in CAF.\n\nFrameworksResCommon \u003d QSSI\nFrameworksResTarget \u003d SoC\nOPlusFrameworksResCommon \u003d OnePlus 9 Series\nFrameworksResDevice \u003d OnePlus 9",
+      "parentUuid": "2300cff6_475467fa",
+      "revId": "ab06c5ffed19954b467dcee9eb03846e00fba7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
