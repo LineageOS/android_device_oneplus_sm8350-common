@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2300cff6_475467fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-05-23T19:59:15Z",
+      "side": 1,
+      "message": "What happened to config_dozeAlwaysOnDisplayAvailable in the first place?",
+      "revId": "ab06c5ffed19954b467dcee9eb03846e00fba7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
