@@ -1153,7 +1153,6 @@ vendor/lib64/hw/vulkan.adreno.so
 
 # GNSS
 odm/etc/izat.conf
-odm/etc/gps.conf
 odm/etc/sap.conf
 -vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
