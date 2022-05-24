@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/etc/gps.conf)
+            sed -i "s/com.oplus.locationproxy/com.google.android.carrierlocation/g" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
