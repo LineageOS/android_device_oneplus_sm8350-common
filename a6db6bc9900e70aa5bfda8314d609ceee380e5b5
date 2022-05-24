@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "146445bb_9ba72538",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-05-24T12:51:55Z",
+      "side": 1,
+      "message": "I\u0027d prefer to keep gps.conf in the device tree and track changes here.",
+      "revId": "a6db6bc9900e70aa5bfda8314d609ceee380e5b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
