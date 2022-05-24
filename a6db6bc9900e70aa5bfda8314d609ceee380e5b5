@@ -52,6 +52,24 @@
       "parentUuid": "43f09370_370de7f2",
       "revId": "a6db6bc9900e70aa5bfda8314d609ceee380e5b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b4728f4_3c7f34c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-24T13:20:58Z",
+      "side": 1,
+      "message": "Done, but OnePlus already changes log level to warnings and above only. I don\u0027t think that this file will ever be touched again, unless OnePlus updates it.",
+      "parentUuid": "8baec33b_3cb8769a",
+      "revId": "a6db6bc9900e70aa5bfda8314d609ceee380e5b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
