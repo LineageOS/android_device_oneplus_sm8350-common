@@ -136,6 +136,10 @@ vendor.media.vpp.sr.enable=0
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# QTEE
+persist.vendor.qteeconnector.retrying_interval=30
+persist.vendor.qteeconnector.retrying_timeout=2000
+
 # Radio
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.force_on_dc=true
