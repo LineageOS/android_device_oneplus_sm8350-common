@@ -130,11 +130,20 @@
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="208" mnc="02">
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true" />
     </carrier_config>
+    <carrier_config mcc="208" mnc="08">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="208" mnc="09">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="208" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
@@ -457,6 +466,7 @@
         <boolean name="editable_wfc_roaming_mode_bool" value="true" />
         <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="262" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1187,6 +1197,7 @@
         <boolean name="allow_video_call_in_low_battery" value="false" />
         <boolean name="config_carrier_cs_retry_available" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="450" mnc="03">
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1194,6 +1205,7 @@
         <boolean name="config_carrier_cs_retry_available" value="true" />
         <boolean name="support_add_conference_participants_bool" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="450" mnc="05">
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1201,6 +1213,7 @@
         <boolean name="config_carrier_cs_retry_available" value="true" />
         <boolean name="support_add_conference_participants_bool" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="450" mnc="06">
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1208,12 +1221,14 @@
         <boolean name="support_adhoc_conference_calls_bool" value="true" />
         <boolean name="support_add_conference_participants_bool" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="450" mnc="08">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="false" />
         <boolean name="config_carrier_cs_retry_available" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="454" mnc="00">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1342,6 +1357,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="01">
         <boolean name="notify_video_call_failed" value="true" />
@@ -1378,6 +1394,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1444,6 +1461,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1487,6 +1505,8 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="carrier_video_crs_supported_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="04">
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
@@ -1520,6 +1540,7 @@
         <boolean name="support_swap_after_merge_bool" value="false" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="disable_filter_out_conference_host" value="true" />
+        <boolean name="carrier_video_crs_supported_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="06">
         <boolean name="notify_video_call_failed" value="true" />
@@ -1549,6 +1570,7 @@
         <boolean name="allow_hold_video_call_bool" value="false" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="07">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1614,6 +1636,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="08">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1678,6 +1701,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="09">
         <boolean name="notify_video_call_failed" value="true" />
@@ -1709,6 +1733,7 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="10">
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
@@ -1760,6 +1785,8 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="1" />
         </int-array>
+        <boolean name="carrier_video_crs_supported_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="12">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1791,6 +1818,8 @@
         <boolean name="hide_enabled_5g_bool" value="false" />
         <boolean name="call_barring_visibility_bool" value="false" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="carrier_video_crs_supported_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="460" mnc="15">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2135,6 +2164,7 @@
         <boolean name="carrier_call_composer_supported_bool" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="use_sms_callback_mode_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
     </carrier_config>
     <carrier_config device="kona" mcc="311" mnc="480">
         <boolean name="show_rtt_visibility_setting_bool" value="true" />
@@ -2363,7 +2393,13 @@
         <boolean name="carrier_volte_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_config_vonr_state" value="false" />
+        <boolean name="carrier_config_vonr_visible" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1">
+            <item value="1" />
+        </int-array>
         <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+        <boolean name="disable_filter_out_conference_host" value="false" />
     </carrier_config>
     <carrier_config oplus5gSupportRegion="TRUE">
         <boolean name="config_oplus_show_5g_pref" value="true" />
@@ -2375,6 +2411,8 @@
     <carrier_config operator="CMCC">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="caller_id_over_ut_warning_bool" value="false" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
         <string-array name="mccmnc" num="5">
             <item value="46000" />
             <item value="46002" />
@@ -2394,7 +2432,6 @@
     </carrier_config>
     <carrier_config operator="CT">
         <boolean name="config_disable_clir_over_ut" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="false" />
         <string-array name="mccmnc" num="2">
             <item value="46003" />
             <item value="46011" />
@@ -2404,6 +2441,7 @@
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_disable_clir_over_ut" value="true" />
+        <boolean name="caller_id_over_ut_warning_bool" value="false" />
         <boolean name="carrier_volte_fr1_bool" value="false" />
         <int-array name="carrier_volte_fr1_int_array" num="3">
             <item value="-115" />
@@ -2441,29 +2479,21 @@
     <carrier_config mcc="214" mnc="22">
         <string name="default_vm_number_string">1210</string>
         <string-array name="feature_access_codes_string_array" num="15">
-            <item value="153" />
-            <item value="132" />
             <item value="45" />
-            <item value="112" />
-            <item value="131" />
-            <item value="155" />
-            <item value="21" />
-            <item value="22" />
-            <item value="32" />
-            <item value="51" />
-            <item value="114" />
-            <item value="157" />
-            <item value="23" />
             <item value="46" />
+            <item value="112" />
+            <item value="114" />
             <item value="121" />
-        </string-array>
-    </carrier_config>
-    <carrier_config mcc="228" mnc="53">
-        <string-array name="carrier_metered_apn_types_strings" num="4">
-            <item value="default" />
-            <item value="mms" />
-            <item value="dun" />
-            <item value="supl" />
+            <item value="132" />
+            <item value="155" />
+            <item value="157" />
+            <item value="211" />
+            <item value="221" />
+            <item value="231" />
+            <item value="311" />
+            <item value="321" />
+            <item value="611" />
+            <item value="621" />
         </string-array>
     </carrier_config>
     <carrier_config mcc="228" mnc="53">
@@ -2586,6 +2616,11 @@
     <carrier_config name="Germany-VDF">
         <boolean name="config_oplus_ut_support_bool" value="true" />
         <boolean name="config_oplus_hide_callbarring_change_passwd" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
         <string-array name="mccmnc" num="2">
             <item value="26202" />
             <item value="26209" />
@@ -2642,6 +2677,44 @@
             <item value="23502" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="Free">
+        <int name="maxMessageSize" value="614400" />
+        <string-array name="mccmnc" num="1">
+            <item value="20815" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="f2330002" operator="Free">
+        <int name="maxMessageSize" value="307200" />
+        <string-array name="mccmnc" num="1">
+            <item value="20815" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Free">
+        <int name="maxMessageSize" value="614400" />
+        <string-array name="mccmnc" num="1">
+            <item value="34009" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Free">
+        <int name="maxMessageSize" value="614400" />
+        <string-array name="mccmnc" num="1">
+            <item value="34004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Telco OI">
+        <int name="maxMessageSize" value="614400" />
+        <string-array name="mccmnc" num="1">
+            <item value="64702" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="SALT">
+        <string-array name="mccmnc" num="1">
+            <item value="29502" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="22803" />
+        </string-array>
+    </carrier_config>
     <carrier_config operator="SWISSCOM">
         <string name="vvm_destination_number_string">30047</string>
         <int name="vvm_port_number_int" value="0" />
@@ -2649,6 +2722,7 @@
         <string name="carrier_vvm_package_name_string" />
         <boolean name="vvm_prefetch_bool" value="true" />
         <boolean name="vvm_cellular_data_required_bool" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
         <string-array name="mccmnc" num="2">
             <item value="22801" />
             <item value="29501" />
@@ -2667,7 +2741,7 @@
     </carrier_config>
     <carrier_config name="CMCC(NR)">
         <int name="carrier_customized_nricon_config" value="4" />
-        <int name="carrier_nr_display_rule" value="0" />
+        <int name="carrier_nr_display_rule" value="1" />
         <int name="carrier_timer1_delay_timer" value="0" />
         <int name="carrier_timer2_delay_timer" value="0" />
         <string-array name="mccmnc" num="5">
@@ -2680,7 +2754,7 @@
     </carrier_config>
     <carrier_config name="CU(NR)">
         <int name="carrier_customized_nricon_config" value="4" />
-        <int name="carrier_nr_display_rule" value="0" />
+        <int name="carrier_nr_display_rule" value="1" />
         <int name="carrier_timer1_delay_timer" value="0" />
         <int name="carrier_timer2_delay_timer" value="0" />
         <string-array name="mccmnc" num="3">
@@ -2691,7 +2765,7 @@
     </carrier_config>
     <carrier_config name="CT(NR)">
         <int name="carrier_customized_nricon_config" value="4" />
-        <int name="carrier_nr_display_rule" value="0" />
+        <int name="carrier_nr_display_rule" value="1" />
         <int name="carrier_timer1_delay_timer" value="0" />
         <int name="carrier_timer2_delay_timer" value="0" />
         <string-array name="mccmnc" num="2">
@@ -2778,6 +2852,11 @@
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
         <boolean name="carrier_not_support_optimized_nr_icon" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
         <string-array name="mccmnc" num="1">
             <item value="23410" />
         </string-array>
@@ -2786,15 +2865,26 @@
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
         <boolean name="carrier_not_support_optimized_nr_icon" value="true" />
-        <string-array name="mccmnc" num="2">
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+        <string-array name="mccmnc" num="3">
             <item value="26203" />
             <item value="26207" />
+            <item value="26211" />
         </string-array>
     </carrier_config>
     <carrier_config name="Spain Movistar(NR)">
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
         <boolean name="carrier_not_support_optimized_nr_icon" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
         <string-array name="mccmnc" num="2">
             <item value="21405" />
             <item value="21407" />
@@ -2812,6 +2902,11 @@
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
         <boolean name="carrier_not_support_optimized_nr_icon" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
         <string-array name="mccmnc" num="14">
             <item value="26202" />
             <item value="26209" />
@@ -2915,6 +3010,11 @@
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
         <boolean name="carrier_not_support_optimized_nr_icon" value="true" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
         <string-array name="mccmnc" num="3">
             <item value="20801" />
             <item value="21403" />
@@ -2932,10 +3032,22 @@
             <item value="26017" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="Play" spn="Mobile Vikings">
+        <string name="wfc_spn_customize">Mobile Vikings WiFi Calling</string>
+        <string-array name="mccmnc" num="1">
+            <item value="26006" />
+        </string-array>
+    </carrier_config>
     <carrier_config name="DTAG(NR)">
         <boolean name="carrier_config_cell_memory_disabled" value="true" />
         <int name="carrier_customized_nricon_config" value="4" />
         <int name="carrier_nr_display_rule" value="0" />
+        <string-array name="ratchet_rat_families" num="3">
+            <item value="1,2" />
+            <item value="7,8,12" />
+            <item value="3,11,9,10,15" />
+        </string-array>
+        <boolean name="force_build_mms_over_wifi_apns" value="true" />
         <string-array name="mccmnc" num="11">
             <item value="23001" />
             <item value="21901" />
@@ -2960,8 +3072,92 @@
             <item value="26007" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="Poland-DT">
+        <boolean name="force_home_network_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="26002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="IN-VDF">
+        <boolean name="oplus_cf_notication_sharepref_first" value="true" />
+        <string-array name="mccmnc" num="23">
+            <item value="40401" />
+            <item value="40405" />
+            <item value="40411" />
+            <item value="40413" />
+            <item value="40415" />
+            <item value="40420" />
+            <item value="40427" />
+            <item value="40430" />
+            <item value="40443" />
+            <item value="40446" />
+            <item value="40460" />
+            <item value="40484" />
+            <item value="40486" />
+            <item value="40488" />
+            <item value="40566" />
+            <item value="40567" />
+            <item value="405750" />
+            <item value="405751" />
+            <item value="405752" />
+            <item value="405753" />
+            <item value="405754" />
+            <item value="405755" />
+            <item value="405756" />
+        </string-array>
+    </carrier_config>
     <carrier_config mcc="502">
         <int name="oplus.operator.ringtone" value="5" />
+    </carrier_config>
+    <carrier_config>
+        <boolean name="config_oplus_show_video_call_forward" value="true" />
+        <string-array name="mccmnc" num="4">
+            <item value="52000" />
+            <item value="52004" />
+            <item value="52001" />
+            <item value="52003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Poland-Play">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string name="default_vm_number_string">+48790200200</string>
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="enableGroupMms" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="smsEncodingChangeable" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="26006" />
+            <item value="26098" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Indonesia-XL">
+        <boolean name="carrier_allow_ussd_in_volte_call" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="51008" />
+            <item value="51011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Czech-VDF">
+        <boolean name="config_oplus_hide_cancel_all_callbarring" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="23003" />
+            <item value="23099" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="2DEGREE">
+        <int name="oplus.operator.ringtone" value="3" />
+        <string-array name="mccmnc" num="1">
+            <item value="53024" />
+        </string-array>
     </carrier_config>
     <carrier_config gid1="1A53" name="Assurance">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2983,6 +3179,317 @@
             <item value="310660" />
             <item value="310800" />
         </string-array>
+    </carrier_config>
+    <carrier_config operator="UPC">
+        <string name="wfc_spn_customize">WiFi Calling</string>
+        <string-array name="mccmnc" num="1">
+            <item value="22853" />
+        </string-array>
+        <string-array name="carrier_metered_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="mms" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="mccmnc" num="1">
+            <item value="22853" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="3">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="5">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="7">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="16">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3000" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="24">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="27">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3000" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="28">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="32">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="529">
+        <string name="default_vm_number_string">*100</string>
+    </carrier_config>
+    <carrier_config cid="530">
+        <string name="default_vm_number_string">*555</string>
+    </carrier_config>
+    <carrier_config cid="541">
+        <string name="default_vm_number_string">*289</string>
+    </carrier_config>
+    <carrier_config cid="658">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3000" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="678">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="624">
+        <string name="default_vm_number_string">*123</string>
+    </carrier_config>
+    <carrier_config cid="625">
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="false" />
+    </carrier_config>
+    <carrier_config cid="773">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <string name="default_vm_number_string">*80</string>
+    </carrier_config>
+    <carrier_config cid="802">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="668">
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1011">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1366">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1385">
+        <string name="default_vm_number_string">*100</string>
+    </carrier_config>
+    <carrier_config cid="1487">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1492">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1505">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3000" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1520">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <string name="default_vm_number_string">*80</string>
+    </carrier_config>
+    <carrier_config cid="1528">
+        <string name="default_vm_number_string">*90</string>
+    </carrier_config>
+    <carrier_config cid="1573">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1575">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1647">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <string name="default_vm_number_string">*80</string>
+    </carrier_config>
+    <carrier_config cid="1659">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="1894">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="7" />
+        <int name="dpmFdmScreenOffIdleTime" value="7" />
+        <int name="dpmFdTetheringIdleTime" value="7" />
+    </carrier_config>
+    <carrier_config cid="1913">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2092">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2096">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2100">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="7" />
+        <int name="dpmFdmScreenOffIdleTime" value="7" />
+        <int name="dpmFdTetheringIdleTime" value="7" />
+    </carrier_config>
+    <carrier_config cid="2366">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="3000" />
+        <int name="dpmFdmScreenOffIdleTime" value="5" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2367">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2386">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2395">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config cid="2468">
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="5" />
+        <int name="dpmFdmScreenOffIdleTime" value="3" />
+        <int name="dpmFdTetheringIdleTime" value="15" />
+    </carrier_config>
+    <carrier_config name="GCF SIM1">
+        <string-array name="mccmnc" num="1">
+            <item value="246081" />
+        </string-array>
+        <string-array name="carrier_oplus_allow_roaming_sa" num="7">
+            <item value="244083" />
+            <item value="244084" />
+            <item value="244081" />
+            <item value="246082" />
+            <item value="244010" />
+            <item value="244020" />
+            <item value="244030" />
+        </string-array>
+    </carrier_config>
+    <carrier_config name="GCF SIM2">
+        <string-array name="mccmnc" num="1">
+            <item value="244083" />
+        </string-array>
+        <string-array name="carrier_oplus_allow_roaming_sa" num="1">
+            <item value="244084" />
+        </string-array>
+    </carrier_config>
+    <carrier_config name="GCF SIM3">
+        <string-array name="mccmnc" num="1">
+            <item value="246816" />
+        </string-array>
+        <string-array name="carrier_oplus_allow_roaming_sa" num="2">
+            <item value="244083" />
+            <item value="246081" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="2003">
+        <string name="default_vm_number_string">600</string>
+    </carrier_config>
+    <carrier_config cid="1521">
+        <string name="default_vm_number_string">*77</string>
+    </carrier_config>
+    <carrier_config cid="1429">
+        <boolean name="caller_id_over_ut_warning_bool" value="false" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
+    </carrier_config>
+    <carrier_config cid="1912">
+        <string name="default_vm_number_string">*86</string>
+    </carrier_config>
+    <carrier_config cid="1915">
+        <string name="default_vm_number_string">*86</string>
+    </carrier_config>
+    <carrier_config cid="1662">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <boolean name="config_oplus_2g_calls_can_be_hd_audio" value="false" />
+    </carrier_config>
+    <carrier_config mcc="334" mnc="130">
+        <string name="default_vm_number_string">*86</string>
+        <boolean name="editable_voicemail_number_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="802">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1963">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1991">
+        <boolean name="editable_wfc_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="451">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1970">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1684">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1972">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1683">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1585">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1586">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1372">
+        <boolean name="wos_flight_mode_support_bool" value="false" />
     </carrier_config>
     <carrier_config operator="ALL">
         <boolean name="carrier_volte_available_bool" value="false" />
@@ -6157,7 +6664,6 @@
         <string-array name="mccmnc" num="1">
             <item value="311480" />
         </string-array>
-        <string name="httpParams">x-up-calling-line-id: 1##LINE1NOCOUNTRYCODE##|X-VzW-MDN: 1##LINE1NOCOUNTRYCODE##</string>
     </carrier_config>
     <carrier_config operator="GCI">
         <boolean name="carrier_volte_available_bool" value="true" />
