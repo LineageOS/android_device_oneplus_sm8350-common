@@ -65,6 +65,7 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM MPSS folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
+	$(hide) ln -sf /data/vendor/olog $@/olog
 	$(hide) ln -sf /data/vendor/tombstones/rfs/modem $@/ramdumps
 	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/mpss $@/readwrite
 	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
@@ -84,12 +85,25 @@ $(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
+RFS_MSM_WPSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/wpss/
+$(RFS_MSM_WPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MSM WPSS folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/wpss $@/ramdumps
+	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/wpss $@/readwrite
+	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
+	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
+
+WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/
 $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating wifi firmware symlinks: $@"
-	@mkdir -p $@
-	$(hide) ln -sf /odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
-	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
+	@mkdir -p $@/wlan/qca_cld
+	$(hide) ln -sf /data/vendor/firmware/wlanmdsp.mbn $@/wlanmdsp.otaupdate
+	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan/qca_cld/wlan_mac.bin
+	$(hide) ln -sf /odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
-ALL_DEFAULT_INSTALLED_MODULES += $(ACDBDATA_SYMLINKS) $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(ACDBDATA_SYMLINKS) $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(RFS_MSM_WPSS_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
 endif
