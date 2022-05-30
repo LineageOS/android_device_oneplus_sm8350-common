@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.C.48).
+## from OnePlus 9 Pro (LE2125_11.C.61).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -68,6 +68,10 @@ odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
 odm/lib/rfsa/adsp/libworker_pool.so
 vendor/lib/rfsa/adsp/bm2n06.bin
 vendor/lib/rfsa/adsp/bm2n08.bin
+vendor/lib/rfsa/adsp/bm2n12.bin
+vendor/lib/rfsa/adsp/bm2n13.bin
+vendor/lib/rfsa/adsp/bm2n14.bin
+vendor/lib/rfsa/adsp/bm2n15.bin
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
@@ -90,6 +94,7 @@ vendor/lib/rfsa/adsp/libmctfengine_skel.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
 vendor/lib/rfsa/adsp/libosie_skel.so
+vendor/lib/rfsa/adsp/libpmucount_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
@@ -280,6 +285,7 @@ odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin
 odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin
 odm/etc/camera/filters_lut/InsJuno.cube.rgb.bin
 odm/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin
+odm/etc/camera/filters_lut/Martin.cube.rgb.bin
 odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin
 odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin
 odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin
@@ -600,7 +606,6 @@ odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.rtb.so
 odm/lib64/camera/components/com.oplus.node.videoenhance.so
-odm/lib64/camera/components/com.oplus.stats.pdlib.so
 odm/lib64/camera/arcsoft_calibration_uw.bin
 odm/lib64/camera/arcsoft_calibration_wt.bin
 odm/lib64/camera/arcsoft_dc_calibration_t.bin
@@ -716,7 +721,7 @@ odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
-vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
+vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -765,7 +770,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so|26ca45c094105c5118ea33555dbedefa8d0d22c1|c93087d3b8fdc1b29d704c130ce7c1487d339b66
+vendor/lib64/hw/com.qti.chi.override.so|d0debb2f9a3daefbcad4560a573dbf85686fd68f|764132fe1d51afe26bd04d3280270f95901dca7b
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -798,6 +803,7 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
+vendor/lib64/libalsc.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
@@ -843,7 +849,9 @@ vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a91c17e0ddd755803c07b09a0aec412e69d1338e|9e16affbc34664e8f3c92d647b849d04c1a009df
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a|41ff023bb72c65b38ded7f51c9be02fd9b653618
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -916,6 +924,7 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.2.so
+vendor/lib64/vendor.qti.data.factory@2.3.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
@@ -926,9 +935,11 @@ vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
+vendor/lib64/vendor.qti.hardware.data.lce@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
+vendor/lib64/vendor.qti.latency@2.1.so
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -945,6 +956,7 @@ vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # CVP firmware
+vendor/firmware/evass.b00
 vendor/firmware/evass.b01
 vendor/firmware/evass.b02
 vendor/firmware/evass.b03
@@ -1112,6 +1124,10 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno)
+vendor/gpu/kbc/sequence_manifest.bin
+vendor/gpu/kbc/unified_kbcs_32.bin
+vendor/gpu/kbc/unified_kbcs_64.bin
+vendor/gpu/kbc/unified_ksqs.bin
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -1127,6 +1143,8 @@ vendor/lib/libadreno_utils.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
+vendor/lib/libkcl.so
+vendor/lib/libkernelmanager.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib64/egl/eglSubDriverAndroid.so
@@ -1144,6 +1162,8 @@ vendor/lib64/libadreno_utils.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
+vendor/lib64/libkcl.so
+vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
@@ -1173,6 +1193,10 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
+vendor/etc/seccomp_policy/gnss@2.0-base.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/apdr.conf
@@ -1314,6 +1338,24 @@ odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
 odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
 odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
+odm/etc/inparm/iris5/inParm1.txt
+odm/etc/inparm/iris5/inParm10.txt
+odm/etc/inparm/iris5/inParm11.txt
+odm/etc/inparm/iris5/inParm12.txt
+odm/etc/inparm/iris5/inParm13.txt
+odm/etc/inparm/iris5/inParm14.txt
+odm/etc/inparm/iris5/inParm15.txt
+odm/etc/inparm/iris5/inParm16.txt
+odm/etc/inparm/iris5/inParm17.txt
+odm/etc/inparm/iris5/inParm18.txt
+odm/etc/inparm/iris5/inParm2.txt
+odm/etc/inparm/iris5/inParm3.txt
+odm/etc/inparm/iris5/inParm4.txt
+odm/etc/inparm/iris5/inParm5.txt
+odm/etc/inparm/iris5/inParm6.txt
+odm/etc/inparm/iris5/inParm7.txt
+odm/etc/inparm/iris5/inParm8.txt
+odm/etc/inparm/iris5/inParm9.txt
 odm/etc/inparm/irissoft/inParm.lst
 odm/etc/inparm/irissoft/inParm10.txt
 odm/etc/inparm/irissoft/inParm11.txt
@@ -1508,9 +1550,11 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
+odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
@@ -1533,6 +1577,7 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
+vendor/lib64/libskewknob.so
 
 # Perf LM
 vendor/etc/lm/prekill/prekill_2GB.data
@@ -1665,10 +1710,13 @@ vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/qcril_database/upgrade/config/10.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
+vendor/etc/qcril_database/upgrade/config/9.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
+vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
@@ -1677,6 +1725,7 @@ vendor/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql
 vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
@@ -1754,8 +1803,41 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/etc/sensors/config/faroe_ak991x_0.json
+vendor/etc/sensors/config/faroe_bu52053nvx_0.json
+vendor/etc/sensors/config/faroe_default_sensors.json
+vendor/etc/sensors/config/faroe_dynamic_sensors.json
+vendor/etc/sensors/config/faroe_idp_ak991x_0.json
+vendor/etc/sensors/config/faroe_idp_lsm6dst_0.json
+vendor/etc/sensors/config/faroe_idp_lsm6dst_1.json
+vendor/etc/sensors/config/faroe_irq.json
+vendor/etc/sensors/config/faroe_lps22hh_0.json
+vendor/etc/sensors/config/faroe_lsm6dst_0.json
+vendor/etc/sensors/config/faroe_lsm6dst_1.json
+vendor/etc/sensors/config/faroe_power_0.json
+vendor/etc/sensors/config/faroe_qrd_ak991x_0.json
+vendor/etc/sensors/config/faroe_qrd_lsm6dst_0.json
+vendor/etc/sensors/config/faroe_qrd_sx932x_0.json
+vendor/etc/sensors/config/faroe_qrd_tmd3702_0.json
+vendor/etc/sensors/config/faroe_sx932x_0.json
+vendor/etc/sensors/config/faroe_tmd3702_0.json
+vendor/etc/sensors/config/faroe_vertigo_ak991x_0.json
+vendor/etc/sensors/config/faroe_vertigo_lsm6dst_0.json
+vendor/etc/sensors/config/faroe_vertigo_lsm6dst_1.json
+vendor/etc/sensors/config/kodiak_qrd_ak991x_0.json
+vendor/etc/sensors/config/kodiak_qrd_ak991x_1.json
+vendor/etc/sensors/config/kodiak_tmd3702_0.json
 vendor/etc/sensors/config/lahaina_default_sensors.json
 vendor/etc/sensors/config/lahaina_dynamic_sensors.json
+vendor/etc/sensors/config/lahaina_hdk_ak991x_0.json
+vendor/etc/sensors/config/lahaina_hdk_lsm6dst_0.json
+vendor/etc/sensors/config/lahaina_hdk_lsm6dst_1.json
+vendor/etc/sensors/config/lahaina_hdk_sx932x_0.json
+vendor/etc/sensors/config/lahaina_hdk_tmd2725_0.json
+vendor/etc/sensors/config/lahaina_hhg_ak991x_0.json
+vendor/etc/sensors/config/lahaina_hhg_lsm6dst_0.json
+vendor/etc/sensors/config/lahaina_hhg_sx9302x_0.json
+vendor/etc/sensors/config/lahaina_hhg_tmd3702_0.json
 vendor/etc/sensors/config/lahaina_irq.json
 vendor/etc/sensors/config/lahaina_power_0.json
 vendor/etc/sensors/config/sns_amd.json
@@ -1772,6 +1854,7 @@ vendor/etc/sensors/config/sns_cm.json
 vendor/etc/sensors/config/sns_dae.json
 vendor/etc/sensors/config/sns_device_orient.json
 vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_direct_channel.json
 vendor/etc/sensors/config/sns_distance_bound.json
 vendor/etc/sensors/config/sns_dpc.json
 vendor/etc/sensors/config/sns_facing.json
@@ -1853,18 +1936,44 @@ odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img
 odm/firmware/tp/20031/FW_S3908_SAMSUNG.img
 odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img
 odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img
+odm/firmware/tp/20085/FW_S3908_BOE.img
+odm/firmware/tp/20085/FW_S3908_BOE_FAE.img
+odm/firmware/tp/20085/FW_ST80Y_SAMSUNG.img
+odm/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img
+odm/firmware/tp/20085/LIMIT_S3908_BOE.img
+odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img
+odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img
 odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img
 odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img
 odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img
 odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin
 odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin
 odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img
+odm/firmware/tp/20820/FW_S3908_SAMSUNG.img
+odm/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img
+odm/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img
 odm/firmware/tp/21005/FW_S3908_BOE.img
 odm/firmware/tp/21005/FW_S3908_BOE_FAE.img
 odm/firmware/tp/21005/FW_S3908_SAMSUNG.img
 odm/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img
 odm/firmware/tp/21005/LIMIT_S3908_BOE.img
+odm/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img
 odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img
+odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img
+odm/firmware/tp/21031/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21051/FW_S3908_SAMSUNG.img
+odm/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img
+odm/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img
+odm/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img
+odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img
+odm/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21147/FW_FT3658U_SAMSUNG.img
+odm/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img
+odm/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img
 odm/firmware/tp/21617/FW_FT3658U_SAMSUNG.img
 odm/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img
 odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img
@@ -1875,6 +1984,7 @@ vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
@@ -2063,6 +2173,7 @@ vendor/lib64/libtrustedapploader.so
 odm/etc/wifi/regdb.bin
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
