@@ -585,7 +585,6 @@ odm/lib/libdehaze.so
 odm/lib/libDeVIS.so
 odm/lib/libnightvision.so
 odm/lib64/camera/components/com.oplus.node.videoenhance.so
-odm/lib64/camera/components/com.oplus.stats.pdlib.so
 odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so
 odm/lib64/camera/components/com.oplus.node.rtb.so
@@ -706,7 +705,7 @@ odm/lib64/libwatermark_photo.so
 odm/lib64/libWaterMode.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
-vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
+vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -833,6 +832,8 @@ vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a91c17e0ddd755803c07b09a0aec412e69d1338e|9e16affbc34664e8f3c92d647b849d04c1a009df
 
 # Camera firmware
@@ -1219,11 +1220,11 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 
-# Hotword Enrollment
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk
+# Hotword Enrollment - from lemonadep - 11.C.48
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|3ddc1fa1fa600285fea9c5d1bbb2273c8fed8c17|52b6a326e59e543daac9b8d6e960654095c0fb6b
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|24acd0045d66a689b9605d5ee008e65b442f7fdd
+-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk|72de7f534469af61fa5881936ef749fd5d65ee75
+-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk|45ff9d3250a0d2213052349174b4c22b8781e101
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -1499,6 +1500,7 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
+odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml

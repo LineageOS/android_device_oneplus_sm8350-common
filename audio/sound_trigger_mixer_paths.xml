@@ -262,10 +262,11 @@
     </path>
 
     <path name="listen-ape-handset-mic">
-
+        <ctl name="VA_CDC_DMA_TX_0 Channels" value="One" />
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
         <ctl name="VA DMIC MUX0" value="DMIC1" />
+        <ctl name="VA_DEC0 Volume" value="69" />
     </path>
 
     <path name="listen-ape-handset-mic-preproc">
@@ -273,13 +274,18 @@
     </path>
 
     <path name="listen-ape-handset-dmic">
+<!--- OPLUS_FEATURE_MIC_VA_MIC_CLK_SWITCH   -->
+        <ctl name="VA_mic_clk" value="0P6MHZ" />
+<!--- OPLUS_FEATURE_MIC_VA_MIC_CLK_SWITCH   -->
         <ctl name="VA_CDC_DMA_TX_0 Channels" value="Two" />
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="VA_AIF1_CAP Mixer DEC1" value="1" />
         <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
         <ctl name="VA DEC1 MUX" value="MSM_DMIC" />
-        <ctl name="VA DMIC MUX0" value="DMIC3" />
-        <ctl name="VA DMIC MUX1" value="DMIC1" />
+        <ctl name="VA DMIC MUX0" value="DMIC1" />
+        <ctl name="VA DMIC MUX1" value="DMIC3" />
+        <ctl name="VA_DEC0 Volume" value="69" />
+        <ctl name="VA_DEC1 Volume" value="69" />
     </path>
 
 

@@ -151,6 +151,8 @@
         <!--Run.Zhang@MULTIMEDIA.AUDIODRIVER.FEATURE, 2021/04/09 , Add for headphone volume match to impedance end-->
         <!--Yewenliang@MULTIMEDIA.AUDIODRIVER.FEATURE, 2021/01/07, add for headset mic record with ns-->
         <param key="hs_rec_with_ns" value="true"/>
+        <!-- Xinlong.An@MULTIMEDIA.AUDIODRIVER.HAL, 2022/03/14, Add for voice car downlink mute -->
+        <param key="enable_car_vc_dl_mute" value="true"/>
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>
@@ -184,11 +186,7 @@
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="191"/>
         <device name="SND_DEVICE_IN_VOICE_HEARING_AID" acdb_id="11"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
-        <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC-->
-        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="103"/>
-        <device name="SND_DEVICE_IN_VOICE_HAC_HANDSET_DMIC" acdb_id="105"/>
-        <!--<device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="7"/>-->
-        <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC end-->
+        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" acdb_id="7"/>
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2017/09/22, Add for oplus config-->
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="133"/>
         <device name="SND_DEVICE_OUT_MMI_SPEAKER_PLAYBACK" acdb_id="99"/>
@@ -301,9 +299,6 @@
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="handset" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="handset" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset" interface="TERT_MI2S_RX"/>
-        <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC-->
-        <device name="SND_DEVICE_IN_VOICE_HAC_HANDSET_DMIC" interface="TX_CDC_DMA_TX_3"/>
-        <!--MinYi.Hu@MULTIMEDIA.AUDIODRIVER.HAL, 2021/08/18, add for HAC end-->
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" interface="TERT_MI2S_RX"/>
