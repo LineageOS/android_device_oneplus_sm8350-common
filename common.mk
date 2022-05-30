@@ -227,6 +227,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service_64-qti.rc \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \

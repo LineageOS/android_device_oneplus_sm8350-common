@@ -11,6 +11,13 @@ cc_library_static {
 }
 
 prebuilt_etc {
+    name: "android.hardware.camera.provider@2.4-service_64-qti.rc",
+    src: "android.hardware.camera.provider@2.4-service_64-qti.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.default",
     src: "fstab.default",
     vendor: true,
@@ -65,6 +72,13 @@ prebuilt_etc {
     filename: "ueventd.rc",
     src: "ueventd.qcom.rc",
     vendor: true,
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_cameraextension_interface",
+    interfaces: [
+        "vendor.qti.hardware.camera.cameraextension@1.0::ICameraExtensionService",
+    ],
 }
 
 sh_binary {
