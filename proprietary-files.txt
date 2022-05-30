@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.C.48).
+## from OnePlus 9 Pro (LE2121_11.C.61).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -281,6 +281,7 @@ odm/etc/camera/filters_lut/FaceappGrayscale.cube.rgb.bin
 odm/etc/camera/filters_lut/InsClarendon.cube.rgb.bin
 odm/etc/camera/filters_lut/InsJuno.cube.rgb.bin
 odm/etc/camera/filters_lut/InsValencia-2.cube.rgb.bin
+odm/etc/camera/filters_lut/Martin.cube.rgb.bin
 odm/etc/camera/filters_lut/OPLUSR0604.cube.rgb.bin
 odm/etc/camera/filters_lut/PP1-soft-2.6.CUBE.rgb.bin
 odm/etc/camera/filters_lut/PP2-pop-4.1.CUBE.rgb.bin
@@ -601,7 +602,6 @@ odm/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.rtb.so
 odm/lib64/camera/components/com.oplus.node.videoenhance.so
-odm/lib64/camera/components/com.oplus.stats.pdlib.so
 odm/lib64/camera/arcsoft_calibration_uw.bin
 odm/lib64/camera/arcsoft_calibration_wt.bin
 odm/lib64/camera/arcsoft_dc_calibration_t.bin
@@ -718,7 +718,7 @@ odm/lib64/libui.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
-vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode
+vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -767,7 +767,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so|26ca45c094105c5118ea33555dbedefa8d0d22c1|c93087d3b8fdc1b29d704c130ce7c1487d339b66
+vendor/lib64/hw/com.qti.chi.override.so|d0debb2f9a3daefbcad4560a573dbf85686fd68f|764132fe1d51afe26bd04d3280270f95901dca7b
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -800,6 +800,7 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
+vendor/lib64/libalsc.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
@@ -845,7 +846,9 @@ vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a91c17e0ddd755803c07b09a0aec412e69d1338e|9e16affbc34664e8f3c92d647b849d04c1a009df
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
+vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a|41ff023bb72c65b38ded7f51c9be02fd9b653618
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -1316,6 +1319,24 @@ odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
 odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
 odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
+odm/etc/inparm/iris5/inParm1.txt
+odm/etc/inparm/iris5/inParm10.txt
+odm/etc/inparm/iris5/inParm11.txt
+odm/etc/inparm/iris5/inParm12.txt
+odm/etc/inparm/iris5/inParm13.txt
+odm/etc/inparm/iris5/inParm14.txt
+odm/etc/inparm/iris5/inParm15.txt
+odm/etc/inparm/iris5/inParm16.txt
+odm/etc/inparm/iris5/inParm17.txt
+odm/etc/inparm/iris5/inParm18.txt
+odm/etc/inparm/iris5/inParm2.txt
+odm/etc/inparm/iris5/inParm3.txt
+odm/etc/inparm/iris5/inParm4.txt
+odm/etc/inparm/iris5/inParm5.txt
+odm/etc/inparm/iris5/inParm6.txt
+odm/etc/inparm/iris5/inParm7.txt
+odm/etc/inparm/iris5/inParm8.txt
+odm/etc/inparm/iris5/inParm9.txt
 odm/etc/inparm/irissoft/inParm.lst
 odm/etc/inparm/irissoft/inParm10.txt
 odm/etc/inparm/irissoft/inParm11.txt
@@ -1510,6 +1531,7 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
+odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
@@ -1535,6 +1557,7 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
+vendor/lib64/libskewknob.so
 
 # Perf LM
 vendor/etc/lm/prekill/prekill_2GB.data
