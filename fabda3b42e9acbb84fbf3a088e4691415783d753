@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ad33c29_358e1e5a",
+        "filename": "common.mk",
+        "patchSetId": 31
+      },
+      "lineNbr": 460,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-05-30T20:44:00Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_build/+/332045",
+      "revId": "fabda3b42e9acbb84fbf3a088e4691415783d753",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
