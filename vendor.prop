@@ -123,6 +123,14 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# IMS
+persist.vendor.ims.disableADBLogs=0
+persist.vendor.ims.disableDebugLogs=0
+persist.vendor.ims.disableQXDMLogs=0
+persist.vendor.ims.disableIMSLogs=0
+persist.vendor.ims.rtp.enableqxdm=15
+persist.vendor.ims.vt.enableadb=3
+
 # Incremental FS
 ro.incremental.enable=yes
 
@@ -135,6 +143,10 @@ vendor.media.vpp.sr.enable=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# QTEE
+persist.vendor.qteeconnector.retrying_interval=30
+persist.vendor.qteeconnector.retrying_timeout=2000
 
 # Radio
 persist.vendor.radio.custom_ecc=1
