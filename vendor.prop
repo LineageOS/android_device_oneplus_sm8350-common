@@ -71,7 +71,6 @@ vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.chall
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM8350
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
@@ -132,6 +131,10 @@ ro.netflix.bsp_rev=Q875-32408-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# QTEE
+persist.vendor.qteeconnector.retrying_interval=30
+persist.vendor.qteeconnector.retrying_timeout=2000
 
 # Radio
 persist.vendor.radio.custom_ecc=1

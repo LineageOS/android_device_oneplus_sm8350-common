@@ -5,6 +5,7 @@ persist.bluetooth.bqr.min_interval_ms=60000
 persist.bluetooth.disableinbandringing=false
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.btstack.enable.lpa=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Display
