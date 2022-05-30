@@ -6,4 +6,4 @@ audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
 # GMS
-ro.opa.device_model_id=ga-oplus-skill-os120-210607
+ro.opa.device_model_id=ga-oplus-skill-os121-211011
