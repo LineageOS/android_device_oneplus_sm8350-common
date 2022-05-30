@@ -67,6 +67,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_hidl_interfaces {
+    name: "hidl_cameraextension_interface",
+    interfaces: [
+        "vendor.qti.hardware.camera.cameraextension@1.0::ICameraExtensionService",
+    ],
+}
+
 sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
