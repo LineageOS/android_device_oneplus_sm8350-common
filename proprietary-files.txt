@@ -835,6 +835,9 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|a91c17e0ddd755803c07b09a0aec412e69d1338e|9e16affbc34664e8f3c92d647b849d04c1a009df
 
+# Camera (App)
+my_product/app/OplusCamera/OplusCamera.apk:product/app/OplusCamera/OplusCamera.apk;PRESIGNED
+
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP_170.elf
