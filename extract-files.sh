@@ -60,11 +60,17 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/etc/camera/CameraHWConfiguration.config)
+            sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/lib64/com.qti.chi.override.so)
+            "${SIGSCAN}" -p "C0 6D 05 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "3F 0A 00 94" -P "1F 20 03 D5" -f "${2}"
