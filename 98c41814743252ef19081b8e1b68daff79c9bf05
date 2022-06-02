@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68a60810_900952b6",
+        "filename": "device_framework_matrix.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-02T14:03:37Z",
+      "side": 1,
+      "message": "shouldn\u0027t that be in hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml?",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 63
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de7bd8c1_370bb536",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1382,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-02T14:03:37Z",
+      "side": 1,
+      "message": "wouldn\u0027t we want to copy it from common.mk?",
+      "range": {
+        "startLine": 1382,
+        "startChar": 0,
+        "endLine": 1382,
+        "endChar": 61
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d43d1d02_fa718939",
+        "filename": "sepolicy/vendor/hal_camera_default.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-02T14:03:37Z",
+      "side": 1,
+      "message": "put at top; remove \u0027;\u0027.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 75
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e2ec4fa_f5f8023d",
+        "filename": "sepolicy/vendor/hwservice_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-02T14:03:37Z",
+      "side": 1,
+      "message": "device/qcom/sepolicy_vndr?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 122
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
