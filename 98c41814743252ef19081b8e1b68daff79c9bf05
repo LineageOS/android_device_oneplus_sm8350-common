@@ -119,6 +119,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0ab6d37_b64d8944",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1382,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-02T15:19:14Z",
+      "side": 1,
+      "message": "Not actually used, removed.",
+      "parentUuid": "6239527f_c895a169",
+      "range": {
+        "startLine": 1382,
+        "startChar": 0,
+        "endLine": 1382,
+        "endChar": 61
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d43d1d02_fa718939",
@@ -132,6 +156,30 @@
       "writtenOn": "2022-06-02T14:03:37Z",
       "side": 1,
       "message": "put at top; remove \u0027;\u0027.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 75
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "886b06ca_189fd8ce",
+        "filename": "sepolicy/vendor/hal_camera_default.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-02T15:19:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d43d1d02_fa718939",
       "range": {
         "startLine": 8,
         "startChar": 0,
