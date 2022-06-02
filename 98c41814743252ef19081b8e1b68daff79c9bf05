@@ -97,6 +97,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6239527f_c895a169",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1382,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-02T14:06:27Z",
+      "side": 1,
+      "message": "Then it doesn\u0027t seem like apps should be aware of this feature?",
+      "parentUuid": "692d212d_d277c6fa",
+      "range": {
+        "startLine": 1382,
+        "startChar": 0,
+        "endLine": 1382,
+        "endChar": 61
+      },
+      "revId": "98c41814743252ef19081b8e1b68daff79c9bf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d43d1d02_fa718939",
         "filename": "sepolicy/vendor/hal_camera_default.te",
         "patchSetId": 3
