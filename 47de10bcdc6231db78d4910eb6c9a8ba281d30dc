@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "882aece3_45b460af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-03T05:53:53Z",
+      "side": 1,
+      "message": "06-01 19:04:34.626  1028  1057 E ANDR-PERF-LM: Core: lmMain() 316: Unable to load library libappclassifier.so: dlopen failed: cannot locate symbol \"_ZN12FeatureStateC1ERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE\" referenced by \"/vendor/lib64/libappclassifier.so\"...",
+      "revId": "47de10bcdc6231db78d4910eb6c9a8ba281d30dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
