@@ -16,6 +16,23 @@
       "message": "+config LTO_DISABLE\n+         bool \"Disable LTO again\"\n+         depends on LTO_MENU\n+         default n\n+         help\n+           This option is merely here so that allyesconfig or allmodconfig do\n+           not enable LTO. If you want to actually use LTO do not enable.\n+\n+config LTO\n+\tbool\n+\tdefault y\n+\tdepends on LTO_MENU \u0026\u0026 !LTO_DISABLE",
       "revId": "abc7c13467da2b5294e64b72a82d9d13b03be46d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1460127d_c1515943",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 40
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-06-03T18:23:43Z",
+      "side": 1,
+      "message": "just saying but this change is just for picking, i do not intend to ever merge it.",
+      "revId": "abc7c13467da2b5294e64b72a82d9d13b03be46d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
