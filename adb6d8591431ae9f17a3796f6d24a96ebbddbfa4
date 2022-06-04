@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6178e46_5376f1f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31176
+      },
+      "writtenOn": "2022-06-04T10:37:04Z",
+      "side": 1,
+      "message": "On systems with variable CPU frequency, the various kernel delay() functions will sometimes behave strangely. Basically these delays usually use a hard loop to delay a certain number of jiffy fractions using a “lpj” (loops per jiffy) value, calibrated on boot.",
+      "revId": "adb6d8591431ae9f17a3796f6d24a96ebbddbfa4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
