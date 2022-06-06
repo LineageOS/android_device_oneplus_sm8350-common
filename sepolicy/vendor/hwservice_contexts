@@ -5,6 +5,9 @@ vendor.oplus.hardware.cammidasservice::IMIDASService    u:object_r:hal_camera_hw
 vendor.pixelworks.hardware.display::IIris           u:object_r:hal_graphics_composer_hwservice:s0
 vendor.pixelworks.hardware.feature::IIrisFeature    u:object_r:hal_graphics_composer_hwservice:s0
 
+# Dolby
+vendor.dolby_v3_6.hardware.dms360::IDms    u:object_r:hal_audio_hwservice:s0
+
 # Fingerprint
 vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint    u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.commondcs::ICommonDcsHalService                   u:object_r:hal_fingerprint_hwservice:s0
