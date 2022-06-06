@@ -281,6 +281,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
+    nqnfcinfo \
     vendor.nxp.hardware.nfc@2.0-service \
     Tag
 
