@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1d8b1a7_780906ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-07T20:02:41Z",
+      "side": 1,
+      "message": "You could probably wrap it for userdebug/eng builds. That is assuming that user builds don\u0027t have such spam.",
+      "revId": "8251f9b616a70f55eb8e7734611990ee1ba32f6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
