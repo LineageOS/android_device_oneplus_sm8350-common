@@ -1029,6 +1029,7 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Dolby
+my_product/app/AudioEffectCenter/AudioEffectCenter.apk:product/app/AudioEffectCenter/AudioEffectCenter.apk
 odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service
 odm/etc/dolby/multimedia_dolby_dax_default.xml
 odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc
