@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "887f1991_b0d38ee0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 38
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31176
+      },
+      "writtenOn": "2022-06-08T04:55:20Z",
+      "side": 1,
+      "message": "It is however possible to extend the assembler to accept and reconstruct assembly directives, allowing llvm-mc to behave more like a standalone compiler.",
+      "revId": "982867988f3a69e266ebdb30d4f15584cbe542f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
