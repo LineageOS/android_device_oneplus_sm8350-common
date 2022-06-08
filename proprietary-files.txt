@@ -1732,12 +1732,10 @@ vendor/etc/init/init.qti.qcv.rc
 
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
-vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/bin/qrtr-ns
 vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/etc/sec_config
 vendor/lib/libidl.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
