@@ -1499,7 +1499,7 @@ vendor/lib64/unnhal-acc-gpu.so
 vendor/lib64/unnhal-acc-htp.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_19815:vendor/etc/libnfc-mtp-SN100.conf
+odm/etc/nfc/libnfc-mtp-SN100.conf_19815:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_19815:vendor/etc/libnfc-nci.conf
 odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
 
