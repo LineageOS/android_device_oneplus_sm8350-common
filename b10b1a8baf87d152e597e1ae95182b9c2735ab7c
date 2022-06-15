@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11f0e34f_34c74647",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-15T21:47:23Z",
+      "side": 1,
+      "message": "could we also set this globally based on kernel version?",
+      "range": {
+        "startLine": 107,
+        "startChar": 34,
+        "endLine": 107,
+        "endChar": 87
+      },
+      "revId": "b10b1a8baf87d152e597e1ae95182b9c2735ab7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
