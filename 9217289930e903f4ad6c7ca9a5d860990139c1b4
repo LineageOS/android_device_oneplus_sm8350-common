@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c703f9c_0633e433",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 41
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31176
+      },
+      "writtenOn": "2022-06-16T05:32:34Z",
+      "side": 1,
+      "message": "link between the two modes of execution and it is not possible to reduce the register width going from one exception to a higher exception level\n \tOptimized for embedded systems with a highly deterministic operation. ",
+      "revId": "9217289930e903f4ad6c7ca9a5d860990139c1b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
