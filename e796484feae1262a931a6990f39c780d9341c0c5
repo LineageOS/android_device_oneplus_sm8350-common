@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab80d1e7_ac812be9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 41
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31176
+      },
+      "writtenOn": "2022-06-16T05:36:33Z",
+      "side": 1,
+      "message": "RAS\t-\tMandatory (at least minimal implementation)\nPersistent memory\t-\tOptional (with restrictions)",
+      "revId": "e796484feae1262a931a6990f39c780d9341c0c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
