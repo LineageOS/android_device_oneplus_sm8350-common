@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a88dc44d_f5b2ec1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-19T03:31:02Z",
+      "side": 1,
+      "message": "For https://review.lineageos.org/c/LineageOS/android_hardware_qcom_bootctrl/+/332878",
+      "revId": "11c9b1e7491ae8080a7220b5b2f28972d57b4ae5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
