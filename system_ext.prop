@@ -4,7 +4,6 @@ persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.hal.implementation=true
-persist.vendor.btstack.aac_frm_ctl.enabled=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Display
