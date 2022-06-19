@@ -130,7 +130,6 @@ ro.incremental.enable=yes
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 vendor.media.vpp.enable=0
-vendor.media.vpp.oplus.version=2
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
 
