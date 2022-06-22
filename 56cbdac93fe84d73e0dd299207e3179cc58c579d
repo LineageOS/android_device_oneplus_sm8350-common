@@ -16,6 +16,24 @@
       "message": "#define PTN_SWAP_LIST                   PTN_XBL, \\\n        \"abl\", \"aboot\", \"apdp\", \"bootlocker\", \"cmnlib\", \"cmnlib32\", \\\n        \"cmnlib64\", \"devcfg\", \"dtbo\", \"hosd\", \"hyp\", \"keymaster\", \\\n        \"lockbooter\", \"msadp\", \"pmic\", \"rpm\", \"storsec\", \\\n        \"trusty\", \"tz\", \"vbmeta\"\n#define AB_PTN_LIST PTN_SWAP_LIST, \"boot\", \"system\", \"vendor\", \"modem\"",
       "revId": "56cbdac93fe84d73e0dd299207e3179cc58c579d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c3cda4e_5202cb30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31176
+      },
+      "writtenOn": "2022-06-22T03:01:02Z",
+      "side": 1,
+      "message": "gpt-utils: PTN_SWAP_LIST add the missing new partitions\n\nabl, dtbo, vbmeta were not part of the list updated by bootctl HAL.\nThis will fix the issue but bootctl HAL should be rewritten to not\ndetect A/B partition candidate at runtime.\n\n\n\n\n\n\n\u003e #define PTN_SWAP_LIST                   PTN_XBL, \\\n\u003e         \"abl\", \"aboot\", \"apdp\", \"bootlocker\", \"cmnlib\", \"cmnlib32\", \\\n\u003e         \"cmnlib64\", \"devcfg\", \"dtbo\", \"hosd\", \"hyp\", \"keymaster\", \\\n\u003e         \"lockbooter\", \"msadp\", \"pmic\", \"rpm\", \"storsec\", \\\n\u003e         \"trusty\", \"tz\", \"vbmeta\"\n\u003e #define AB_PTN_LIST PTN_SWAP_LIST, \"boot\", \"system\", \"vendor\", \"modem\"",
+      "parentUuid": "a32de643_aae5aa10",
+      "revId": "56cbdac93fe84d73e0dd299207e3179cc58c579d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
