@@ -104,6 +104,18 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# Audio
+odm/lib/libaudioEngineerTest.so
+odm/lib/liblvimfs.so
+odm/lib/liblvimfs_wrapper.so
+odm/lib/libui.so
+vendor/lib/hw/audio.primary.lahaina.so
+vendor/lib/liba2dpoffload.so
+vendor/lib/libextcamera_client.so
+vendor/lib/libgui1_vendor.so
+vendor/lib/libssrec.so
+vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
+
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
