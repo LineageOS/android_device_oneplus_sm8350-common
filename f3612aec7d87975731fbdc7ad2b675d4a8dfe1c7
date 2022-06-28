@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3404874d_20f02f9d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-28T10:53:34Z",
+      "side": 1,
+      "message": "Verified changes by flashing an OTA with firmware twice.",
+      "revId": "f3612aec7d87975731fbdc7ad2b675d4a8dfe1c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
