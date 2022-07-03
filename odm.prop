@@ -1,4 +1,11 @@
 # Audio
+persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+persist.vendor.audio.spv4.enable=false
+persist.vendor.audio.vbat.enabled=false
+ro.config.media_vol_steps=30
+ro.config.vc_call_vol_steps=9
+ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.qti.va_odm.support=1
 
 # Media
