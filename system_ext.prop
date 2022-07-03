@@ -2,6 +2,7 @@
 persist.bluetooth.bqr.choppy_threshold=9,6
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
+persist.bluetooth.disableinbandringing=false
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.hal.implementation=true
 ro.bluetooth.library_name=libbluetooth_qti.so
