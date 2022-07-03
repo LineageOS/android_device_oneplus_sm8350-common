@@ -1891,6 +1891,33 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
+# Sensors - from lemonade - LE2115_11.C.48
+odm/firmware/slpi.b00|78fee1463386b9764c7e5afed0fe0585f692b0f1
+odm/firmware/slpi.b01|e374d0ae37529df2ccfc3049b14443a25657c514
+odm/firmware/slpi.b02|bb34413178dded329f2d889f099c34a1987ed4a9
+odm/firmware/slpi.b03|17af3ec159e7b537149bfbb5a5a1f6505d8b8119
+odm/firmware/slpi.b04|c4030c12de5319a80ac4c356e9c28af720ef6338
+odm/firmware/slpi.b05|d637734c788cf1ce62d39c1295b072bc02389e07
+odm/firmware/slpi.b06|98390c32062976d7bd2c5a5f4803500789df84c2
+odm/firmware/slpi.b07|8587910527d3c01420db00e5a7683fcbdee3dbe3
+odm/firmware/slpi.b08|72f0d00f6cd8d29fcb6eb1e40b2f7718476d1d3c
+odm/firmware/slpi.b09|9807cd158f59f9d83bfdc073b6259509baa86333
+odm/firmware/slpi.b10|7a1b346a19b1a43f568544380b4c482def8fffa1
+odm/firmware/slpi.b11|33b1c5dfc989a9d61858075141af8e926ddabad9
+odm/firmware/slpi.b12|dbfb40169304ed24c580a04b73e0d37782d2eb1c
+odm/firmware/slpi.b13|5bdcb45866a7bcb3d79bccc2e2ddc5a4e7297b3b
+odm/firmware/slpi.b14|ec347ace4c2d753eb88bfded11778b429fcf1d2b
+odm/firmware/slpi.b15|f6f21d731a73ac595ec014df260c15e5c37265ce
+odm/firmware/slpi.b16|ccd6ec4820b0f1813feb6672ef18292c162a0f1f
+odm/firmware/slpi.b17|edc6fd1051398f138640e8e7ab552b23f2d3a5ff
+odm/firmware/slpi.b18|cb75ec1bf7271065b0f8fc964efa8bf3aeaec162
+odm/firmware/slpi.b19|957e65e65c4a06b8180703afd48339f6e0fa8184
+odm/firmware/slpi.b20|74a31e87ed58274f3e82261d2a378260473b4715
+odm/firmware/slpi.b21|909f3373d041fbd3de2b04cb7b402168ba67b8d9
+odm/firmware/slpi.b22|540e380590de8aecaefd20a720269c22c4120fe2
+odm/firmware/slpi.b23|a705927702f959fce45e6a28864246de293cdf74
+odm/firmware/slpi.mdt|34f496fdfffb88fa292b4a147c360da928555343
+
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
