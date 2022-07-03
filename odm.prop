@@ -1,8 +1,27 @@
 # Audio
+persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+persist.vendor.audio.spv4.enable=false
+persist.vendor.audio.vbat.enabled=false
+ro.config.media_vol_steps=30
+ro.config.vc_call_vol_steps=9
+ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.qti.va_odm.support=1
+
+# Bluetooth
+persist.vendor.bluetooth.modem_nv_support=true
+
+# Display
+vendor.display.primary_mixer_stages=9
 
 # Media
 ro.odm.build.media_performance_class=30
+vendor.media.vpp.enable=0
+vendor.media.vpp.osie.enable=0
+vendor.media.vpp.sr.enable=0
 
 # Radio
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.poweron_opt=1
+persist.vendor.radio.stack_id_1=1
 ro.vendor.oplus.radio.project=2
