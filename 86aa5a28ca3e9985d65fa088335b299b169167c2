@@ -16,6 +16,23 @@
       "message": "Unless there is evidence that this \"CPU ricing\" has made any negative impacts (e.g. performance regressions), we should just leave it as-is.\n\nShould we move forward with this, we should at least have TARGET_ARCH_VARIANT set to armv8-2a, as Google has done in \"device/generic/art/armv8_kryo385\".",
       "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a319c57_8c0cdce7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-07T15:38:05Z",
+      "side": 1,
+      "message": "This was just to see if the Bluetooth issue was because of these commits, it wasn\u0027t.",
+      "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
