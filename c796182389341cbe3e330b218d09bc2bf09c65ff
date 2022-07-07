@@ -16,6 +16,24 @@
       "message": "CAF version works fine and is better. This is unnecessary.",
       "revId": "c796182389341cbe3e330b218d09bc2bf09c65ff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "963b9150_681e80dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-07T10:24:27Z",
+      "side": 1,
+      "message": "Define \"CAF version\"",
+      "parentUuid": "6f8425c8_be95eb87",
+      "revId": "c796182389341cbe3e330b218d09bc2bf09c65ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
