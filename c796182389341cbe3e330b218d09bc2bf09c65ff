@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f8425c8_be95eb87",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-07-07T02:05:29Z",
+      "side": 1,
+      "message": "CAF version works fine and is better. This is unnecessary.",
+      "revId": "c796182389341cbe3e330b218d09bc2bf09c65ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
