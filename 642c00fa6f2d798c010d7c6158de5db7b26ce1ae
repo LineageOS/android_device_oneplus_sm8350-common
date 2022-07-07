@@ -50,6 +50,23 @@
       "message": "No UI lags nor any performance regressions (benchmarks) were noticed on realme GT master (sm7325) either.",
       "revId": "642c00fa6f2d798c010d7c6158de5db7b26ce1ae",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7edaa9c8_dc071794",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23615
+      },
+      "writtenOn": "2022-07-07T08:24:04Z",
+      "side": 1,
+      "message": "Geekbench is in no way a valid benchmark to test these kinds of optimisations. ",
+      "revId": "642c00fa6f2d798c010d7c6158de5db7b26ce1ae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
