@@ -87,6 +87,24 @@
       "parentUuid": "199d44f8_084b426a",
       "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad2d9b9b_16a42ace",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-07T18:07:12Z",
+      "side": 1,
+      "message": "Google wants a generic system image, that\u0027s why they set variant in runtime. We don\u0027t care about that.",
+      "parentUuid": "7962cb5e_02f82023",
+      "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
