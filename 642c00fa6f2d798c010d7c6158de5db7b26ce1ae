@@ -16,6 +16,23 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8350-common/+/333843",
       "revId": "642c00fa6f2d798c010d7c6158de5db7b26ce1ae",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a98e008c_c98f05d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-07T06:04:53Z",
+      "side": 1,
+      "message": "Those scores are within the margin of error, there isn\u0027t a way to show they come directly from the change. I don\u0027t see any \"UI lag\" either. This isn\u0027t about performance or \"rice\", it\u0027s about accurately declaring CPU capabilities as per LLVM. I detailed this in the original change. Unless you can prove in some way that these changes actually break something, I\u0027d rather not revert.",
+      "revId": "642c00fa6f2d798c010d7c6158de5db7b26ce1ae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
