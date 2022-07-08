@@ -105,6 +105,24 @@
       "parentUuid": "7962cb5e_02f82023",
       "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa6cc99d_eae35ae3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-08T09:37:55Z",
+      "side": 1,
+      "message": "Even vendor libs gets build with generic variant...",
+      "parentUuid": "ad2d9b9b_16a42ace",
+      "revId": "86aa5a28ca3e9985d65fa088335b299b169167c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
