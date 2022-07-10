@@ -173,9 +173,9 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/oplus/sepolicy/qti/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += hardware/oplus/sepolicy/qti/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += hardware/oplus/sepolicy/qti/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
