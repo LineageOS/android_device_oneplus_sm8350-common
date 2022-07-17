@@ -69,6 +69,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
+        vendor/lib/libgui1_vendor.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
+            ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             "${SIGSCAN}" -p "C0 6D 05 94" -P "1F 20 03 D5" -f "${2}"
             ;;
