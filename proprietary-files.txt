@@ -770,7 +770,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so|d0debb2f9a3daefbcad4560a573dbf85686fd68f|764132fe1d51afe26bd04d3280270f95901dca7b
+vendor/lib64/hw/com.qti.chi.override.so|b037e24ffdbe2be3aeba3cd067b5690e8a06d884|34194276eb816a55f4183d3de67f15611480baf5
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
