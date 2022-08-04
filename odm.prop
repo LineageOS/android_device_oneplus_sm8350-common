@@ -12,6 +12,7 @@ ro.vendor.qti.va_odm.support=1
 persist.vendor.bluetooth.modem_nv_support=true
 
 # Display
+ro.vendor.display.sensortype=2
 vendor.display.primary_mixer_stages=9
 
 # Media
