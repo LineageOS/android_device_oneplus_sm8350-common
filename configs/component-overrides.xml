@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <component-override package="com.android.bluetooth" >
+        <component class=".avrcpcontroller.AvrcpControllerService" enabled="true" />
+        <component class=".hid.HidDeviceService" enabled="true" />
+        <component class=".sap.SapService" enabled="true" />
+    </component-override>
+</config>
