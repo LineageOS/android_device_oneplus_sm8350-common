@@ -5,16 +5,20 @@
 #
 
 on property:ro.boot.rf_version=11
+    setprop persist.radio.multisim.config dsds
     setprop ro.boot.hardware.revision "CN"
 
 on property:ro.boot.rf_version=12
     setprop ro.boot.hardware.revision "TMO"
 
 on property:ro.boot.rf_version=13
+    setprop persist.radio.multisim.config dsds
     setprop ro.boot.hardware.revision "IN"
 
 on property:ro.boot.rf_version=21
+    setprop persist.radio.multisim.config dsds
     setprop ro.boot.hardware.revision "EU"
 
 on property:ro.boot.rf_version=22
+    setprop persist.radio.multisim.config dsds
     setprop ro.boot.hardware.revision "NA"
