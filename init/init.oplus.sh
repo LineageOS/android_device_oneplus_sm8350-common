@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-if grep -q simcardnum.doublesim=1 /proc/cmdline; then
+if grep simcardnum.doublesim=1 /proc/cmdline | grep -qv androidboot.opcarrier=tmo; then
     setprop vendor.radio.multisim.config dsds
 fi
