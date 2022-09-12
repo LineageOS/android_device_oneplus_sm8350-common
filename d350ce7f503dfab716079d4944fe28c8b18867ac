@@ -16,6 +16,23 @@
       "message": "I\u0027m pretty sure you can use bluetooth audio HIDL 2.x\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8250-common/+/330222",
       "revId": "d350ce7f503dfab716079d4944fe28c8b18867ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa24ad68_35893642",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-12T23:48:16Z",
+      "side": 1,
+      "message": "This was done to mirror pixels which use AOSP BT stack without picking the v2 commit",
+      "revId": "d350ce7f503dfab716079d4944fe28c8b18867ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
