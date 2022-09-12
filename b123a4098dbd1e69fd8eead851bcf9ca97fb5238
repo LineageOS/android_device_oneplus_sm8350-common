@@ -16,6 +16,24 @@
       "message": "these were replaced with properties in 13",
       "revId": "b123a4098dbd1e69fd8eead851bcf9ca97fb5238",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1baf8ece_7cddf5dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-12T23:25:17Z",
+      "side": 1,
+      "message": "Yes, I am aware of that since the props are set in this chain. On mi845 I still needed component overrides for BT to work, so I was assuming the same was needed here. Obviously happy to ditch this if it\u0027s not necessary.",
+      "parentUuid": "674aed82_3387ca6b",
+      "revId": "b123a4098dbd1e69fd8eead851bcf9ca97fb5238",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
