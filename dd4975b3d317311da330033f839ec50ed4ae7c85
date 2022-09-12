@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb53e52f_4c4e39c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-12T21:43:49Z",
+      "side": 1,
+      "message": "Should squash into https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8350-common/+/333844 if needed be.",
+      "revId": "dd4975b3d317311da330033f839ec50ed4ae7c85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
