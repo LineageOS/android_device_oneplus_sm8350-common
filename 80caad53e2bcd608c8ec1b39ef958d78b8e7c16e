@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6141a922_a93ddc1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-09-13T11:11:07Z",
+      "side": 1,
+      "message": "Wouldn\u0027t this break audio with pure AOSP gsi?",
+      "revId": "80caad53e2bcd608c8ec1b39ef958d78b8e7c16e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
