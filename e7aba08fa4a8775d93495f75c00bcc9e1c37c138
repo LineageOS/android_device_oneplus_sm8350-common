@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c49d382_1712d058",
+        "filename": "audio/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 312,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-15T15:14:02Z",
+      "side": 0,
+      "message": "Doesn\u0027t AOSP support LC3 bt audio now?",
+      "range": {
+        "startLine": 312,
+        "startChar": 203,
+        "endLine": 312,
+        "endChar": 222
+      },
+      "revId": "e7aba08fa4a8775d93495f75c00bcc9e1c37c138",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
