@@ -118,6 +118,29 @@
       },
       "revId": "e7aba08fa4a8775d93495f75c00bcc9e1c37c138",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80e5d5f5_5b3490d5",
+        "filename": "audio/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 312,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-15T15:54:14Z",
+      "side": 0,
+      "message": "CELT and aptX adaptive also show up in frameworks, not sure if they actually work now",
+      "range": {
+        "startLine": 312,
+        "startChar": 135,
+        "endLine": 312,
+        "endChar": 179
+      },
+      "revId": "e7aba08fa4a8775d93495f75c00bcc9e1c37c138",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
