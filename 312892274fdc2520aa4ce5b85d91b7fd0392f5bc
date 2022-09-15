@@ -16,6 +16,24 @@
       "message": "Don\u0027t you also need to build audio.hearing_aid.default, like my original commit? https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8350-common/+/333846",
       "revId": "312892274fdc2520aa4ce5b85d91b7fd0392f5bc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2400cf95_db0a7d29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-15T15:11:33Z",
+      "side": 1,
+      "message": "audio.hearing_aid.default is dead on 13. Google removed that and audio.a2dp.default. Can\u0027t find the real commit right now (were both are removed), but here you can see: https://android.googlesource.com/device/google/gs101/+/3fec66cbb6d85169cba0410aa104f56ded0b48f6%5E%21/#F0",
+      "parentUuid": "5f9c756c_b979cda9",
+      "revId": "312892274fdc2520aa4ce5b85d91b7fd0392f5bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
