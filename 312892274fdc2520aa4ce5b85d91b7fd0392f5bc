@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f9c756c_b979cda9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-15T15:01:18Z",
+      "side": 1,
+      "message": "Don\u0027t you also need to build audio.hearing_aid.default, like my original commit? https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8350-common/+/333846",
+      "revId": "312892274fdc2520aa4ce5b85d91b7fd0392f5bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
