@@ -16,6 +16,23 @@
       "message": "These are being moved from the /vendor overlays, shouldn\u0027t be product properties",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ed75812_83fba07e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-09-17T21:05:56Z",
+      "side": 1,
+      "message": "why move them to props anyway? just move them over to power_profile.xml -- imo where they belong",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
