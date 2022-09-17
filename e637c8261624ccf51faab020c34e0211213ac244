@@ -33,6 +33,24 @@
       "message": "why move them to props anyway? just move them over to power_profile.xml -- imo where they belong",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef94eba2_8b036893",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-17T21:07:31Z",
+      "side": 1,
+      "message": "Google introduced them as properties in 13, seems better to do that",
+      "parentUuid": "5ed75812_83fba07e",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
