@@ -86,6 +86,24 @@
       "parentUuid": "3ac9fa57_006cfdcf",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b50c110e_49be9b8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-17T21:18:44Z",
+      "side": 1,
+      "message": "The properties are used as apart of https://android.googlesource.com/platform/packages/modules/Bluetooth/+/46f0869e440ec05086a4916b95855b865eeb085c\n\n    private int getIdleCurrentMa() {\n        return BluetoothProperties.getHardwareIdleCurrentMa().orElse(0);\n    }\n\n    private int getTxCurrentMa() {\n        return BluetoothProperties.getHardwareTxCurrentMa().orElse(0);\n    }\n\n    private int getRxCurrentMa() {\n        return BluetoothProperties.getHardwareRxCurrentMa().orElse(0);\n    }\n\n    private double getOperatingVolt() {\n        return BluetoothProperties.getHardwareOperatingVoltageMv().orElse(0) / 1000.0;\n    }",
+      "parentUuid": "fb1e25dc_0ec0c414",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
