@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91db66f8_a64bf9f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-17T21:24:58Z",
+      "side": 1,
+      "message": "We need the properties for the Bluetooth app, seemingly. I don\u0027t see it falling back to anything else",
+      "revId": "f199fdd0c976a7d3df78390059a7380d59a78071",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
