@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5373e0f_859d4c0f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-17T21:02:24Z",
+      "side": 1,
+      "message": "Move back to vendor, this will break on GSI otherwise",
+      "revId": "01d8150e3a7b56b6241091da5b7712e295b5c557",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
