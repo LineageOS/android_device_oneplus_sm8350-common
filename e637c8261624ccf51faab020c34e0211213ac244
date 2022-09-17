@@ -68,6 +68,24 @@
       "message": "afaics, the only use is in PowerProfile.java? and all the google devices moved this to power_profile.xml",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb1e25dc_0ec0c414",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-17T21:15:20Z",
+      "side": 1,
+      "message": "Yea, I also think we can just forget these, since power_profile.xml already has the needed entries. See https://review.lineageos.org/c/LineageOS/android_device_fairphone_FP4/+/339231.",
+      "parentUuid": "3ac9fa57_006cfdcf",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
