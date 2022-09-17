@@ -104,6 +104,24 @@
       "parentUuid": "fb1e25dc_0ec0c414",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5334586c_b27caab7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-09-17T21:26:03Z",
+      "side": 1,
+      "message": "so basically we would need to do both? have the props AND power profile info? i haven\u0027t checked more in powerprofile, but it doesn\u0027t seem connected to the bt stack?",
+      "parentUuid": "b50c110e_49be9b8a",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
