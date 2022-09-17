@@ -33,6 +33,24 @@
       "message": "i\u0027ll be going with this:\nhttps://review.lineageos.org/c/LineageOS/android_device_oneplus_msm8998-common/+/338570",
       "revId": "ab43cbfa7a358ece65622bdc39e74c4572d582f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55aea776_dc3c5eb4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 18
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-17T21:42:03Z",
+      "side": 1,
+      "message": "That looks fine.",
+      "parentUuid": "b1a06366_9c92b5b1",
+      "revId": "ab43cbfa7a358ece65622bdc39e74c4572d582f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
