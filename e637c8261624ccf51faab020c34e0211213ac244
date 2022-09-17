@@ -140,6 +140,24 @@
       "parentUuid": "5334586c_b27caab7",
       "revId": "e637c8261624ccf51faab020c34e0211213ac244",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccd9c78d_9a21458e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-17T21:32:06Z",
+      "side": 1,
+      "message": "Yeah, we\u0027d need to have power_profile and properties according to Bluetooth app seemingly",
+      "parentUuid": "1316d572_3d2ce50c",
+      "revId": "e637c8261624ccf51faab020c34e0211213ac244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
