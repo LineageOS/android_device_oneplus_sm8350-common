@@ -16,6 +16,24 @@
       "message": "Move back to vendor, this will break on GSI otherwise",
       "revId": "01d8150e3a7b56b6241091da5b7712e295b5c557",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b18bbb4c_f4c4dedd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-17T21:32:31Z",
+      "side": 1,
+      "message": "If any, we can do in a separate change, since this is AOSP change that places props explicitely into product.prop.",
+      "parentUuid": "c5373e0f_859d4c0f",
+      "revId": "01d8150e3a7b56b6241091da5b7712e295b5c557",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
