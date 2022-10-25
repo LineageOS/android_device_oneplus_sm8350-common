@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.C.66).
+## from OnePlus 9 Pro (LE2125_11.F.20).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -188,6 +188,7 @@ odm/etc/camera/cfr_bin/cfr_bin/CFR_imx766.bin
 odm/etc/camera/cfr_bin/cfr_bin/CFR_imx766_uw.bin
 odm/etc/camera/cfr_bin/cfr_bin/CFR_s5k3m5.bin
 odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
+odm/etc/camera/config/camera_unit_feature_config.protobuf
 odm/etc/camera/config/imx471
 odm/etc/camera/config/imx689
 odm/etc/camera/config/imx766
@@ -595,6 +596,7 @@ odm/etc/camera/model_fdc.data
 odm/etc/camera/settings_fdc_lite.txt
 odm/etc/init/calibrationOutput_uw.rc
 odm/etc/init/calibrationOutput_uw_686.rc
+odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml
 odm/lib/libDeVIS.so
 odm/lib/libc++_shared.so
 odm/lib/libdehaze.so
@@ -704,6 +706,7 @@ odm/lib64/liboplus_dehaze_module.so
 odm/lib64/liboptical_zoom_dc.so
 odm/lib64/liboptical_zoom_vs.so
 odm/lib64/libormshalclient.so
+odm/lib64/libosensehalclient.so
 odm/lib64/libsnpe_dsp_domains_v2.so
 odm/lib64/libsnpe_dsp_domains_v3.so
 odm/lib64/libsnpe_htp.so
@@ -717,8 +720,10 @@ odm/lib64/libtriplecam_image_optical_zoom.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libwatermark_photo.so
+odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 vendor/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
@@ -846,10 +851,9 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a|41ff023bb72c65b38ded7f51c9be02fd9b653618
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|436cd1f351daaee8d8068c790005e814c6e4cdb6|74cb9bfeeb96df0b707654d662042133ffb23c1a
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -984,6 +988,11 @@ vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
+
+# Display (CWB)
+odm/etc/vintf/manifest/manifest_oplus_cwb.xml
+odm/lib64/vendor.oplus.hardware.cwb@1.0.so
+vendor/lib64/libcwb_sm8350.so
 
 # Display (Features)
 vendor/bin/feature_enabler_client
@@ -1547,6 +1556,7 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
+odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
