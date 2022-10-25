@@ -208,6 +208,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.oplus.hardware.cameraextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.oplus.hardware.ims</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
