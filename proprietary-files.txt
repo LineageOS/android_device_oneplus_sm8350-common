@@ -1446,7 +1446,6 @@ vendor/lib/libmulawdec.so
 odm/lib/libaiboost_qnn_sr.so
 odm/lib/libaiboost_sr.so
 odm/lib/libaiboost_ubwc.so
-odm/lib/liboplusvppfilter.so
 odm/lib/libosie_process.so
 odm/lib/libosie_stub.so
 system_ext/lib/libmmosal.so
@@ -1457,7 +1456,6 @@ vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media/video_system_specs.json
-vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
@@ -2143,7 +2141,6 @@ vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
-vendor/etc/qconfigpresets.json
 vendor/lib/libqconfigclient.so
 vendor/lib/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@2.0.so
