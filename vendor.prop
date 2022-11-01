@@ -82,6 +82,7 @@ ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
+vendor.camera.aux.packagelist=org.lineageos.aperture,org.lineageos.aperture.dev
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
