@@ -80,9 +80,6 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 
-# Camera
-vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
-
 # Chipset
 ro.soc.manufacturer=Qualcomm
 
