@@ -222,5 +222,12 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# SIM secure element, SIM1/SIM2
+ifeq ($(PRODUCT_DEVICE_DS),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/android.hardware.secure_element_ds.xml
+else
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/android.hardware.secure_element_ss.xml
+endif
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8350-common/BoardConfigVendor.mk
