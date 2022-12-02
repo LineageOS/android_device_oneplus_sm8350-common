@@ -286,7 +286,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service
 else ifeq ($(TARGET_NFC_CHIPSET),st21)
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.st \
+    android.hardware.nfc-service.st \
     android.hardware.nfc@1.2.vendor
 endif
 
