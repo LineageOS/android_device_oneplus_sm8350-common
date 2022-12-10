@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0165203f_f6a8441e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-10T18:52:18Z",
+      "side": 1,
+      "message": "Try this, along with: https://review.lineageos.org/c/LineageOS/android_device_oneplus_lemonadep/+/345676.",
+      "revId": "228f1d79d99dfb0a025c3bafc8f368015c8ecb66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
