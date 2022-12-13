@@ -274,9 +274,11 @@ vendor/lib64/libtinyxml2_1.so
 vendor/etc/ltm_config_samsung_AMS643YE01_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_AMS643YE01_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml
+vendor/etc/qdcm_calib_data_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
