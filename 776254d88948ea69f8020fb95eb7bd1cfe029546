@@ -16,6 +16,23 @@
       "message": "The problem with this patchset is that persist prop won\u0027t change unless we do it manually.",
       "revId": "776254d88948ea69f8020fb95eb7bd1cfe029546",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95c90edd_6a91d5bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-12-29T17:40:35Z",
+      "side": 1,
+      "message": "You need to do something like this https://review.calyxos.org/c/CalyxOS/device_fairphone_FP4/+/13780 to toggle offload",
+      "revId": "776254d88948ea69f8020fb95eb7bd1cfe029546",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
