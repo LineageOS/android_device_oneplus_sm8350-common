@@ -33,6 +33,24 @@
       "message": "Do we really need to disable it *so hard* when it\u0027s just until it\u0027s working again?",
       "revId": "5aeb6d1d4ded6aacad4904f3521b21052c82d3ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "299cf287_f59f090a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-29T17:01:40Z",
+      "side": 1,
+      "message": "Just changing props doesn\u0027t work. You need to force A2DP to be routed through BT HAL (aka using the A2DP disable offload config).",
+      "parentUuid": "bb08bbe7_db3f212b",
+      "revId": "5aeb6d1d4ded6aacad4904f3521b21052c82d3ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
