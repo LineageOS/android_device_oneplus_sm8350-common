@@ -51,6 +51,24 @@
       "message": "Got it.\n\nThink this is the culprit breaking A2DP\n",
       "revId": "7a4a6758ad590741494d1866ee9a998b8c2e463c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "160879b9_d56ba781",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2023-01-11T17:26:16Z",
+      "side": 1,
+      "message": "https://github.com/chandu078/device_oneplus_sm8350-common/commit/84b5023c3bd91cb929810e51e55aaac1365ed9b9",
+      "parentUuid": "7eb44dc1_23f7bc5d",
+      "revId": "7a4a6758ad590741494d1866ee9a998b8c2e463c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
