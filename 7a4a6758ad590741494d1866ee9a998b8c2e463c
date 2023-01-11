@@ -34,6 +34,23 @@
       "parentUuid": "fd159628_5b2b273c",
       "revId": "7a4a6758ad590741494d1866ee9a998b8c2e463c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7eb44dc1_23f7bc5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2023-01-11T17:25:54Z",
+      "side": 1,
+      "message": "Got it.\n\nThink this is the culprit breaking A2DP\n",
+      "revId": "7a4a6758ad590741494d1866ee9a998b8c2e463c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
