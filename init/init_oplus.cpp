@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2022-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -34,7 +34,30 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
+    auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+
+    switch (prjname) {
+        // lunaa
+        case 21603: // CN
+            OverrideProperty("ro.product.product.model", "RMX3361");
+            break;
+        case 21675: // IN
+            OverrideProperty("ro.product.product.model", "RMX3360");
+            break;
+        case 21676: // EU
+            OverrideProperty("ro.product.product.model", "RMX3363");
+            break;
+        // martini
+        case 20820: // CN
+            OverrideProperty("ro.product.product.model", "MT2110");
+            break;
+        case 20821: // IN
+            OverrideProperty("ro.product.product.model", "MT2111");
+            break;
+        default:
+            LOG(ERROR) << "Unexpected project name: " << prjname;
+    }
 
     switch (rf_version) {
         case 11: // CN
