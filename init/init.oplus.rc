@@ -38,6 +38,20 @@ on boot
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
+    # TOF
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/alg_setting
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_fac_calib
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_iterations
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_trim_set
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_distance
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_fac_calib
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/capture
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/iterations
+    chown cameraserver cameraserver /sys/kernel/tof_control/app0/period
+    chown cameraserver cameraserver /sys/kernel/tof_control/chip_enable
+    chown cameraserver cameraserver /sys/kernel/tof_control/driver_debug
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
