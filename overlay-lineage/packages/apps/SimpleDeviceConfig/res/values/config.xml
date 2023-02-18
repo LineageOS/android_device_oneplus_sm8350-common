@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The Proton AOSP Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string-array name="configs_device">
+        <item>activity_manager_native_boot/use_freezer=false</item>
+    </string-array>
+</resources>
