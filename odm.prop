@@ -15,6 +15,9 @@ persist.vendor.bluetooth.modem_nv_support=true
 ro.vendor.display.sensortype=2
 vendor.display.primary_mixer_stages=9
 
+# Fingerprint
+persist.vendor.fp.template_updateflag=V1
+
 # Media
 ro.odm.build.media_performance_class=30
 vendor.media.vpp.enable=0
