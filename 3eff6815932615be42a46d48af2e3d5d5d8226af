@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c010b3e_1e130c03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-02-21T21:49:16Z",
+      "side": 1,
+      "message": "Why didn\u0027t you pick original commit? https://git.codelinaro.org/clo/la/platform/vendor/qcom/lahaina/-/commit/2dc959cfc40d1662b037876b2a3f6d6d5af2fc34",
+      "revId": "3eff6815932615be42a46d48af2e3d5d5d8226af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
