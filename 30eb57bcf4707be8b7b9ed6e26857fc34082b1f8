@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "440d5698_272c23f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-02-27T04:36:10Z",
+      "side": 1,
+      "message": "Hotword enrollment continues to work after nuking it, moreover realme devices don\u0027t have this in stock.",
+      "revId": "30eb57bcf4707be8b7b9ed6e26857fc34082b1f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
