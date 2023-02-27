@@ -16,6 +16,23 @@
       "message": "This requires labelling ",
       "revId": "1c446acef91ea890861311b6b1b001d0cde19223",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee2d6e69_8d6cc67b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-02-27T04:46:13Z",
+      "side": 1,
+      "message": "USB OTG is confirmed working",
+      "revId": "1c446acef91ea890861311b6b1b001d0cde19223",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
