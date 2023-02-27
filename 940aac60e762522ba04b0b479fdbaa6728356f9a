@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50dfb2a6_1f6272be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-02-27T04:41:01Z",
+      "side": 1,
+      "message": "This seems necessary for lunaa and martini, without which battery meter would not load very often.",
+      "revId": "940aac60e762522ba04b0b479fdbaa6728356f9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
