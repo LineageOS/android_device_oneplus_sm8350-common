@@ -16,6 +16,24 @@
       "message": "maybe decommonize instead?",
       "revId": "5fa0a879f9d5f164c053660e3351765d95e2f427",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d189f4a_91a5a852",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-02-28T15:26:39Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "e08bf94e_3b49fe0d",
+      "revId": "5fa0a879f9d5f164c053660e3351765d95e2f427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
