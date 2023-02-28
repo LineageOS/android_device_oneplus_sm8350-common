@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "224ecc08_036985a0",
+        "filename": "overlay/OPlusFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-02-28T11:56:27Z",
+      "side": 0,
+      "message": "this isn\u0027t just doze.",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 111
+      },
+      "revId": "38a536d98d730ce0bc08eb9c60208e5d3d412085",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
