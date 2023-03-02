@@ -1,8 +1,12 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+# NFC
+/dev/st21nfc    0660    nfc               nfc
+/dev/st54spi    0660    secure_element    secure_element
 
 # Reserve
 /dev/block/bootdevice/by-name/oplusreserve1    0660    root    system
