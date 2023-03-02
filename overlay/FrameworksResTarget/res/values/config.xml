@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 The Linux Foundation
+     Copyright (C) 2022-2023 The Linux Foundation
      SPDX-License-Identifier: BSD-3-Clause
 -->
 <resources>
-
-    <!-- Control whether the always on display mode is available. This should only be enabled on
-         devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
-         states. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
