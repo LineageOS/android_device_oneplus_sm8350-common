@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac693cd0_739923c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-03-03T17:35:14Z",
+      "side": 1,
+      "message": "doesn\u0027t seem necessary here, and also will break usb when modem fails to mount.",
+      "revId": "7fd753ac07d796d051c42e2aa4494aa0686bcd30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
