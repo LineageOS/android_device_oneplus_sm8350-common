@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -27,6 +27,43 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys10/restart_level RELATED
 
 on boot
+    # Charging
+    chown system system /dev/oplus_chg
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_chg
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_rechg
+    chown system system /sys/class/oplus_chg/battery/short_ic_volt_thresh
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_value
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /proc/charger/reserve_soc_debug
+
+    # Charging (wireless)
+    chown system system /sys/class/oplus_chg/wireless/cp_current_now
+    chown system system /sys/class/oplus_chg/wireless/cp_voltage_now
+    chown system system /sys/class/power_supply/wireless/current_max
+    chown system system /sys/class/power_supply/wireless/current_now
+    chown system system /sys/class/power_supply/wireless/online
+    chown system system /sys/class/power_supply/wireless/present
+    chown system system /sys/class/oplus_chg/wireless/real_type
+    chown system system /sys/class/power_supply/wireless/type
+    chown system system /sys/class/oplus_chg/wireless/tx_current_now
+    chown system system /sys/class/oplus_chg/wireless/tx_voltage_now
+    chown system system /sys/class/oplus_chg/wireless/wireless_mode
+    chown system system /sys/class/oplus_chg/wireless/wireless_type
+
     # Display
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
