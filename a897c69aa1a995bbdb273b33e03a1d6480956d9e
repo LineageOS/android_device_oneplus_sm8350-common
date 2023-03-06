@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33722308_0a0a4a4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-03-06T16:40:22Z",
+      "side": 1,
+      "message": "Tested this and it worked fine for me when i tried with --only-common and --only-target",
+      "revId": "a897c69aa1a995bbdb273b33e03a1d6480956d9e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
