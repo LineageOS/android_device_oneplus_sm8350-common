@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d7256fa_626dc512",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-03-26T14:43:14Z",
+      "side": 1,
+      "message": "Seems to make esim.me device compatibility check happy, although I didn\u0027t try to check if it actually works.",
+      "revId": "fe3c7d1e3be052a9d7d9d90863a1b6f2d1abb960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
