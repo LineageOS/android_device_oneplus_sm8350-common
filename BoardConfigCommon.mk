@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -169,7 +169,7 @@ CUSTOM_APNS_FILE := $(COMMON_PATH)/configs/apns-conf.xml
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-BOOT_SECURITY_PATCH := 2023-01-05
+BOOT_SECURITY_PATCH := 2023-03-05
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
