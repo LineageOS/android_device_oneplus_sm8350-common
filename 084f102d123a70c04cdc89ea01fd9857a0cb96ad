@@ -46,6 +46,30 @@
       },
       "revId": "084f102d123a70c04cdc89ea01fd9857a0cb96ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f751d0fb_181f9f0b",
+        "filename": "overlay/OPlusFrameworksResCommon/res/values/config.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-04-16T18:06:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "67da1d6c_cee26407",
+      "range": {
+        "startLine": 112,
+        "startChar": 14,
+        "endLine": 112,
+        "endChar": 17
+      },
+      "revId": "084f102d123a70c04cdc89ea01fd9857a0cb96ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
