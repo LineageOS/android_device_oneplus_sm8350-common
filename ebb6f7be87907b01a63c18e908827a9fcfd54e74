@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a9f7c9a_e26ab54c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2023-05-06T14:50:08Z",
+      "side": 1,
+      "message": "We have a GKI 1.0 kernel, so this may not be necessary",
+      "revId": "ebb6f7be87907b01a63c18e908827a9fcfd54e74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
