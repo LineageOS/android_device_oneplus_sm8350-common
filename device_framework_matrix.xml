@@ -24,12 +24,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.cameraextension</name>
-        <version>1.0</version>
         <interface>
             <name>ICameraExtensionService</name>
-            <instance>cameraextensionservice</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
