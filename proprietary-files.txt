@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_11.F.21).
+## from OnePlus 9 Pro (LE2125_13.1.0.500(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -459,8 +459,8 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 # Hotword Enrollment
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogle.apk
+my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogle.apk
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -684,8 +684,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
-odm/lib/vendor.oplus.hardware.performance@1.0.so
-odm/lib64/vendor.oplus.hardware.performance@1.0.so
+odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
