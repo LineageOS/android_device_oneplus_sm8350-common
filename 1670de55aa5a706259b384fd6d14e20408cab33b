@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da0fafde_ef69f287",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-06-29T22:43:15Z",
+      "side": 1,
+      "message": "pjgowtham, can you check this on your realme devices?",
+      "revId": "1670de55aa5a706259b384fd6d14e20408cab33b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
