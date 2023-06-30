@@ -34,6 +34,24 @@
       "parentUuid": "da0fafde_ef69f287",
       "revId": "1670de55aa5a706259b384fd6d14e20408cab33b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df1ec13d_d5253690",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-06-30T06:36:47Z",
+      "side": 1,
+      "message": "Okay then, lunaa is sm7325.",
+      "parentUuid": "f1652d6a_ec4ec24d",
+      "revId": "1670de55aa5a706259b384fd6d14e20408cab33b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
