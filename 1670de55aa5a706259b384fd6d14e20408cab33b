@@ -16,6 +16,24 @@
       "message": "pjgowtham, can you check this on your realme devices?",
       "revId": "1670de55aa5a706259b384fd6d14e20408cab33b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1652d6a_ec4ec24d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-06-30T02:20:05Z",
+      "side": 1,
+      "message": "lunaa / # ls /mnt/vendor/persist/data/pfm/licenses\n1000-1000-no-exp-1186717196.pfm.err_18                  store_0\n1000-1000-no-exp-958228818.pfm.err_18                   store_1\nOnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm.err_18  store_2\nOplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm.inst      store_3\noplus_Widevine_licenses.pfm.err_18                      store_4\noplus_Widevine_licenses.pfm.inst",
+      "parentUuid": "da0fafde_ef69f287",
+      "revId": "1670de55aa5a706259b384fd6d14e20408cab33b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
