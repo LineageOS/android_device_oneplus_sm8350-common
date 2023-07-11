@@ -31,4 +31,4 @@ ro.vendor.oplus.radio.project=2
 ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # SVN
-ro.build.version.svn=61
+ro.build.version.svn=27
