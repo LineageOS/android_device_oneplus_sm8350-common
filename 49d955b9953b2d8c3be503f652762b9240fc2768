@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1025c4c8_1c15702e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-12T14:58:02Z",
+      "side": 1,
+      "message": "Update this too https://github.com/LineageOS/android_device_oneplus_sm8350-common/blob/lineage-20/odm.prop#L34. We have been missing in some updates.",
+      "revId": "49d955b9953b2d8c3be503f652762b9240fc2768",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
