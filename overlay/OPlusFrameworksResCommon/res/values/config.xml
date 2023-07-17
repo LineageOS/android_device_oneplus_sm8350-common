@@ -151,32 +151,6 @@
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
-    <!-- An array of device capabilities defined by GSMA SGP.22 v2.0.
-         The first item is the capability name that the device supports. The second item is the
-         major version. The minor and revision versions are default to 0s.
-         The device capabilities and their definition in the spec are:
-             gsm : gsmSupportedRelease
-             utran : utranSupportedRelease
-             cdma1x : cdma2000onexSupportedRelease
-             hrpd : cdma2000hrpdSupportedRelease
-             ehrpd : cdma2000ehrpdSupportedRelease
-             eutran : eutranSupportedRelease
-             nfc : contactlessSupportedRelease
-             crl : rspCrlSupportedVersion
-             nrepc : nrEpcSupportedRelease
-             nr5gc : nr5gcSupportedRelease
-             eutran5gc : eutran5gcSupportedRelease
-    -->
-    <string-array name="config_telephonyEuiccDeviceCapabilities">
-        <item>gsm,11</item>
-        <item>utran,11</item>
-        <item>cdma1x,1</item>
-        <item>hrpd,3</item>
-        <item>ehrpd,12</item>
-        <item>eutran,11</item>
-        <item>nfc,1</item>
-    </string-array>
-
     <!-- Safe headphone volume index. When music stream volume is below this index
     the SPL on headphone output is compliant to EN 60950 requirements for portable music
     players. -->
