@@ -117,7 +117,7 @@ BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.recove
 TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/chg_enable
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
