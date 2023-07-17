@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2deb43a9_14da893e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2023-07-17T19:21:21Z",
+      "side": 1,
+      "message": "Works, but will exceed the charging limit if wireless charging is used (in my case, 86 when limit is set to 80)",
+      "revId": "fdaaeac3ca0677df00eb9dee22ce82ed68eab6b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
