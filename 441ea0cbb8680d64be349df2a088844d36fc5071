@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b726dbb1_c4e0d01e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31286
+      },
+      "writtenOn": "2023-07-18T20:54:11Z",
+      "side": 1,
+      "message": "While the targets do not have eUICC built-in, they should continue to support removable ones for products like esim.me. I am currently using one successfully on lemonadep. Related: https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8350-common/+/344943",
+      "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
