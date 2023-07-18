@@ -34,6 +34,24 @@
       "parentUuid": "2deb43a9_14da893e",
       "revId": "fdaaeac3ca0677df00eb9dee22ce82ed68eab6b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4689233c_8761df52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2023-07-18T00:12:16Z",
+      "side": 1,
+      "message": "Tested again. Wireless charging is stopping at the limit and not exceeding it.",
+      "parentUuid": "e729d6e3_8563b7ce",
+      "revId": "fdaaeac3ca0677df00eb9dee22ce82ed68eab6b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
