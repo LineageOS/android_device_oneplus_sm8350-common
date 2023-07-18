@@ -34,6 +34,24 @@
       "parentUuid": "b726dbb1_c4e0d01e",
       "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64b79c38_8b5adb48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31286
+      },
+      "writtenOn": "2023-07-18T21:07:02Z",
+      "side": 1,
+      "message": "I am 100% certain esim.me is a eUICC device. I use OpenEUICC to manage the esim profiles on it: https://gitea.angry.im/PeterCxy/OpenEUICC\n\nHowever, I will try a build with this to confirm it negatively effects functionality. Will respond soon.",
+      "parentUuid": "3322308c_b5d049ad",
+      "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
