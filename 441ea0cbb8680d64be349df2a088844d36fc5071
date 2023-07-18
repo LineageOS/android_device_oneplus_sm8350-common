@@ -52,6 +52,24 @@
       "parentUuid": "3322308c_b5d049ad",
       "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8d5dfd7_e0101f85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31286
+      },
+      "writtenOn": "2023-07-18T22:23:39Z",
+      "side": 1,
+      "message": "Tested with this change. I don\u0027t see an immediate negative impact with viewing and enabling/disabling profiles, however I need to test a new activation first and this will take a day or so. I would still ask that this be delayed in merging.\n\nIt looks like devicecapability is only queried when a new activation happens. From page 115 of the spec here: https://www.gsma.com/esim/wp-content/uploads/2021/07/SGP.22-v2.3.pdf",
+      "parentUuid": "64b79c38_8b5adb48",
+      "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
