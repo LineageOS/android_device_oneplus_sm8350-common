@@ -16,6 +16,24 @@
       "message": "This node is non-existent on all oplus devices except lemonade/p",
       "revId": "68c0d5095ac14e2c288ba6877fafeb9312021e6b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04c3b3d4_900ad25f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-25T09:30:03Z",
+      "side": 1,
+      "message": "You mean the new node chg_enable node, right? Then this needs to be decommonized.",
+      "parentUuid": "146e4ebd_7bf7c86a",
+      "revId": "68c0d5095ac14e2c288ba6877fafeb9312021e6b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
