@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "146e4ebd_7bf7c86a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2023-07-25T06:06:36Z",
+      "side": 1,
+      "message": "This node is non-existent on all oplus devices except lemonade/p",
+      "revId": "68c0d5095ac14e2c288ba6877fafeb9312021e6b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
