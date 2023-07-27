@@ -16,6 +16,29 @@
       "message": "would split this change",
       "revId": "6296466eab5f327dcd9281c5108a01c2c814f1cb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "798878ed_15ce4625",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T21:49:49Z",
+      "side": 1,
+      "message": "This isn\u0027t even needed, to be honest, as lemonade/lemonadep include common BoardConfig first and then can simply set the proper path.",
+      "range": {
+        "startLine": 120,
+        "startChar": 45,
+        "endLine": 120,
+        "endChar": 47
+      },
+      "revId": "6296466eab5f327dcd9281c5108a01c2c814f1cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
