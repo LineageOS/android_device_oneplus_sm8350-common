@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_13.1.0.582(EX01)).
+## from OnePlus 9 Pro (LE2125_13.1.0.590(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -807,7 +807,13 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
+odm/lib64/lib-virtual-modem-protos.so
+odm/lib64/libcommcenterfw.so
+odm/lib64/libcommcenterutils.so
+odm/lib64/libdmtp-protos-lite.so
+odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
+odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
