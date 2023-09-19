@@ -106,6 +106,24 @@
       "parentUuid": "d27e0d6d_6270d4ff",
       "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "938c14b9_dfc6bc43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31286
+      },
+      "writtenOn": "2023-09-19T05:09:56Z",
+      "side": 1,
+      "message": "Apologies for the delay. I completed testing with activation via the official esim.me app and it still works. They appear to use their own library. Therefore should be fine to merge this!\n\nI was not successful completing an activation using OpenEUICC either with or without the changes, but it works otherwise to manage profiles.",
+      "parentUuid": "7ecad81f_f742516d",
+      "revId": "441ea0cbb8680d64be349df2a088844d36fc5071",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
