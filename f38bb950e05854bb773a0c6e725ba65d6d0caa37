@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fcc67164_5836eb48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-11-18T10:57:11Z",
+      "side": 1,
+      "message": "anything against picking them to 20? At least on 8250, the change below fixes something and if I\u0027m gonna pick it there, I might as well sync all trees.",
+      "revId": "f38bb950e05854bb773a0c6e725ba65d6d0caa37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
