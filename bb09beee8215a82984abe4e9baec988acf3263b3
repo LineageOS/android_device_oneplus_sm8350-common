@@ -16,6 +16,23 @@
       "message": "Can anyone reproduce this choppy audio issue? Simply play any audio over BT with WiFi turned on and it immediately happens. This change is tested on A14 but issue was introduced in A13.",
       "revId": "bb09beee8215a82984abe4e9baec988acf3263b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f54f753_634a4eee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-11-21T21:43:08Z",
+      "side": 1,
+      "message": "if it only happens with specific headsets, i think we could just keep offload and maybe just disable it by default.",
+      "revId": "bb09beee8215a82984abe4e9baec988acf3263b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
