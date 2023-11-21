@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8760d57_a515725c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-21T21:34:31Z",
+      "side": 1,
+      "message": "Can anyone reproduce this choppy audio issue? Simply play any audio over BT with WiFi turned on and it immediately happens. This change is tested on A14 but issue was introduced in A13.",
+      "revId": "bb09beee8215a82984abe4e9baec988acf3263b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
