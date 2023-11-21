@@ -33,6 +33,24 @@
       "message": "if it only happens with specific headsets, i think we could just keep offload and maybe just disable it by default.",
       "revId": "bb09beee8215a82984abe4e9baec988acf3263b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b3e1163_e552007f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-21T22:02:09Z",
+      "side": 1,
+      "message": "I have tested only with Sony headphones, but tomorrow will test a few others. Will be appreciated if you guys can also do some testing.",
+      "parentUuid": "6f54f753_634a4eee",
+      "revId": "bb09beee8215a82984abe4e9baec988acf3263b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
