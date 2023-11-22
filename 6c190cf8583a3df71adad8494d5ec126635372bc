@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d5fec71_375353cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-22T09:50:00Z",
+      "side": 1,
+      "message": "Heads-up, the issue choppy audio issue is only reproducible with LDAC codec, probably because it uses much higher bandwitdh. I tried to remove `ldac` from persist.vendor.qcom.bluetooth.a2dp_offload_cap prop, which doesn\u0027t really force LDAC to use sofware encoding path.",
+      "revId": "6c190cf8583a3df71adad8494d5ec126635372bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
