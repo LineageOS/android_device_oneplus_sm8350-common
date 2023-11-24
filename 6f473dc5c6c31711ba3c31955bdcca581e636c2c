@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00595d23_e4d3816e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-24T11:57:40Z",
+      "side": 1,
+      "message": "All the time I was testing this with Sony WH-1000XM3, which always default to using LDAC codec. This fixes it: https://review.lineageos.org/c/LineageOS/android_hardware_interfaces/+/374981",
+      "revId": "6f473dc5c6c31711ba3c31955bdcca581e636c2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
