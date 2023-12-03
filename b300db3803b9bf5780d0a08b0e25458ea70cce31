@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f89630b3_53b60e3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2023-12-03T14:48:31Z",
+      "side": 1,
+      "message": "https://git.codelinaro.org/clo/la/device/qcom/qssi/-/commit/7bce0ee5ed8a602354460387526e1acb65a76877\nhttps://git.codelinaro.org/clo/la/platform/vendor/qcom/lahaina/-/commit/74c3917c5f13df691c75b8dfb522d4379e36b7ef",
+      "revId": "b300db3803b9bf5780d0a08b0e25458ea70cce31",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
