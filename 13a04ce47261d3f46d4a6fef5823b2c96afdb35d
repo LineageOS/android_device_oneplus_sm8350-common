@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32208efb_954c2430",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2023-12-03T15:03:37Z",
+      "side": 1,
+      "message": "Confirmed that device defaults to 120Hz on OOBE.",
+      "revId": "13a04ce47261d3f46d4a6fef5823b2c96afdb35d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
