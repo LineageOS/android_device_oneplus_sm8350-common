@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7600485f_bc09263d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-12-03T16:54:21Z",
+      "side": 1,
+      "message": "for context this was removed because of devices we don\u0027t even ship, I think they can just override it in their device trees.",
+      "revId": "7565cd471dfe0198371dbeb9dd37a4bb912e3c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
