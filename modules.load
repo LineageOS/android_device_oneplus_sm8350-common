@@ -47,7 +47,6 @@ rmnet_core.ko
 rmnet_ctl.ko
 rmnet_offload.ko
 rmnet_shs.ko
-rt_info.ko
 rx_macro_dlkm.ko
 si2157.ko
 slimbus.ko
