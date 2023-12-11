@@ -52,6 +52,24 @@
       "parentUuid": "392b3384_e2d00db3",
       "revId": "481727046c3ef55a2f440ffa686aafe1e0d34527",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f5a1452_d465470c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-12-11T08:44:34Z",
+      "side": 1,
+      "message": "idk, I kinda see some value in keeping OG change id",
+      "parentUuid": "a16a4945_a0024991",
+      "revId": "481727046c3ef55a2f440ffa686aafe1e0d34527",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
