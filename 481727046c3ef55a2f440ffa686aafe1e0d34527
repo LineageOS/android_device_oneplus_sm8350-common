@@ -34,6 +34,24 @@
       "parentUuid": "12a2f1d7_d8f62eab",
       "revId": "481727046c3ef55a2f440ffa686aafe1e0d34527",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a16a4945_a0024991",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-11T08:43:57Z",
+      "side": 1,
+      "message": "I decided to keep the template with a different one.",
+      "parentUuid": "392b3384_e2d00db3",
+      "revId": "481727046c3ef55a2f440ffa686aafe1e0d34527",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
