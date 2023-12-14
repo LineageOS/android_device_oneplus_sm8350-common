@@ -66,6 +66,7 @@ function blob_fixup() {
     case "${1}" in
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
+            sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
             ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
