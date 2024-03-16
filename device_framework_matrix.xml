@@ -48,6 +48,13 @@
             <instance>oplusimsradio1</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.oplusSensor</name>
+        <interface>
+            <name>ISensorFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.radio</name>
         <version>1.0-1</version>
@@ -55,6 +62,21 @@
             <name>IOplusRadio</name>
             <instance>oplus_slot1</instance>
             <instance>oplus_slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <interface>
+            <name>IRadioStable</name>
+            <instance>OplusRadio0</instance>
+            <instance>OplusRadio1</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.sendextcamcmd</name>
+        <interface>
+            <name>ISendExtCamCmdService</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
