@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86b7a27e_ac8bc079",
+        "filename": "init/ueventd.oplus.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-26T14:05:38Z",
+      "side": 1,
+      "message": "no",
+      "revId": "ec1e407a69e48e2f8cdf97707f92d97d98e8c948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b600c60b_3f9f2e3e",
+        "filename": "init/ueventd.oplus.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-26T14:05:38Z",
+      "side": 1,
+      "message": "no",
+      "revId": "ec1e407a69e48e2f8cdf97707f92d97d98e8c948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
