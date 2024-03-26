@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "741257dc_d65a19f2",
+        "filename": "configs/hals.conf",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-26T14:06:13Z",
+      "side": 0,
+      "message": "no",
+      "revId": "5984b503ccbd6b42eda0c9fbcd18f564c04c1d08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
