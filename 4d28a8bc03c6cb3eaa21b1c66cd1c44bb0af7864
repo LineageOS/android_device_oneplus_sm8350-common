@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e04a71f2_eeabdc42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-28T14:51:34Z",
+      "side": 1,
+      "message": "I\u0027d prefer to import the scripts from stock and default to CLO in a follow-up commit, just like we have on sm8550.",
+      "revId": "4d28a8bc03c6cb3eaa21b1c66cd1c44bb0af7864",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
