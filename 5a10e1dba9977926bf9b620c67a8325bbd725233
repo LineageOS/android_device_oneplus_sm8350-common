@@ -22,6 +22,30 @@
       },
       "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1142025c_15440536",
+        "filename": "device_framework_matrix.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2024-03-28T14:54:10Z",
+      "side": 1,
+      "message": "I haven\u0027t committed extracting oplusSensor blobs yet because I don\u0027t know if that should be done here or make it device-specific.",
+      "parentUuid": "147205b0_bc8186af",
+      "range": {
+        "startLine": 52,
+        "startChar": 14,
+        "endLine": 52,
+        "endChar": 47
+      },
+      "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
