@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "147205b0_bc8186af",
+        "filename": "device_framework_matrix.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-28T14:49:42Z",
+      "side": 1,
+      "message": "Why add it here if blobs are not extracted?",
+      "range": {
+        "startLine": 52,
+        "startChar": 14,
+        "endLine": 52,
+        "endChar": 47
+      },
+      "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
