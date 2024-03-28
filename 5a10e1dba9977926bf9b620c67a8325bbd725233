@@ -46,6 +46,30 @@
       },
       "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79bd83f6_666f884f",
+        "filename": "device_framework_matrix.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-28T14:56:20Z",
+      "side": 1,
+      "message": "Mind explaining why oplusSensor is needed for on sm8350 targets?",
+      "parentUuid": "1142025c_15440536",
+      "range": {
+        "startLine": 52,
+        "startChar": 14,
+        "endLine": 52,
+        "endChar": 47
+      },
+      "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
