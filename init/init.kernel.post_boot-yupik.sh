@@ -30,8 +30,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
-chp_support=0
-
 function configure_zram_parameters() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
@@ -79,104 +77,6 @@ function configure_zram_parameters() {
 	fi
 }
 
-#/*Add swappiness tunning parameters*/
-function oplus_configure_tunning_swappiness() {
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
-	prjname=`getprop ro.boot.prjname`
-
-	if [ $MemTotal -le 6291456 ]; then
-		echo 0 > /proc/sys/vm/vm_swappiness_threshold1
-		echo 0 > /proc/sys/vm/swappiness_threshold1_size
-		echo 0 > /proc/sys/vm/vm_swappiness_threshold2
-		echo 0 > /proc/sys/vm/swappiness_threshold2_size
-	elif [ $MemTotal -le 8388608 ]; then
-		echo 100 > /proc/sys/vm/vm_swappiness_threshold1
-		echo 2000 > /proc/sys/vm/swappiness_threshold1_size
-		echo 120 > /proc/sys/vm/vm_swappiness_threshold2
-		echo 1500 > /proc/sys/vm/swappiness_threshold2_size
-	else
-		if [ $chp_support -eq 1 ]; then
-			if [ "$prjname" == "22101" ]; then
-				echo 60 > /proc/sys/vm/vm_swappiness_threshold1
-				echo 4096 > /proc/sys/vm/swappiness_threshold1_size
-				echo 80 > /proc/sys/vm/vm_swappiness_threshold2
-				echo 2048 > /proc/sys/vm/swappiness_threshold2_size
-			else
-				echo 100 > /proc/sys/vm/vm_swappiness_threshold1
-				echo 4096 > /proc/sys/vm/swappiness_threshold1_size
-				echo 120 > /proc/sys/vm/vm_swappiness_threshold2
-				echo 2048 > /proc/sys/vm/swappiness_threshold2_size
-			fi
-		else
-			echo 100 > /proc/sys/vm/vm_swappiness_threshold1
-			echo 4096 > /proc/sys/vm/swappiness_threshold1_size
-			echo 120 > /proc/sys/vm/vm_swappiness_threshold2
-			echo 2048 > /proc/sys/vm/swappiness_threshold2_size
-		fi
-	fi
-}
-
-#ifdef OPLUS_FEATURE_ZRAM_OPT
-function oppo_configure_zram_parameters() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    echo lz4 > /sys/block/zram0/comp_algorithm
-    echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-    echo 60 > /sys/module/zram_opt/parameters/direct_vm_swappiness
-    echo 0 > /proc/sys/vm/page-cluster
-
-    if [ -f /sys/block/zram0/disksize ]; then
-        if [ -f /sys/block/zram0/use_dedup ]; then
-            echo 1 > /sys/block/zram0/use_dedup
-        fi
-
-        if [ $MemTotal -le 524288 ]; then
-            #config 384MB zramsize with ramsize 512MB
-            echo 402653184 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 1048576 ]; then
-            #config 768MB zramsize with ramsize 1GB
-            echo 805306368 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 2097152 ]; then
-            #config 1GB+256MB zramsize with ramsize 2GB
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 1342177280 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 3145728 ]; then
-            #config 1GB+512MB zramsize with ramsize 3GB
-            echo 1610612736 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 4194304 ]; then
-            #config 2GB+512MB zramsize with ramsize 4GB
-            echo 2684354560 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 6291456 ]; then
-            #config 3GB zramsize with ramsize 6GB
-            echo 3221225472 > /sys/block/zram0/disksize
-        else
-            #config 4GB zramsize with ramsize >=8GB
-            echo 4294967296 > /sys/block/zram0/disksize
-        fi
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
-    fi
-}
-
-function oplus_configure_hybridswap() {
-	kernel_version=`uname -r`
-
-	if [[ "$kernel_version" == "5.10"* ]]; then
-		echo 160 > /sys/module/oplus_bsp_zram_opt/parameters/vm_swappiness
-	else
-		echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-	fi
-
-	echo 0 > /proc/sys/vm/page-cluster
-
-	# FIXME: set system memcg pata in init.kernel.post_boot-lahaina.sh temporary
-	echo 500 > /dev/memcg/system/memory.app_score
-	echo systemserver > /dev/memcg/system/memory.name
-}
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
-
 function configure_read_ahead_kb_values() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
@@ -197,17 +97,7 @@ function configure_read_ahead_kb_values() {
 		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
 	fi
 	for dm in $dmpts; do
-		dm_dev=`echo $dm |cut -d/ -f4`
-		if [ "$dm_dev" = "" ]; then
-			is_erofs=""
-		else
-			is_erofs=`mount |grep erofs |grep "${dm_dev} "`
-		fi
-		if [ "$is_erofs" = "" ]; then
-			echo $ra_kb > $dm
-		else
-			echo 128 > $dm
-		fi
+		echo $ra_kb > $dm
 	done
 }
 
@@ -230,37 +120,20 @@ function configure_memory_parameters() {
 	#
 	# Set allocstall_threshold to 0 for all targets.
 	#
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
 
-#ifdef OPLUS_FEATURE_ZRAM_OPT
-	if [ -f /sys/block/zram0/hybridswap_enable ]; then
-		oplus_configure_hybridswap
-	else
-		oppo_configure_zram_parameters
-	fi
-        oplus_configure_tunning_swappiness
-#else
-#       configure_zram_parameters
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
+	ProductName=`getprop ro.product.name`
+
+	configure_zram_parameters
 	configure_read_ahead_kb_values
-	echo 0 > /proc/sys/vm/page-cluster
-
-#	if [ $MemTotal -le 8388608 ]; then
-#		echo 35 > /proc/sys/vm/watermark_scale_factor
-#	else
-#		echo 16 > /proc/sys/vm/watermark_scale_factor
-#	fi
-
-	echo 0 > /proc/sys/vm/watermark_boost_factor
 	echo 100 > /proc/sys/vm/swappiness
-	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
-	echo 1 > /proc/sys/vm/kswapd_threads
-}
 
-if [ -e "/proc/cont_pte_hugepage/stat" ]; then
-	chp_support=1
-fi
+        # Disable wsf  beacause we are using efk.
+        # wsf Range : 1..1000. So set to bare minimum value 1.
+        echo 1 > /proc/sys/vm/watermark_scale_factor
+
+	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
+	echo 2 > /proc/sys/vm/kswapd_threads
+}
 
 rev=`cat /sys/devices/soc0/revision`
 ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`
@@ -337,7 +210,6 @@ echo -6 > /sys/devices/system/cpu/cpu5/sched_load_boost
 echo -6 > /sys/devices/system/cpu/cpu6/sched_load_boost
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-echo "80 2131200:95" > /sys/devices/system/cpu/cpufreq/policy4/schedutil/target_loads
 
 # configure governor settings for gold+ cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
@@ -349,7 +221,6 @@ echo 85 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_load
 echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/rtg_boost_freq
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
-echo "80 2208000:95" > /sys/devices/system/cpu/cpufreq/policy7/schedutil/target_loads
 
 # colocation V3 settings
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq

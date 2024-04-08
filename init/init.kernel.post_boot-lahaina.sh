@@ -2,7 +2,7 @@
 # Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
-# Copyright (C) 2020 Oplus. All rights reserved.
+#
 # Copyright (c) 2009-2012, 2014-2019, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -77,89 +77,6 @@ function configure_zram_parameters() {
 	fi
 }
 
-#/*Add swappiness tunning parameters*/
-function oplus_configure_tunning_swappiness() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    if [ $MemTotal -le 6291456 ]; then
-        echo 0 > /proc/sys/vm/swappiness_threshold1_size
-        echo 0 > /proc/sys/vm/swappiness_threshold1_size
-        echo 0 > /proc/sys/vm/vm_swappiness_threshold2
-        echo 0 > /proc/sys/vm/swappiness_threshold2_size
-    elif [ $MemTotal -le 8388608 ]; then
-        echo 70 > /proc/sys/vm/vm_swappiness_threshold1
-        echo 2000 > /proc/sys/vm/swappiness_threshold1_size
-        echo 90 > /proc/sys/vm/vm_swappiness_threshold2
-        echo 1500 > /proc/sys/vm/swappiness_threshold2_size
-    else
-        echo 100 > /proc/sys/vm/vm_swappiness_threshold1
-        echo 4096 > /proc/sys/vm/swappiness_threshold1_size
-        echo 120 > /proc/sys/vm/vm_swappiness_threshold2
-        echo 2048 > /proc/sys/vm/swappiness_threshold2_size
-    fi
-}
-
-#ifdef OPLUS_FEATURE_ZRAM_OPT
-function oppo_configure_zram_parameters() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    echo lz4 > /sys/block/zram0/comp_algorithm
-    echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-    echo 60 > /sys/module/zram_opt/parameters/direct_vm_swappiness
-    echo 0 > /proc/sys/vm/page-cluster
-
-    if [ -f /sys/block/zram0/disksize ]; then
-        if [ -f /sys/block/zram0/use_dedup ]; then
-            echo 1 > /sys/block/zram0/use_dedup
-        fi
-
-        if [ $MemTotal -le 524288 ]; then
-            #config 384MB zramsize with ramsize 512MB
-            echo 402653184 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 1048576 ]; then
-            #config 768MB zramsize with ramsize 1GB
-            echo 805306368 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 2097152 ]; then
-            #config 1GB+256MB zramsize with ramsize 2GB
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 1342177280 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 3145728 ]; then
-            #config 1GB+512MB zramsize with ramsize 3GB
-            echo 1610612736 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 4194304 ]; then
-            #config 2GB+512MB zramsize with ramsize 4GB
-            echo 2684354560 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 6291456 ]; then
-            #config 3GB zramsize with ramsize 6GB
-            echo 3221225472 > /sys/block/zram0/disksize
-        else
-            #config 4GB zramsize with ramsize >=8GB
-            echo 4294967296 > /sys/block/zram0/disksize
-        fi
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
-    fi
-}
-
-function oplus_configure_hybridswap() {
-	kernel_version=`uname -r`
-
-	if [[ "$kernel_version" == "5.10"* ]]; then
-		echo 160 > /sys/module/oplus_bsp_zram_opt/parameters/vm_swappiness
-	else
-		echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-	fi
-
-	echo 0 > /proc/sys/vm/page-cluster
-
-	# FIXME: set system memcg pata in init.kernel.post_boot-lahaina.sh temporary
-	echo 500 > /dev/memcg/system/memory.app_score
-	echo systemserver > /dev/memcg/system/memory.name
-}
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
-
 function configure_read_ahead_kb_values() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
@@ -180,17 +97,7 @@ function configure_read_ahead_kb_values() {
 		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
 	fi
 	for dm in $dmpts; do
-		dm_dev=`echo $dm |cut -d/ -f4`
-		if [ "$dm_dev" = "" ]; then
-			is_erofs=""
-		else
-			is_erofs=`mount |grep erofs |grep "${dm_dev} "`
-		fi
-		if [ "$is_erofs" = "" ]; then
-			echo $ra_kb > $dm
-		else
-			echo 128 > $dm
-		fi
+		echo $ra_kb > $dm
 	done
 }
 
@@ -213,38 +120,10 @@ function configure_memory_parameters() {
 	#
 	# Set allocstall_threshold to 0 for all targets.
 	#
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
 
-#ifdef OPLUS_FEATURE_ZRAM_OPT
-	# For vts test which has replace system.img
-	ls -l /product | grep '\-\>'
-	if [ $? -eq 0 ]; then
-		oppo_configure_zram_parameters
-	else
-		if [ -f /sys/block/zram0/hybridswap_enable ]; then
-			oplus_configure_hybridswap
-		else
-			oppo_configure_zram_parameters
-		fi
-	fi
-        oplus_configure_tunning_swappiness
-#else
-#       configure_zram_parameters
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
+	configure_zram_parameters
 	configure_read_ahead_kb_values
-	echo 0 > /proc/sys/vm/page-cluster
-
-#	if [ $MemTotal -le 8388608 ]; then
-#		echo 32 > /proc/sys/vm/watermark_scale_factor
-#	else
-#		echo 16 > /proc/sys/vm/watermark_scale_factor
-#	fi
-
-	echo 0 > /proc/sys/vm/watermark_boost_factor
-#ifndef OPLUS_FEATURE_ZRAM_OPT
-#	echo 100 > /proc/sys/vm/swappiness
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
+	echo 100 > /proc/sys/vm/swappiness
 }
 
 rev=`cat /sys/devices/soc0/revision`
@@ -293,36 +172,22 @@ echo 10 10 10 10 10 10 10 95 > /proc/sys/kernel/sched_coloc_busy_hyst_cpu_busy_p
 # set the threshold for low latency task boost feature which prioritize
 # binder activity tasks
 echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
-# change colocation threshould
-echo 162 > /proc/sys/kernel/sched_min_task_util_for_colocation
 
 # cpuset parameters
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 
-#cpu cgroup
-echo 3 > /dev/cpuctl/background/cpu.uclamp.window_policy
-echo 1 > /dev/cpuctl/background/cpu.uclamp.discount_wait_time
-echo 1 > /dev/cpuctl/background/cpu.uclamp.ed_task_filter
-echo 1 > /dev/cpuctl/background/cpu.uclamp.top_task_filter
-
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
-#config power effiecny tunning parameters
-echo 1 > /sys/module/cpufreq_effiency/parameters/affect_mode
-echo "300000,45000,1209600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster0_effiency
-echo "710400,45000,1881600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster1_effiency
-echo "844800,50000,2035200,55000,0"  > /sys/module/cpufreq_effiency/parameters/cluster2_effiency
-
 # configure governor settings for silver cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1190400 > /sys/devices/system/cpu/cpufreq/policy0/uag/hispeed_freq
+	echo 1190400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 else
-	echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/uag/hispeed_freq
+	echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 fi
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
@@ -336,28 +201,26 @@ fi
 echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # configure governor settings for gold cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1497600 > /sys/devices/system/cpu/cpufreq/policy4/uag/hispeed_freq
+	echo 1497600 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 else
-	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy4/uag/hispeed_freq
+	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 fi
 echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-echo "80 2112000:95" > /sys/devices/system/cpu/cpufreq/policy4/uag/target_loads
 
 # configure governor settings for gold+ cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1536000 > /sys/devices/system/cpu/cpufreq/policy7/uag/hispeed_freq
+	echo 1536000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 else
-	echo 1670400 > /sys/devices/system/cpu/cpufreq/policy7/uag/hispeed_freq
+	echo 1670400 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 fi
 echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
-echo "80 2380800:95" > /sys/devices/system/cpu/cpufreq/policy7/uag/target_loads
 
 # configure bus-dcvs
 for device in /sys/devices/platform/soc
@@ -467,18 +330,7 @@ do
 	done
 done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
-#Add for sleep mode adjust. 2020-12-04
-inner_temp_boot_mode=`getprop sys.oppo_ftm_mode`
-case "$inner_temp_boot_mode" in
-	"3")
-		echo "Use s2idle(ftm, sleep to idle) sleep mode"
-		echo s2idle > /sys/power/mem_sleep
-	;;
-	*)
-		echo "Use deep(sleep to mem) sleep mode"
-		echo deep > /sys/power/mem_sleep
-	;;
-esac
+echo s2idle > /sys/power/mem_sleep
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
@@ -508,9 +360,5 @@ case "$console_config" in
 		echo "Enable console config to $console_config"
 	;;
 esac
-
-chown -h system.system /sys/devices/system/cpu/cpufreq/policy0/schedutil/target_loads
-chown -h system.system /sys/devices/system/cpu/cpufreq/policy4/schedutil/target_loads
-chown -h system.system /sys/devices/system/cpu/cpufreq/policy7/schedutil/target_loads
 
 setprop vendor.post_boot.parsed 1
