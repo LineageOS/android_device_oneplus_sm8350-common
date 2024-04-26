@@ -70,6 +70,30 @@
       },
       "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c6d9edd_994fda96",
+        "filename": "device_framework_matrix.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2024-04-26T16:23:41Z",
+      "side": 1,
+      "message": "I thought I did, but I actually don\u0027t. This has been dropped.",
+      "parentUuid": "79bd83f6_666f884f",
+      "range": {
+        "startLine": 52,
+        "startChar": 14,
+        "endLine": 52,
+        "endChar": 47
+      },
+      "revId": "5a10e1dba9977926bf9b620c67a8325bbd725233",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
