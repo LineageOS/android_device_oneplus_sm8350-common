@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb85b795_8cb3138a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-06-12T08:29:42Z",
+      "side": 1,
+      "message": "Alternative fix: https://review.lineageos.org/c/LineageOS/android_bootable_recovery/+/394097",
+      "revId": "ea329985f119e187177b14b87cb8cf805ef1ed19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
