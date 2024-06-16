@@ -527,12 +527,12 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
 # Iris
-odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
-odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
-odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
-odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
+#odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
+#odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
+#odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
+#odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
+#odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
+#odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
 odm/lib64/libpwirisIoctlWrapper.so
 odm/lib64/libpwirisPCS.so
 odm/lib64/libpwiriscalibrate.so
