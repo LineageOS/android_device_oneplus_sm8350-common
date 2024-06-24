@@ -327,8 +327,12 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # USB
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/usb_compositions.conf:$(TARGET_COPY_OUT_ODM)/etc/usb_compositions.conf
+
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.qti
+    android.hardware.usb-service.qti \
+    android.hardware.usb.gadget-service.qti
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
