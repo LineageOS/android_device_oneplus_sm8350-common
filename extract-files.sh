@@ -103,7 +103,7 @@ function blob_fixup() {
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
             ;;
         vendor/etc/media_codecs_lahaina.xml|vendor/etc/media_codecs_lahaina_vendor.xml|vendor/etc/media_codecs_yupik_v1.xml)
-            sed -Ei "/media_codecs_(google_audio|google_telephony|vendor_audio)/d" "${2}"
+            sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d" "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
             [ "$2" = "" ] && return 0
