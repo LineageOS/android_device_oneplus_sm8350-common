@@ -71,6 +71,9 @@ function blob_fixup() {
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
             ;;
+        product/app/PowerOffAlarm/PowerOffAlarm.apk)
+            apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -s
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
