@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d7378b3_a860f7b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18745
+      },
+      "writtenOn": "2024-08-22T17:59:03Z",
+      "side": 1,
+      "message": "Dependent on change 400007 https://review.lineageos.org/c/LineageOS/android_kernel_oneplus_sm8350/+/400007",
+      "revId": "5a70a3e91baeaa7cfe1936646bf3f5bcf52395c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
