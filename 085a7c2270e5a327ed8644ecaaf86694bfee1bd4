@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0c4b9f3_83334bf4",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-08-23T23:05:00Z",
+      "side": 1,
+      "message": "Interestingly, this doesn\u0027t exist anymore on salami A14 images.",
+      "range": {
+        "startLine": 466,
+        "startChar": 28,
+        "endLine": 466,
+        "endChar": 44
+      },
+      "revId": "085a7c2270e5a327ed8644ecaaf86694bfee1bd4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
