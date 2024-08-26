@@ -48,6 +48,13 @@
             <instance>oplusimsradio1</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.osense.client</name>
+        <interface>
+            <name>IOsenseAidlHalReporter</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.radio</name>
         <version>1.0-1</version>
