@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0811db2c_083dfd38",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 11
+      },
+      "lineNbr": 1550,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2024-08-31T10:25:40Z",
+      "side": 1,
+      "message": "This is audio firmware, and it is already listed in the device tree proprietary files.",
+      "revId": "bede32fca54c560b2968f1a4db59cd9056a84bbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
