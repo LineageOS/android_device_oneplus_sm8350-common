@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92472736_fd52c48d",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 13
+      },
+      "lineNbr": 1205,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2024-09-03T19:19:39Z",
+      "side": 1,
+      "message": "All this vibrator firmware is not required since we don’t have framework/vibrator hal support to utilize this effect.",
+      "revId": "589553da118f7f141359e0dd1a77ad33b8d2e3f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
