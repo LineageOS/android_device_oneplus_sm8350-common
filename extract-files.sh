@@ -113,6 +113,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
+        vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "23 0B 00 94" -P "1F 20 03 D5" -f "${2}"
