@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_13.1.0.593(EX01)).
+## from OnePlus 9 Pro (LE2123_14.0.0.720(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -30,7 +30,6 @@ vendor/lib/rfsa/adsp/bm2n15.bin
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
 vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
 vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
 vendor/lib/rfsa/adsp/libVppQnnHtp.so
@@ -82,6 +81,8 @@ vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
 # Bluetooth
+odm/lib/libbluetooth_audio_extend_factory_client.so
+odm/lib/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -311,6 +312,7 @@ system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
+system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
@@ -471,7 +473,6 @@ my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollm
 
 # IMS
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
@@ -485,6 +486,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk
@@ -501,7 +503,6 @@ vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
-vendor/lib64/lib-imsSDP.so
 vendor/lib64/lib-imscommon.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -525,12 +526,24 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.1.so
+vendor/lib64/vendor.qti.ims.connection@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.1.so
+vendor/lib64/vendor.qti.ims.factory@2.0.so
+vendor/lib64/vendor.qti.ims.factory@2.1.so
+vendor/lib64/vendor.qti.ims.factory@2.2.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.0.so
+vendor/lib64/vendor.qti.ims.rcssip@1.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.2.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.0.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.1.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 
@@ -633,17 +646,6 @@ vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 # Native public libraries
 vendor/etc/public.libraries.txt
 
-# Neural networks
-odm/lib64/libQnnHtpAltPrepStub.so;MODULE_SUFFIX=_odm
-odm/lib64/libQnnHtpStub.so
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib64/libQnnHtpAltPrepStub.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-gpu.so
-vendor/lib64/unnhal-acc-htp.so
-
 # OMX
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -667,6 +669,12 @@ vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
+# PASR manager
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
@@ -674,8 +682,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib64/liboplus-uah-client.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
@@ -713,8 +721,6 @@ vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/gPLAFFeature.xml
 vendor/etc/lm/sPLHFeature.xml
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libgameoptfeature.so
@@ -727,12 +733,8 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/libsplh.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 
 # Power-off alarm
-product/app/PowerOffAlarm/PowerOffAlarm.apk
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -809,7 +811,6 @@ odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
-odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -843,12 +844,16 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
+vendor/etc/qcril_database/upgrade/config/11.0_config.sql
+vendor/etc/qcril_database/upgrade/config/12.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/config/9.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
@@ -897,10 +902,12 @@ vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
+vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
@@ -910,6 +917,7 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -1120,128 +1128,6 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Vibrator firmware
-odm/firmware/100ms_RTP.bin
-odm/firmware/120ms_RTP.bin
-odm/firmware/140ms_RTP.bin
-odm/firmware/160ms_RTP.bin
-odm/firmware/180ms_RTP.bin
-odm/firmware/200ms_RTP.bin
-odm/firmware/20ms_RTP.bin
-odm/firmware/220ms_RTP.bin
-odm/firmware/240ms_RTP.bin
-odm/firmware/260ms_RTP.bin
-odm/firmware/280ms_RTP.bin
-odm/firmware/300ms_RTP.bin
-odm/firmware/320ms_RTP.bin
-odm/firmware/340ms_RTP.bin
-odm/firmware/360ms_RTP.bin
-odm/firmware/380ms_RTP.bin
-odm/firmware/400ms_RTP.bin
-odm/firmware/40ms_RTP.bin
-odm/firmware/420ms_RTP.bin
-odm/firmware/440ms_RTP.bin
-odm/firmware/460ms_RTP.bin
-odm/firmware/480ms_RTP.bin
-odm/firmware/500ms_RTP.bin
-odm/firmware/60ms_RTP.bin
-odm/firmware/80ms_RTP.bin
-odm/firmware/AT500ms_RTP.bin
-odm/firmware/VZW_Alrwave_RTP.bin
-odm/firmware/Version_Alert_RTP.bin
-odm/firmware/alarm_Alarm_clock_RTP.bin
-odm/firmware/alarm_Beep_RTP.bin
-odm/firmware/alarm_Breeze_RTP.bin
-odm/firmware/alarm_Dawn_RTP.bin
-odm/firmware/alarm_Dream_RTP.bin
-odm/firmware/alarm_Fluttering_RTP.bin
-odm/firmware/alarm_Flyer_RTP.bin
-odm/firmware/alarm_Interesting_RTP.bin
-odm/firmware/alarm_Leisurely_RTP.bin
-odm/firmware/alarm_Memory_RTP.bin
-odm/firmware/alarm_Relieved_RTP.bin
-odm/firmware/alarm_Ripple_RTP.bin
-odm/firmware/alarm_Slowly_RTP.bin
-odm/firmware/alarm_Stars_RTP.bin
-odm/firmware/alarm_Surging_RTP.bin
-odm/firmware/alarm_The_wind_RTP.bin
-odm/firmware/alarm_Walking_in_the_rain_RTP.bin
-odm/firmware/alarm_spring_RTP.bin
-odm/firmware/alarm_tactfully_RTP.bin
-odm/firmware/aw8697_haptic.bin
-odm/firmware/aw8697_haptic_166.bin
-odm/firmware/aw8697_haptic_168.bin
-odm/firmware/aw8697_haptic_170.bin
-odm/firmware/aw8697_haptic_172.bin
-odm/firmware/aw8697_haptic_174.bin
-odm/firmware/aw8697_rtp.bin
-odm/firmware/aw8697_rtp_lighthouse.bin
-odm/firmware/aw8697_rtp_silk.bin
-odm/firmware/awinic_haptic_gun_params.bin
-odm/firmware/awinic_haptic_params.bin
-odm/firmware/notif_Allay_RTP.bin
-odm/firmware/notif_Allusion_RTP.bin
-odm/firmware/notif_Amiable_RTP.bin
-odm/firmware/notif_Blare_RTP.bin
-odm/firmware/notif_Blissful_RTP.bin
-odm/firmware/notif_Brisk_RTP.bin
-odm/firmware/notif_Bubble_RTP.bin
-odm/firmware/notif_Cheerful_RTP.bin
-odm/firmware/notif_Clear_RTP.bin
-odm/firmware/notif_Comely_RTP.bin
-odm/firmware/notif_Cozy_RTP.bin
-odm/firmware/notif_Ding_RTP.bin
-odm/firmware/notif_Effervesce_RTP.bin
-odm/firmware/notif_Elegant_RTP.bin
-odm/firmware/notif_Free_RTP.bin
-odm/firmware/notif_Hallucination_RTP.bin
-odm/firmware/notif_Inbound_RTP.bin
-odm/firmware/notif_Light_RTP.bin
-odm/firmware/notif_Meet_RTP.bin
-odm/firmware/notif_Naivety_RTP.bin
-odm/firmware/notif_Quickly_RTP.bin
-odm/firmware/notif_Rhythm_RTP.bin
-odm/firmware/notif_Surprise_RTP.bin
-odm/firmware/notif_Twinkle_RTP.bin
-odm/firmware/ring_Amenity_RTP.bin
-odm/firmware/ring_Bounce_RTP.bin
-odm/firmware/ring_Calm_RTP.bin
-odm/firmware/ring_Lazy_RTP.bin
-odm/firmware/ring_Mystical_RTP.bin
-odm/firmware/ring_Whirl_RTP.bin
-odm/firmware/ringtone_Alacrity_RTP.bin
-odm/firmware/ringtone_Blues_RTP.bin
-odm/firmware/ringtone_Cloud_RTP.bin
-odm/firmware/ringtone_Cyclotron_RTP.bin
-odm/firmware/ringtone_Distinct_RTP.bin
-odm/firmware/ringtone_Dynamic_RTP.bin
-odm/firmware/ringtone_Eager.bin
-odm/firmware/ringtone_Ebullition.bin
-odm/firmware/ringtone_Echo_RTP.bin
-odm/firmware/ringtone_Expect_RTP.bin
-odm/firmware/ringtone_Fanatical_RTP.bin
-odm/firmware/ringtone_Friendship.bin
-odm/firmware/ringtone_Funky_RTP.bin
-odm/firmware/ringtone_Guitar_RTP.bin
-odm/firmware/ringtone_Harping_RTP.bin
-odm/firmware/ringtone_Highlight_RTP.bin
-odm/firmware/ringtone_Idyl_RTP.bin
-odm/firmware/ringtone_Innocence_RTP.bin
-odm/firmware/ringtone_Jazz_life_RTP.bin
-odm/firmware/ringtone_Journey_RTP.bin
-odm/firmware/ringtone_Joyous_RTP.bin
-odm/firmware/ringtone_Marimba_RTP.bin
-odm/firmware/ringtone_Old_telephone_RTP.bin
-odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin
-odm/firmware/ringtone_Oneplus_tune_RTP.bin
-odm/firmware/ringtone_Optimistic_RTP.bin
-odm/firmware/ringtone_Piano_RTP.bin
-odm/firmware/ringtone_Rhythm_RTP.bin
-odm/firmware/ringtone_Sun_glittering_RTP.bin
-odm/firmware/shuntai24k_rtp.bin
-odm/firmware/t-jingle_RTP.bin
-odm/firmware/wentai24k_rtp.bin
-
 # VPP
 vendor/bin/hw/qconfigservice
 vendor/bin/vppservice
@@ -1262,6 +1148,10 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
+# Vibrator firmware
+odm/firmware/aw8697_haptic_170.bin
+odm/firmware/aw8697_rtp.bin
+
 # Widevine DRM
 odm/bin/hw/android.hardware.drm@1.3-service.widevine
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
@@ -1278,51 +1168,51 @@ vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
-# WiFi Display (system) - from LE2121 14.0.0.210(EX01)
-system/framework/WfdCommon.jar|a661c494d064b79a3f71579592411fada1ea232f
-system_ext/bin/wfdservice|400d123df78c1ed2e9643ff3ddf5ee5748f954fe
-system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
-system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f0652d800d48ae5b76e4fab43fda214
-system_ext/etc/seccomp_policy/wfdservice.policy|5b3592c965f16b2d55ac89d56d8d3c49a6b5800b
-system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|cb88bc73bf9f44d7da000a41d38b309ffdf71370
-system_ext/lib/libmmrtpdecoder.so|4fc76315f11ff5fe416f36b66c9422ef05eae182
-system_ext/lib/libmmrtpencoder.so|0fa2096eec29eec395f6bd88d7d1049a127e090c
-system_ext/lib/libwfdavenhancements.so|581db496334d2adb76e6c6af67620f49ca24eabd
-system_ext/lib/libwfdclient.so|a9639d9f269880700bac6fc06e8302702fb0ab32
-system_ext/lib/libwfdcommonutils.so|b738182e77f3e7faf72460f09ebdfca7de5e0c23
-system_ext/lib/libwfdconfigutils.so|a52a96e2699f3a5ad79838e356cd90838e26218b
-system_ext/lib/libwfddisplayconfig.so|f46fe63fb3d58c143dc92741a962167af3d8b928
-system_ext/lib/libwfdmminterface.so|5844114d7cc823090a70fe4f44cbda0ddf585ebd
-system_ext/lib/libwfdmmsink.so|23fb5c836fc06865b229c30b46998e41c0624dac
-system_ext/lib/libwfdmmsrc_system.so|0adfc69a5560158f3a6803ba720acc795d6d05dc|c3001ea4e2aa707f0e65547919c67c6c62e5eb7a
-system_ext/lib/libwfdrtsp.so|afd69963c2bd59bdb3ff23e01710c61ed90c5d87
-system_ext/lib/libwfdservice.so|07e6d0e00393a8c068f75b46531d2e75fdaebde2|90e41544f3797c118082d1663fd3a09465e50268
-system_ext/lib/libwfdsinksm.so|875171cc6ae534dd941eec1c87b78d5961e19c06
-system_ext/lib/libwfduibcinterface.so|e90fa4920b010bd6ef2bd78c2d2644cbd0fcbffa
-system_ext/lib/libwfduibcsink.so|91af548471c395a958e6155dd9be19cccbe482d3
-system_ext/lib/libwfduibcsinkinterface.so|bc0e7dca28d1e5cbc6caf5bd5378f3e6db3b460c
-system_ext/lib/libwfduibcsrc.so|a0b1c73015c449468db0d2776fdfcc56dfeee53b
-system_ext/lib/libwfduibcsrcinterface.so|2e24ec6a075407664488b4214eef35cb2ca845f4
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|45a0a8cd9f1aa5cbe69b113192d42bc42e32e9c3
-system_ext/lib64/libmmparser_lite.so|59d550a52773722f1fe515bd5fba86918cf6f54e
-system_ext/lib64/libmmrtpdecoder.so|0da526d51135ea58236ab6bcc2d1b7484931df24
-system_ext/lib64/libmmrtpencoder.so|fafe00d1ed3d691c6d2c2d963144218764cad5ae
-system_ext/lib64/libwfdclient.so|0070b1e88cee6ebaf17dcb02c2706232cc087071
-system_ext/lib64/libwfdcommonutils.so|14b3bd86703f2aca0abb1232d2304e626c1af644
-system_ext/lib64/libwfdconfigutils.so|6f1a3a862ddde4245ea58ad310101df620d3a00b
-system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
-system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
-system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdnative.so|6d6dad5e631bc4d63463f608c47f3f9e5493944f|465e92c94f2440eda506f9b23c33f35256adf068
-system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
-system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
-system_ext/lib64/libwfduibcinterface.so|dca32fe063bdba7ce3b131b16cf112b793ae03ad
-system_ext/lib64/libwfduibcsink.so|63ea93b1a6aec75a294baf50007270807a819e21
-system_ext/lib64/libwfduibcsinkinterface.so|39c123bd9a4d7a8fa317f8ed4d86972dcfab0423
-system_ext/lib64/libwfduibcsrc.so|5557f3bd58c37b7e3b28e13f2f86d55930b14ab6
-system_ext/lib64/libwfduibcsrcinterface.so|77cead9bf7b60384fe1e11dc2b25bd99af0b4608
-system_ext/priv-app/WfdService/WfdService.apk|7191da7d336f6018ee292af4e69167677b9f5bd1
+# WiFi Display (system)
+system/framework/WfdCommon.jar
+system_ext/bin/wfdservice
+system_ext/etc/init/wfdservice.rc
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
+system_ext/etc/seccomp_policy/wfdservice.policy
+system_ext/etc/wfdconfigsink.xml
+system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+system_ext/lib/libmmrtpdecoder.so
+system_ext/lib/libmmrtpencoder.so
+system_ext/lib/libwfdavenhancements.so
+system_ext/lib/libwfdclient.so
+system_ext/lib/libwfdcommonutils.so
+system_ext/lib/libwfdconfigutils.so
+system_ext/lib/libwfddisplayconfig.so
+system_ext/lib/libwfdmminterface.so
+system_ext/lib/libwfdmmsink.so
+system_ext/lib/libwfdmmsrc_system.so
+system_ext/lib/libwfdrtsp.so
+system_ext/lib/libwfdservice.so
+system_ext/lib/libwfdsinksm.so
+system_ext/lib/libwfduibcinterface.so
+system_ext/lib/libwfduibcsink.so
+system_ext/lib/libwfduibcsinkinterface.so
+system_ext/lib/libwfduibcsrc.so
+system_ext/lib/libwfduibcsrcinterface.so
+system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/libmmparser_lite.so
+system_ext/lib64/libmmrtpdecoder.so
+system_ext/lib64/libmmrtpencoder.so
+system_ext/lib64/libwfdclient.so
+system_ext/lib64/libwfdcommonutils.so
+system_ext/lib64/libwfdconfigutils.so
+system_ext/lib64/libwfddisplayconfig.so
+system_ext/lib64/libwfdmminterface.so
+system_ext/lib64/libwfdmmsink.so
+system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so
+system_ext/lib64/libwfdrtsp.so
+system_ext/lib64/libwfdsinksm.so
+system_ext/lib64/libwfduibcinterface.so
+system_ext/lib64/libwfduibcsink.so
+system_ext/lib64/libwfduibcsinkinterface.so
+system_ext/lib64/libwfduibcsrc.so
+system_ext/lib64/libwfduibcsrcinterface.so
+system_ext/priv-app/WfdService/WfdService.apk
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice
