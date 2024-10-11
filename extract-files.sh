@@ -117,6 +117,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.lahaina.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/\/vendor\/lib\/liba2dpoffload.so/\/odm\/lib\/liba2dpoffload.so\x00\x00\x00/" "${2}"
+            sed -i "s/\/vendor\/lib\/libssrec.so/\/odm\/lib\/libssrec.so\x00\x00\x00/" "${2}"
+            ;;
         vendor/lib/libgui1_vendor.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
