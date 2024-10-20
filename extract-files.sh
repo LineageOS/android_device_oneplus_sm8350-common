@@ -77,6 +77,10 @@ function blob_fixup() {
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
             ;;
+        odm/lib64/libAlgoProcess.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.hardware.graphics.common-V1-ndk_platform.so/android.hardware.graphics.common-V5-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
         product/app/PowerOffAlarm/PowerOffAlarm.apk)
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -s
