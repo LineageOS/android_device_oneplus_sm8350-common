@@ -70,8 +70,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     ('vendor/etc/media_lahaina/video_system_specs.json', 'vendor/etc/media_yupik_v1/video_system_specs.json'): blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 1000,', '"max_retry_alloc_output_timeout": 0,'),
-    ('vendor/etc/media_codecs_lahaina.xml', 'vendor/etc/media_codecs_lahaina_vendor.xml', 'vendor/etc/media_codecs_yupik_v1.xml'): blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).*\n', ''),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
 }  # fmt: skip
