@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -175,8 +175,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.default \
-    fstab.default.vendor_ramdisk \
+    fstab.qcom \
+    fstab.qcom.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
