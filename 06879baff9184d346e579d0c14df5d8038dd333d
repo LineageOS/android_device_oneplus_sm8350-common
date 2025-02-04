@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee562258_c8788aac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-04T22:51:11Z",
+      "side": 1,
+      "message": "Any specific reason for this? Don\u0027t you also have to change the mount_all and swapon_all entries in init files?",
+      "revId": "06879baff9184d346e579d0c14df5d8038dd333d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
