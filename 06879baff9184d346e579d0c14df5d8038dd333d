@@ -16,6 +16,41 @@
       "message": "Any specific reason for this? Don\u0027t you also have to change the mount_all and swapon_all entries in init files?",
       "revId": "06879baff9184d346e579d0c14df5d8038dd333d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "090d0f41_dd5eeed6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-02-04T22:55:03Z",
+      "side": 1,
+      "message": "seems pointless...",
+      "revId": "06879baff9184d346e579d0c14df5d8038dd333d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c1c1e0c_eaffb6b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-02-04T22:55:03Z",
+      "side": 1,
+      "message": "there are no mount_all/swapon_all entries, but it seems pretty pointless when `ro.boot.fstab_suffix` is set to default via bootloader.",
+      "parentUuid": "ee562258_c8788aac",
+      "revId": "06879baff9184d346e579d0c14df5d8038dd333d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
