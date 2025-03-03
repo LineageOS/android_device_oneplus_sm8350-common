@@ -26,22 +26,12 @@
 
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
-        <item>/apex/com.android.art/javalib/arm64/boot.vdex</item>
-        <item>/apex/com.android.art/javalib/arm/boot.vdex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.vdex</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.vdex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.art</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.art</item>
-        <item>/system/framework/framework-res.apk</item>
-        <item>/system/lib64/libhwui.so</item>
-        <item>/system/lib/libhwui.so</item>
-        <item>/system/framework/boot-framework.vdex</item>
-        <item>/system/framework/oat/arm64/services.vdex</item>
-        <item>/system/framework/telephony-common.jar</item>
-        <item>/system/framework/arm64/boot-telephony-common.art</item>
-        <item>/system/bin/libsurfaceflinger</item>
-        <item>/apex/com.android.art/javalib/core-oj.jar</item>
-        <item>/apex/com.android.art/javalib/core-libart.jar</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/bin/surfaceflinger"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
