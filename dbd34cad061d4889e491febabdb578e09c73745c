@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab722087_2bbe6943",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-24T16:44:58Z",
+      "side": 1,
+      "message": "this will change usb ids btw, but ngl I might totally be ok with just using stock qcom ones instead...",
+      "revId": "dbd34cad061d4889e491febabdb578e09c73745c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
