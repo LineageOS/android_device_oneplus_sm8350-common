@@ -315,7 +315,9 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oplus
+    vendor.lineage.touch-service.oplus
+
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,true)
 
 # Update engine
 PRODUCT_PACKAGES += \
