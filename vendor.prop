@@ -96,6 +96,9 @@ ro.crypto.volume.metadata.method=dm-default-key
 persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpmhalservice.enable=1
 
+# DeviceAsWebcam
+persist.vendor.uvc.disable_video_encode_flag=true
+
 # Display
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
