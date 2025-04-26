@@ -39,5 +39,8 @@ ril.subscription.types=NV,RUIM
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# USB
+persist.sys.uvc.disable_video_encode_flag=true
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
