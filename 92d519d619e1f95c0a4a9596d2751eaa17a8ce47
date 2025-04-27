@@ -16,6 +16,24 @@
       "message": "Are these all the nodes that should be ignored? What about /dev/video32 and /dev/video33?",
       "revId": "92d519d619e1f95c0a4a9596d2751eaa17a8ce47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04fad8e8_85371533",
+        "filename": "overlay/DeviceAsWebcamResTarget/res/raw/ignored_v4l2_nodes.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-04-27T23:59:38Z",
+      "side": 1,
+      "message": "Only added 1 \u0026 2 since they were the only ones that the app printed warnings for:\n\nW .DeviceAsWebcam: isVideoOutputDevice Opening V4L2 node /dev/video0 failed Operation already in progress\nW .DeviceAsWebcam: isVideoOutputDevice Opening V4L2 node /dev/video1 failed Operation already in progress",
+      "parentUuid": "030243d5_1898c7fb",
+      "revId": "92d519d619e1f95c0a4a9596d2751eaa17a8ce47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
