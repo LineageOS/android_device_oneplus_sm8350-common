@@ -467,6 +467,17 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 
+# Horae
+system/lib64/libostatslog.so
+system/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
+system/lib64/vendor.oplus.hardware.performance-V1-ndk.so
+system_ext/bin/horae
+system_ext/etc/horae/horae.conf
+system_ext/etc/horae/horae_SM8350.conf
+system_ext/etc/init/horae.rc
+system_ext/lib64/vendor.oplus.hardware.charger-V1-ndk.so
+system_ext/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so
+
 # Hotword Enrollment
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
@@ -641,6 +652,16 @@ vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Native public libraries
 vendor/etc/public.libraries.txt
+
+# OPLUS Charger
+odm/bin/hw/vendor.oplus.hardware.charger-V3-service
+odm/bin/hw/wlschgd
+odm/etc/init/vendor.oplus.hardware.charger-V3-service.rc
+odm/etc/permissions/vendor-oplus-hardware-charger.xml
+odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
+odm/lib64/libosenseaidlhalclient.so:odm/lib64/libosenseaidlhalclient_charge.so;FIX_SONAME
+odm/lib64/vendor.oplus.hardware.charger-V3-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.charger@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy

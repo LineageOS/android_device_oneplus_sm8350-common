@@ -45,6 +45,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/bin/hw/vendor.oplus.hardware.charger-V3-service': blob_fixup()
+        .replace_needed('libosenseaidlhalclient.so', 'libosenseaidlhalclient_charge.so'),
     'odm/bin/hw/vendor.pixelworks.hardware.display.iris-service': blob_fixup()
         .add_needed('libprocessgroup.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
