@@ -13,8 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
+
+ifeq ($(WITH_GMS),true)
+    AB_OTA_POSTINSTALL_CONFIG += FILESYSTEM_TYPE_system=erofs
+else
+    AB_OTA_POSTINSTALL_CONFIG += FILESYSTEM_TYPE_system=ext4
+endif
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
