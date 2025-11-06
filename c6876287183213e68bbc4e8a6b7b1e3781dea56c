@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53573ebb_e254ea3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-06T20:44:29Z",
+      "side": 1,
+      "message": "FYI OPlusFrameworksResCommon takes priority and overrides config_defaultPinnerServiceFiles.",
+      "revId": "c6876287183213e68bbc4e8a6b7b1e3781dea56c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
