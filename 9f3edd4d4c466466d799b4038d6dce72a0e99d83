@@ -16,6 +16,24 @@
       "message": "Is this really necessary? I am still building lemonadep with partner GMS just fine.",
       "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "356f5474_5fab811b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-12-16T10:09:41Z",
+      "side": 1,
+      "message": "Did you try with the HEAD~ that was pushed yesterday?\n\nRuntimeError: sum of sizes of [\u0027odm\u0027, \u0027product\u0027, \u0027system\u0027, \u0027system_ext\u0027, \u0027vendor\u0027, \u0027vendor_dlkm\u0027] is greater than BOARD_oneplus_dynamic_partitions_SIZE:\n670957568+3012788224+1022099456+492593152+381796352+13709312 \u003d\u003d 5593944064 \u003e 5591007232 \u003d\u003d 5591007232",
+      "parentUuid": "dc6aaade_3cf3aa7e",
+      "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
