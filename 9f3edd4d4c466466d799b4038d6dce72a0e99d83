@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc6aaade_3cf3aa7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-16T09:09:36Z",
+      "side": 1,
+      "message": "Is this really necessary? I am still building lemonadep with partner GMS just fine.",
+      "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
