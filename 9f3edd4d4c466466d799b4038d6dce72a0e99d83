@@ -70,6 +70,23 @@
       "parentUuid": "5030fb16_43e54557",
       "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae20d884_4a22c0d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-21T21:40:08Z",
+      "side": 1,
+      "message": "Seems to cause boot issues here. Besides, you can simply not ship stuff like YouTube and YT Music and it will fit again.",
+      "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
