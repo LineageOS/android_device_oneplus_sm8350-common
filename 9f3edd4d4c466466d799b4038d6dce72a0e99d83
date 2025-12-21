@@ -52,6 +52,24 @@
       "parentUuid": "356f5474_5fab811b",
       "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "543ca81d_d723b44e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-21T15:01:32Z",
+      "side": 1,
+      "message": "Yea, it fails with updated partner GMS.",
+      "parentUuid": "5030fb16_43e54557",
+      "revId": "9f3edd4d4c466466d799b4038d6dce72a0e99d83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
