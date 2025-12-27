@@ -565,9 +565,6 @@ odm/lib64/libpwirispq.so
 odm/lib64/libpwirisservice.so
 odm/lib64/libpwirissoft.so
 odm/lib64/libpwsoftirisPCS.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirishalwrapper.so
 

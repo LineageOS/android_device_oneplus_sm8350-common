@@ -4,6 +4,10 @@
     "target_path": "hardware/oplus"
   },
   {
+    "repository": "android_hardware_pixelworks_interfaces",
+    "target_path": "hardware/pixelworks/interfaces"
+  },
+  {
     "repository": "android_kernel_oneplus_sm8350",
     "target_path": "kernel/oneplus/sm8350"
   }
