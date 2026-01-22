@@ -67,6 +67,9 @@ on property:sys.boot_completed=1
     copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
     # IRQ 243: msm_drm
