@@ -16,6 +16,24 @@
       "message": "We will also need the two changes from here https://github.com/oneplus-sm8350-devs/android_kernel_oneplus_sm8350/commits/aaf23560caa13d0aca52d2191c17a16c4438fab9/ and the sepolicy can be grabbed from https://github.com/ArianK16a/android_device_fairphone_FP6/commit/178f1cefcfeb5b5ad548ae8c9a3a5706a77fa822 for hardware/oplus",
       "revId": "3d56c9b1178c6cdad6e417fd239e0a15373631f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32dc1673_9126a468",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-02-23T07:28:24Z",
+      "side": 1,
+      "message": "and 471088 ^^",
+      "parentUuid": "2ade74e8_8bfb280c",
+      "revId": "3d56c9b1178c6cdad6e417fd239e0a15373631f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
