@@ -16,6 +16,24 @@
       "message": "not needed. already included in hardware/oplus/sepolicy/qti/SEPolicy.mk",
       "revId": "8141acc892d3550240569876515e0370b1644cbb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d791c53_c369baf6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-02-23T23:56:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4da801af_56724053",
+      "revId": "8141acc892d3550240569876515e0370b1644cbb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
