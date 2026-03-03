@@ -16,6 +16,144 @@
       "message": "Needs a lot more work, a ton of drops. Will look into it later ¯\\_(ツ)_/¯",
       "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "77ee2f7a_9e0401ff",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "*100 and round to next available llcbw frequency",
+      "range": {
+        "startLine": 8,
+        "startChar": 9,
+        "endLine": 8,
+        "endChar": 11
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e49a343c_f3738616",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "*100000 and round to next available l3 frequency",
+      "range": {
+        "startLine": 50,
+        "startChar": 9,
+        "endLine": 50,
+        "endChar": 13
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1a71a07_b5940da4",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "def wrong, i\u0027d have thought it\u0027s been fixed since https://github.com/ArianK16a/qcom-perf-parser/commit/539f051d91023ed97d396745d48ab0685a749c40",
+      "range": {
+        "startLine": 140,
+        "startChar": 9,
+        "endLine": 140,
+        "endChar": 15
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81bfb5f2_6cd93e14",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "*100, round to next available cpubw frequency",
+      "range": {
+        "startLine": 161,
+        "startChar": 9,
+        "endLine": 161,
+        "endChar": 12
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cb41acf_88301676",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "*100, round to next available cpubw frequency",
+      "range": {
+        "startLine": 171,
+        "startChar": 9,
+        "endLine": 171,
+        "endChar": 12
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3281d1d0_b8119257",
+        "filename": "configs/power/powerhint.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-03-03T11:02:40Z",
+      "side": 1,
+      "message": "looks sus, can you find out the major/minor of the orig boost?",
+      "range": {
+        "startLine": 190,
+        "startChar": 9,
+        "endLine": 190,
+        "endChar": 14
+      },
+      "revId": "082ce4764266ad3156fb34bff05d341d6b53c462",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
