@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.hw.rc \
-    init.oplus.hw.rc.recovery \
+    init.oplus.hw.recovery.rc \
     init.oplus.rc \
     init.oplus.sh \
     init.qcom.early_boot.sh \
