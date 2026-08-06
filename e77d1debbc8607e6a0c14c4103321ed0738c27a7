@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29f761df_542ce0e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-06T12:44:16Z",
+      "side": 1,
+      "message": "Missed https://github.com/LineageOS/android_device_oneplus_sm8350-common/blob/lineage-24.0/extract-files.py#L57",
+      "revId": "e77d1debbc8607e6a0c14c4103321ed0738c27a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
