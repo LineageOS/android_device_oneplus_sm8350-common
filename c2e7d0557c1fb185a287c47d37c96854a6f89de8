@@ -33,6 +33,24 @@
       "message": "because it feels separate.",
       "revId": "c2e7d0557c1fb185a287c47d37c96854a6f89de8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58ee80d5_81674ac0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-17T20:17:30Z",
+      "side": 1,
+      "message": "Both commits are not very descriptive reading them as a user. I would still keep them squashed with e.g. \"Add face unlock support\".",
+      "parentUuid": "1f7d97ad_6bf01bbc",
+      "revId": "c2e7d0557c1fb185a287c47d37c96854a6f89de8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
