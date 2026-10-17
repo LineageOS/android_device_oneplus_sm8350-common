@@ -51,6 +51,24 @@
       "parentUuid": "1f7d97ad_6bf01bbc",
       "revId": "c2e7d0557c1fb185a287c47d37c96854a6f89de8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a772576_ac765a37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-10-17T20:39:26Z",
+      "side": 1,
+      "message": "user will see that commit msg from their device specific repo.",
+      "parentUuid": "58ee80d5_81674ac0",
+      "revId": "c2e7d0557c1fb185a287c47d37c96854a6f89de8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
