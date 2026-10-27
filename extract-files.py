@@ -64,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('"max_retry_alloc_output_timeout": 1000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
+    'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
+        .regex_replace(r'(Id="0x0000108[01]" Type="1") Enable="false"((?: Timeout="2000")? Target="lahaina")', r'\1 Enable="true"\2'),
     (
         'vendor/lib64/libdpps.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
