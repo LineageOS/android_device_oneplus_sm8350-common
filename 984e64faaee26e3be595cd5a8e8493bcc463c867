@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4ed772e_5c8d17dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-01T23:43:54Z",
+      "side": 1,
+      "message": "-------\narm64-v8a CtsWifiTestCases:WifiRttTest: Passed: 19, Failed: 2, Ignored: 0, Assumption Failed: 4  \n\n2 tests failed\n--------------\nandroid.net.wifi.rtt.cts.WifiRttTest#testRangingToTestNon11mcApUsingResponderConfig\nandroid.net.wifi.rtt.cts.WifiRttTest#testRangingToTestNon11mcApUsingScanResult\n\nShipping those 2 fails is probably fine, most stuff that would want RTT only uses 802.11mc, which all passed.",
+      "revId": "984e64faaee26e3be595cd5a8e8493bcc463c867",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
